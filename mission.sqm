@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1162;
+		nextID=1210;
 	};
 	class Camera
 	{
-		pos[]={1459.7806,259.26181,782.78064};
-		dir[]={0.002380427,-0.88836926,0.45918193};
-		up[]={0.0046051093,0.4590553,0.88840038};
-		aside[]={1.0000023,-2.4143628e-007,-0.0051830015};
+		pos[]={1053.262,129.17282,644.35309};
+		dir[]={-0.0082064709,-0.89828449,0.43944326};
+		up[]={-0.016775124,0.4392989,0.89819014};
+		aside[]={0.99985772,-5.5610872e-007,0.018674081};
 	};
 };
 binarizationWanted=0;
@@ -267,7 +267,6 @@ class ScenarioData
 	overViewPicture="loadlogo.jpg";
 	onLoadMission="*** ENTER YOUR MISSION DESCRIPTION ***";
 	loadScreen="loadlogo.jpg";
-	disabledAI=1;
 	class Header
 	{
 		gameType="Sandbox";
@@ -578,7 +577,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=114;
+		items=138;
 		class Item0
 		{
 			dataType="Object";
@@ -13902,6 +13901,1474 @@ class Mission
 					};
 				};
 				nAttributes=14;
+			};
+		};
+		class Item114
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1445.2581,5.0014391,688.10901};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_1";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1163;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_1";
+			};
+			id=1162;
+		};
+		class Item115
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1448.2799,5.0014391,688.05286};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_2";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1165;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_2";
+			};
+			id=1164;
+		};
+		class Item116
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1450.8203,5.0014391,688.10046};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_3";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1167;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_3";
+			};
+			id=1166;
+		};
+		class Item117
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1453.4739,5.0014391,688.11133};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_4";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1169;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_4";
+			};
+			id=1168;
+		};
+		class Item118
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1456.0106,5.0014391,688.08136};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_5";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1171;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_5";
+			};
+			id=1170;
+		};
+		class Item119
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1458.7031,5.0014391,688.04565};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_6";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1173;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_6";
+			};
+			id=1172;
+		};
+		class Item120
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1460.8925,5.0014391,688.07251};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_7";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1175;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpAAF_A2_7";
+			};
+			id=1174;
+		};
+		class Item121
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1463.1531,5.0014391,688.02478};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitAAF_A2_AT_8";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1177;
+					type="I_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+			};
+			id=1176;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item122
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1022.636,5.0014391,699.84198};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_1";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1179;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_1";
+			};
+			id=1178;
+		};
+		class Item123
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1025.5563,5.0014391,699.81244};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_2";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1181;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_2";
+			};
+			id=1180;
+		};
+		class Item124
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1028.1042,5.0014391,699.98651};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_3";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1183;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_3";
+			};
+			id=1182;
+		};
+		class Item125
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1030.8101,5.0014391,699.86847};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_4";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1185;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_4";
+			};
+			id=1184;
+		};
+		class Item126
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1032.9706,5.0014391,699.74103};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_5";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1187;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_5";
+			};
+			id=1186;
+		};
+		class Item127
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1035.6578,5.0014391,700.0011};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_6";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1189;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_6";
+			};
+			id=1188;
+		};
+		class Item128
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1038.3132,5.0014391,699.96655};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_7";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1191;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_A2_7";
+			};
+			id=1190;
+		};
+		class Item129
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1040.8795,5.0014391,699.72174};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitNATO_A2_AT_8";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1193;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+			};
+			id=1192;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="jip1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item130
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1858.0229,5.0014391,697.12799};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_1";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1195;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_1";
+			};
+			id=1194;
+		};
+		class Item131
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1860.1748,5.0014391,696.93542};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_2";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1197;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_2";
+			};
+			id=1196;
+		};
+		class Item132
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1861.978,5.0014391,696.96912};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_3";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1199;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_3";
+			};
+			id=1198;
+		};
+		class Item133
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1863.6389,5.0014391,697.04657};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_4";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1201;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_4";
+			};
+			id=1200;
+		};
+		class Item134
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1865.2551,5.0014391,697.1698};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_5";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1203;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_5";
+			};
+			id=1202;
+		};
+		class Item135
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1866.7708,5.0014391,697.05859};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_6";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1205;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_6";
+			};
+			id=1204;
+		};
+		class Item136
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1868.5266,5.0014391,697.09143};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_7";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1207;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_A2_7";
+			};
+			id=1206;
+		};
+		class Item137
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1870.1799,5.0014391,697.02954};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						lock="UNLOCKED";
+						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						name="UnitCSAT_A2_AT_8";
+						description="JIP Slot";
+						isPlayable=1;
+					};
+					id=1209;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1208;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="jip3";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

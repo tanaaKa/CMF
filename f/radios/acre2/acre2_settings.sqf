@@ -53,7 +53,7 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Alpha",    ["ASL","A1","A2","A3"]],
 	["Bravo",    ["BSL","B1","B2","B3"]],
 	["Charlie",  ["CSL","C1","C2","C3"]],
-	["Platoon",  ["CO","DC","ENG1"]],
+	["Platoon",  ["PL","DC","ENG1"]],
 	["Support",  ["MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1"]],
 	["Armor",    ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
 	["Air",      ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
@@ -87,7 +87,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Emergency Net",  []],
 	["Platoon Net",
 		[
-			"CO", "DC",
+			"PL", "DC",
 			"ASL","BSL","CSL",
 			"MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1",
 			"ST1","DT1","ENG1",
