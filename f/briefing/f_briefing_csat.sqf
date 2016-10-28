@@ -12,20 +12,20 @@ _rad = player createDiaryRecord ["diary", ["Radio Structure","
 <br/>
 <font size='16'>PRC 343's (Short Range)</font>
 <br/>
-CH1 - Alpha
-CH2 - Bravo
-CH3 - Charlie
-CH4 - Platoon
-CH5 - Ground Supports (MMG, MAT, etc..)
-CH6 - Inter-Air 
-CH7 - Inter-Armor 
+CH1 - Alpha <br />
+CH2 - Bravo <br />
+CH3 - Charlie <br />
+CH4 - Platoon <br />
+CH5 - Ground Supports (MMG, MAT, etc..) <br />
+CH6 - Inter-Air <br />
+CH7 - Inter-Armor <br />
 <br/><br/>
 <font size='16'>PRC 152's (Long Range)</font>
 <br/>
-CH1 - Air Net
-CH2 - Armor Net
-CH3 - Emergency Net
-CH4 - Platoon Net
+CH1 - Air Net <br />
+CH2 - Armor Net <br />
+CH3 - Emergency Net <br />
+CH4 - Platoon Net <br />
 
 "]];
 
