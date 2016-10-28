@@ -6,11 +6,11 @@
 
 // Whether any radios should be assigned at all, to any units
 // TRUE = Disable radios for all units
-f_radios_settings_acre2_disableRadios = false;
+f_radios_settings_acre2_disableRadios = FALSE;
 
 // Whether or not the radio frequencies should be left as default, and not split per side
 // TRUE = Disable frequency seperation across sides
-f_radios_settings_acre2_disableFrequencySplit = false;
+f_radios_settings_acre2_disableFrequencySplit = FALSE;
 
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
@@ -18,7 +18,7 @@ f_radios_settings_acre2_disableFrequencySplit = false;
 f_radios_settings_acre2_shortRange = nil;
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["pl", "dc", "asl", "bsl", "csl", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
+f_radios_settings_acre2_longRange = ["co", "dc", "m", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
@@ -53,10 +53,10 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Alpha",    ["ASL","A1","A2","A3"]],
 	["Bravo",    ["BSL","B1","B2","B3"]],
 	["Charlie",  ["CSL","C1","C2","C3"]],
-	["Platoon",  ["PL","DC"]],
-	["Support",  ["MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ENG1","DT1"]],
-	["Air",  	 ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
+	["Platoon",  ["CO","DC","ENG1"]],
+	["Support",  ["MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1"]],
 	["Armor",    ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
+	["Air",      ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
 	["Hotel",    []],
 	["India",    []],
 	["Juliet",   []],
@@ -82,12 +82,12 @@ f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_bluf
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-	["Air Net",    []],
 	["Armor Net",    []],
+	["Air Net",    []],
 	["Emergency Net",  []],
 	["Platoon Net",
 		[
-			"PL", "DC",
+			"CO", "DC",
 			"ASL","BSL","CSL",
 			"MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1",
 			"ST1","DT1","ENG1",
@@ -96,7 +96,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 			"AH1"
 		]
 	],
-	["Echo",     []],
+	["FAC Net",  []],
 	["Foxtrot",  []],
 	["Golf",     []],
 	["Hotel",    []],

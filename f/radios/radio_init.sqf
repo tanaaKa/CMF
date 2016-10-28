@@ -12,9 +12,15 @@ if(f_param_radios != 0) then {
 
   switch (f_param_radios) do {
 
+  // TFR
+  case 2: {
+    [] execVM "f\radios\tfr\tfr_init.sqf";
+  };
   // acre2
   case 3: {
     [] execVM "f\radios\acre2\acre2_init.sqf";
+  };
+
   };
 };
 
