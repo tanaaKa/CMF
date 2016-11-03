@@ -2,7 +2,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// FACTION: CIVILIAN
+// FACTION: AAF
 
 // ====================================================================================
 // Radio Structure
@@ -12,21 +12,27 @@ _rad = player createDiaryRecord ["diary", ["Radio Structure","
 <br/>
 <font size='16'>PRC 343's (Short Range)</font>
 <br/>
-CH1 - Alpha <br />
-CH2 - Bravo <br />
-CH3 - Charlie <br />
-CH4 - Platoon <br />
-CH5 - Ground Supports (MMG, MAT, etc..) <br />
-CH6 - Inter-Air <br />
-CH7 - Inter-Armor <br />
+CH1 - Alpha 1 <br />
+CH2 - Alpha 2  <br />
+CH3 - Alpha 3 <br />
+CH4 - Bravo 1 <br />
+CH5 - Bravo 2 <br />
+CH6 - Bravo 3<br />
+CH7 - Charlie 1<br />
+CH8 - Charlie 2<br />
+CH9 - Charlie 3<br />
+CH10 - Inter-Armor<br />
+CH11 - Inter-Air<br />
+CH12 - Inter-Platoon<br />
 <br/><br/>
 <font size='16'>PRC 152's (Long Range)</font>
 <br/>
-CH1 - Air Net <br />
-CH2 - Armor Net <br />
-CH3 - Emergency Net <br />
-CH4 - Platoon Net <br />
-
+CH1 - Alpha Net<br />
+CH2 - Bravo Net <br />
+CH3 - Charlie Net <br />
+CH4 - Air Net Net <br />
+CH5 - Armor Net <br />
+CH6 - Emergency Net <br />
 "]];
 
 // NOTES: CREDITS

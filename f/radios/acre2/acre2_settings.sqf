@@ -18,7 +18,7 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 f_radios_settings_acre2_shortRange = nil;
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["co", "dc", "m", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
+f_radios_settings_acre2_longRange = ["co","dc","m","asl","ftl","bsl","csl","mmgag","hmgag","matag","hatag","mtrag","msamag","sp","vc","pp","eng","engm","uav","div"];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
@@ -29,7 +29,7 @@ f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
 // Standard LongRange
 f_radios_settings_acre2_standardLRRadio = "ACRE_PRC152";
 // Extra radio
-f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
+f_radios_settings_acre2_extraRadio = "ACRE_PRC148";
 
 // ====================================================================================
 // BABEL API
@@ -50,18 +50,18 @@ f_radios_settings_acre2_language_indfor = ["arabic"];
 // note that if using a 343 only the first 16 channels are available for the short-range array
 // also note these only work if f_radios_settings_acre2_disableFrequencySplit is set to false
 f_radios_settings_acre2_sr_groups_blufor = [
-	["Alpha",    ["ASL","A1","A2","A3"]],
-	["Bravo",    ["BSL","B1","B2","B3"]],
-	["Charlie",  ["CSL","C1","C2","C3"]],
-	["Platoon",  ["PL","DC","ENG1"]],
-	["Support",  ["MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1"]],
-	["Armor",    ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
-	["Air",      ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
-	["Hotel",    []],
-	["India",    []],
-	["Juliet",   []],
-	["Kilo",     []],
-	["Lima",     []],
+	["Alpha 1",    ["A1"]],
+	["Alpha 2",    ["A2"]],
+	["Alpha 3",    ["A3"]],
+	["Bravo 1",    ["B1"]],
+	["Bravo 2",    ["B2"]],
+	["Bravo 3",    ["B3"]],
+	["Charlie 1",  ["C1"]],
+	["Charlie 2",  ["C2"]],
+	["Charlie 3",  ["C3"]],
+	["Armor",      ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
+	["Air",        ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
+	["Platoon",    ["PL","MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ENG1","ASL","BSL","CSL"]],
 	["Mike",     []],
 	["November", []],
 	["Oscar", 	 []],
@@ -82,9 +82,9 @@ f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_bluf
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-	["Armor Net",    []],
-	["Air Net",    []],
-	["Emergency Net",  []],
+	["Alpha Net",    ["ASL","A1","A2","A3"]],
+	["Bravo Net",    ["BSL","B1","B2","B3"]],
+	["Charlie Net",  ["CSL","C1","C2","C3"]],
 	["Platoon Net",
 		[
 			"PL", "DC",
@@ -96,9 +96,9 @@ f_radios_settings_acre2_lr_groups_blufor = [
 			"AH1"
 		]
 	],
-	["FAC Net",  []],
-	["Foxtrot",  []],
-	["Golf",     []],
+	["Air Net",  []],
+	["Armor Net",  []],
+	["Emergency Net",     []],
 	["Hotel",    []],
 	["India",    []],
 	["Juliet",   []],

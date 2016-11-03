@@ -133,7 +133,11 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag, 4];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addItem _medkit;
+		_unit addItem _medkit;
 		_unit addItem _firstaid;
+		_unit addItem _firstaid;
+		_unit addItem ["ACE_epinephrine", 5];
+		_unit addItem ["ACE_morphine", 8];
 	};
 // Designated Marksman Loadout:
 	case "dm":

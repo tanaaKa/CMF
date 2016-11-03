@@ -128,12 +128,16 @@ switch (_typeofUnit) do
 		_unit addBackpack _bag;
 		_unit addmagazines [_carbinemag, 1];
 		_unit addweapon _carbine;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_carbinemag, 4];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addItem _medkit;
-		_unit addItem _firstaid ;
+		_unit addItem _medkit;
+		_unit addItem _firstaid;
+		_unit addItem _firstaid;
+		_unit addItem ["ACE_epinephrine", 5];
+		_unit addItem ["ACE_morphine", 8];
 	};
 // Designated Marksman Loadout:
 	case "dm":

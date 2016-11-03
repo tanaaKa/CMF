@@ -88,6 +88,11 @@ f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
 
+// Misc settings
+setViewDistance 2000;
+
+// ====================================================================================
+
 // F3 - Automatic Body Removal
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -131,7 +136,7 @@ _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\
 
 {
 	if (_x isKindOf "Air") then {
-		_x addaction [("<t color=""#DF0101"">" + ("PARADROP") + "</t>"), SC_fnc_paraeject, "", 10, false, true, "", "(getPosATL _target select 2) > 100"]; 
+		_x addaction [("<t color=""#DF0101"">" + ("PARADROP") + "</t>"), "scripts\simplepara\fn_paraeject.sqf", "", 10, false, true, "", "(getPosATL _target select 2) > 100"]; 
 	};
 } foreach vehicles;
 
@@ -139,8 +144,9 @@ _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\
 
 // tanaKa's Safestart and server load script
 
-cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										//Synchronization Hint (Disable by placing "//" in front of)
-if ((!isNil "PABST_fnc_safeStart") && (isMultiplayer)) then {[] spawn PABST_fnc_safeStart;}; 	//Safe Start Initialization (Disable by placing "//" in front of)
+cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										
+
+if ((!isNil "PABST_fnc_safeStart") && (isMultiplayer)) then {[] spawn PABST_fnc_safeStart;}; 
 
 sleep 30; 
 cutText ["Server Initialized. Free to move.", "PLAIN"];
