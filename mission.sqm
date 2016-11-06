@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1476.3363,112.74886,900.7113};
-		dir[]={0.010333907,-0.6190533,0.78541046};
-		up[]={0.0081443992,0.7852326,0.619187};
-		aside[]={0.99998111,7.8640369e-008,-0.013154205};
+		pos[]={1476.5372,69.128769,872.854};
+		dir[]={0.07036458,-0.61175185,0.78808165};
+		up[]={0.054421194,0.79092914,0.6095472};
+		aside[]={0.99611437,-1.0734657e-006,-0.088933855};
 	};
 };
 binarizationWanted=0;
@@ -248,7 +248,6 @@ randomSeed=1116085;
 class ScenarioData
 {
 	author="*** Insert mission author name here. ***";
-	overViewPicture="";
 	onLoadMission="*** ENTER YOUR MISSION DESCRIPTION ***";
 	loadScreen="loadlogo.jpg";
 	respawn=1;
@@ -291,7 +290,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="ace_spectator";
+								value="Spectator";
 							};
 						};
 					};
@@ -1260,7 +1259,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={992.53424,5.0014391,761.75476};
+						position[]={992.534,5.0014391,761.755};
 					};
 					side="West";
 					flags=4;
@@ -1269,7 +1268,7 @@ class Mission
 						skill=0.60000002;
 						init="[""m"",this] call f_fnc_assignGear;";
 						name="UnitNATO_CO_M";
-						description=" Medic";
+						description="Platoon Medic";
 						isPlayable=1;
 					};
 					id=194;
@@ -11959,7 +11958,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=1.2;
 						};
 					};
 				};

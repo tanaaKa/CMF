@@ -29,7 +29,7 @@ f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
 // Standard LongRange
 f_radios_settings_acre2_standardLRRadio = "ACRE_PRC152";
 // Extra radio
-f_radios_settings_acre2_extraRadio = "ACRE_PRC148";
+f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
 
 // ====================================================================================
 // BABEL API
@@ -82,12 +82,12 @@ f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_bluf
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-	["Alpha Net",    ["ASL","A1","A2","A3"]],
-	["Bravo Net",    ["BSL","B1","B2","B3"]],
-	["Charlie Net",  ["CSL","C1","C2","C3"]],
+	["Alpha Net",    ["ASL","A1","A2","A3","ASL_M"]],
+	["Bravo Net",    ["BSL","B1","B2","B3","BSL_M"]],
+	["Charlie Net",  ["CSL","C1","C2","C3","CSL_M"]],
 	["Platoon Net",
 		[
-			"PL", "DC",
+			"PL",
 			"ASL","BSL","CSL",
 			"MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1",
 			"ST1","DT1","ENG1",

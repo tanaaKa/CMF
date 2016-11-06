@@ -5,6 +5,8 @@ class Header
 	maxPlayers = 100; //max # of players the mission supports
 };
 
+disableChannels[] = {2,4,5,6};
+
 // ============================================================================================
 
 // F3 - Respawn Settings
@@ -13,7 +15,7 @@ class Header
 respawn = 1;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"ace_spectator"};
+respawnTemplates[] = {"seagull","f_spectator","f_JIP"};
 
 // ============================================================================================
 
@@ -161,6 +163,10 @@ class Params
 
 class CfgRespawnTemplates
 {
+	class f_Spectator
+	{
+		onPlayerRespawn = "f_fnc_CamInit";
+	};
   	//Overwrite Vanilla Seagull
     class Seagull
     {
@@ -181,6 +187,9 @@ class CfgRespawnTemplates
 // Menu components for the JIP Menu
 #include "f\JIP\f_JIP_kitpicker.h"
 #include "f\JIP\f_JIP_grppicker.h"
+
+// Menu components for the Spectator Script
+#include "f\spect\config.hpp"
 
 // ============================================================================================
 
