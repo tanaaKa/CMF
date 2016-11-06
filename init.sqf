@@ -8,6 +8,13 @@ if(isServer) then {
 };
 
 // ====================================================================================
+// Adds all AI and placed objects to zeus on mission load
+
+_scripts_ZeusAddObjects = compileFinal preprocessFileLineNumbers "scripts\Zeus_AddEditorObjects.sqf";
+
+if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
+
+// ====================================================================================
 
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
