@@ -14,6 +14,8 @@ _scripts_ZeusAddObjects = compileFinal preprocessFileLineNumbers "scripts\Zeus_A
 
 if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
 
+if (isServer) then { { _y = _x; { if (side _x != sideLogic) then { _y addCuratorEditableObjects [[_x],true]; }; } forEach allMissionObjects ""; } forEach allCurators; };
+
 // ====================================================================================
 
 // F3 - Radio Systems Support
@@ -42,7 +44,7 @@ enableSaving [false, false];
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-{_x setSpeaker "NoVoice"} forEach playableUnits;
+{_x setSpeaker "NoVoice"} forEach allUnits;
 
 // ====================================================================================
 
@@ -107,14 +109,6 @@ setViewDistance 2000;
 // f_var_removeBodyDistance = 500;
 // f_var_doNotRemoveBodies = [];
 // [] execVM "f\removeBody\f_addRemoveBodyEH.sqf";
-
-// ====================================================================================
-
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// f_var_civAI = independent; 		// Optional: The civilian AI will use this side's settings
-// [] execVM "f\setAISKill\f_setAISkill.sqf";
 
 // ====================================================================================
 

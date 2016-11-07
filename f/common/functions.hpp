@@ -43,11 +43,6 @@ class F // Defines the "owner"
 		file = "f\removeBody";
 		class removeBody{};
 	};
-	class setAISkill
-	{
-		file = "f\setAISKill";
-		class setAISKill{};
-	};
 	class mapClickTeleport
 	{
 		file = "f\mapClickTeleport";
