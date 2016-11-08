@@ -14,7 +14,6 @@ _unit = _this select 0;
 _textAction = localize "STR_f_JIP_reinforcementOptionsAction";
 
 // PREVENT THE JIP AI UNITS FROM FOLLOWING THEIR LEADER/MOVING AWAY
-_unit disableAI "MOVE";
 
 // ====================================================================================
 

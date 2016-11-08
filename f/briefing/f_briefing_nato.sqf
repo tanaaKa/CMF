@@ -2,7 +2,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// FACTION: AAF
+// FACTION: NATO
 
 // ====================================================================================
 // Radio Structure
@@ -35,16 +35,6 @@ CH5 - Armor Net <br />
 CH6 - Emergency Net <br />
 "]];
 
-// NOTES: CREDITS
-// The code below creates the administration sub-section of notes.
-
-_cre = player createDiaryRecord ["diary", ["Credits","
-<br/>
-Mission by: *** Insert mission credits here. ***
-<br/><br/>
-Made with Coalition Mission Framework (CMF)
-"]];
-
 // ====================================================================================
 
 // NOTES: ADMINISTRATION
@@ -60,7 +50,7 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
-_exe = player createDiaryRecord ["diary", ["Overview","
+_exe = player createDiaryRecord ["diary", ["Mission Briefing","
 <br/>
 <font size='18'>OBJECTIVE</font>
 <br/>
@@ -70,15 +60,6 @@ _exe = player createDiaryRecord ["diary", ["Overview","
 <br/>
 *** Insert very short summary of plan here. ***
 <br/><br/>
-"]];
-
-// ====================================================================================
-
-// NOTES: SITUATION
-// The code below creates the situation sub-section of notes.
-
-_sit = player createDiaryRecord ["diary", ["Situation","
-<br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
 *** Insert information about enemy forces here.***
@@ -94,7 +75,10 @@ _sit = player createDiaryRecord ["diary", ["Situation","
 <font size='18'>ROE STATUS</font>
 <br/>
 *** Green (do not fire), Amber (Fire if fired upon), Red (Fire at will) ***
+<br/><br/>
+Mission by: *** Insert mission credits here. ***
 <br/>
+Made with Coalition Mission Framework (CMF)
 "]];
 
 // ====================================================================================

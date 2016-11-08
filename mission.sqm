@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1225;
+		nextID=1226;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1488.0342,150.34627,1009.1732};
-		dir[]={-0.008484181,-0.86166853,0.50766355};
-		up[]={-0.014401706,0.50742042,0.86163932};
-		aside[]={0.99987233,-2.256711e-007,0.016709756};
+		pos[]={1880.9441,112.47054,676.19897};
+		dir[]={0.13919677,-0.80322039,0.57940716};
+		up[]={0.18765196,0.59559762,0.78111553};
+		aside[]={0.97234088,4.7357753e-007,-0.23359564};
 	};
 };
 binarizationWanted=0;
@@ -4686,7 +4686,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1914.4451,5.0014391,796.06287};
+						position[]={1914.4449,5.0014391,796.06299};
 					};
 					side="East";
 					flags=6;
@@ -4697,7 +4697,7 @@ class Mission
 						lock="UNLOCKED";
 						init="[""co"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_CO";
-						description=" Commander";
+						description=" Platoon Leader";
 						isPlayable=1;
 					};
 					id=368;
@@ -8681,7 +8681,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1493.6149,5.0014391,786.03687};
+						position[]={1493.615,5.0014391,786.03699};
 					};
 					side="Independent";
 					flags=6;
@@ -8691,7 +8691,7 @@ class Mission
 						rank="LIEUTENANT";
 						init="[""co"",this] call f_fnc_assignGear;";
 						name="UnitAAF_CO";
-						description=" Commander";
+						description=" Platoon Leader";
 						isPlayable=1;
 					};
 					id=531;
@@ -13502,7 +13502,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -14104,14 +14104,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1486.3462,5.0014391,719.08282};
+						position[]={1486.3459,5.0014391,719.08301};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_1";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14161,14 +14161,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1489.3682,5.0014391,719.02679};
+						position[]={1489.368,5.0014391,719.02698};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_2";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14218,14 +14218,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1491.9081,5.0014391,719.07379};
+						position[]={1491.908,5.0014391,719.07397};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_3";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14275,14 +14275,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1494.5621,5.0014391,719.08478};
+						position[]={1494.562,5.0014391,719.08496};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_4";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14332,14 +14332,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1497.0991,5.0014391,719.05481};
+						position[]={1497.099,5.0014391,719.05499};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_5";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14389,14 +14389,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1499.7911,5.0014391,719.01978};
+						position[]={1499.791,5.0014391,719.01996};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_6";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14446,14 +14446,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1501.9801,5.0014391,719.04681};
+						position[]={1501.98,5.0014391,719.047};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_7";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14503,14 +14503,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1504.2411,5.0014391,718.99878};
+						position[]={1504.241,5.0014391,718.99896};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitAAF_A2_AT_8";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14583,14 +14583,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1066.7551,5.0014391,734.49103};
+						position[]={1066.755,5.0014391,734.49097};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_1";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14640,14 +14640,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1069.6752,5.0014391,734.46106};
+						position[]={1069.675,5.0014391,734.461};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_2";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14697,14 +14697,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1072.2231,5.0014391,734.63605};
+						position[]={1072.223,5.0014391,734.63599};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_3";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14754,14 +14754,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1074.9292,5.0014391,734.51703};
+						position[]={1074.929,5.0014391,734.51697};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_4";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14811,14 +14811,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1077.0901,5.0014391,734.39001};
+						position[]={1077.09,5.0014391,734.39001};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
-						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						skill=0.28169879;
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_5";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14868,14 +14868,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1079.7771,5.0014391,734.65002};
+						position[]={1079.777,5.0014391,734.64996};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_6";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14925,14 +14925,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1082.4321,5.0014391,734.61603};
+						position[]={1082.432,5.0014391,734.61597};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_7";
 						description="JIP Slot";
 						isPlayable=1;
@@ -14982,7 +14982,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1084.9987,5.0014391,734.37079};
+						position[]={1084.999,5.0014391,734.37097};
 					};
 					side="West";
 					flags=6;
@@ -14990,7 +14990,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitNATO_A2_AT_8";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15063,7 +15063,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1908.4971,5.0014391,731.08258};
+						position[]={1908.4969,5.0014391,731.08301};
 					};
 					side="East";
 					flags=6;
@@ -15072,7 +15072,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_1";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15122,7 +15122,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1910.6492,5.0014391,730.88959};
+						position[]={1910.649,5.0014391,730.89001};
 					};
 					side="East";
 					flags=6;
@@ -15130,7 +15130,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_2";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15180,7 +15180,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1912.4521,5.0014391,730.92358};
+						position[]={1912.452,5.0014391,730.92401};
 					};
 					side="East";
 					flags=6;
@@ -15188,7 +15188,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_3";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15238,7 +15238,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1914.1132,5.0014391,731.00159};
+						position[]={1914.113,5.0014391,731.00201};
 					};
 					side="East";
 					flags=6;
@@ -15246,7 +15246,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_4";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15296,7 +15296,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1915.7291,5.0014391,731.12457};
+						position[]={1915.729,5.0014391,731.125};
 					};
 					side="East";
 					flags=6;
@@ -15304,7 +15304,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_5";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15354,7 +15354,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1917.2451,5.0014391,731.01355};
+						position[]={1917.245,5.0014391,731.01398};
 					};
 					side="East";
 					flags=6;
@@ -15362,7 +15362,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_6";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15412,7 +15412,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1919.0011,5.0014391,731.04559};
+						position[]={1919.001,5.0014391,731.04596};
 					};
 					side="East";
 					flags=6;
@@ -15420,7 +15420,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_7";
 						description="JIP Slot";
 						isPlayable=1;
@@ -15470,7 +15470,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1920.6542,5.0014391,730.98456};
+						position[]={1920.6541,5.0014391,730.98499};
 					};
 					side="East";
 					flags=6;
@@ -15478,7 +15478,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 						name="UnitCSAT_A2_AT_8";
 						description="JIP Slot";
 						isPlayable=1;

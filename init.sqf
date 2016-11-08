@@ -14,8 +14,6 @@ _scripts_ZeusAddObjects = compileFinal preprocessFileLineNumbers "scripts\Zeus_A
 
 if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
 
-if (isServer) then { { _y = _x; { if (side _x != sideLogic) then { _y addCuratorEditableObjects [[_x],true]; }; } forEach allMissionObjects ""; } forEach allCurators; };
-
 // ====================================================================================
 
 // F3 - Radio Systems Support
