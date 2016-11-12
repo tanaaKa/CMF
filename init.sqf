@@ -121,7 +121,7 @@ setViewDistance 2000;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_var_mapClickTeleport_Uses = 1;					// How often the teleport action can be used. 0 = infinite usage.
-f_var_mapClickTeleport_TimeLimit = 900; 			// If higher than 0 the action will be removed after the given time.
+f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
 f_var_mapClickTeleport_GroupTeleport = true; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
 // f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
 f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
@@ -138,6 +138,11 @@ _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\
 		_x addaction [("<t color=""#DF0101"">" + ("PARADROP") + "</t>"), "scripts\simplepara\fn_paraeject.sqf", "", 10, false, true, "", "(getPosATL _target select 2) > 100"]; 
 	};
 } foreach vehicles;
+
+// ====================================================================================
+
+// tanaKa's JIP script
+// 404 jip tele not found yet
 
 // ====================================================================================
 

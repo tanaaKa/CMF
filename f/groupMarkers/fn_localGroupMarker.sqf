@@ -40,7 +40,7 @@ _mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader
 _mkr setMarkerShapeLocal "ICON";
 _mkrName setMarkerTypeLocal  _mkrType;
 _mkrName setMarkerColorLocal _mkrColor;
-_mkrName setMarkerSizeLocal [0.8, 0.8];
+_mkrName setMarkerSizeLocal [0.6, 0.6];
 _mkrName setMarkerTextLocal _mkrText;
 
 // ====================================================================================

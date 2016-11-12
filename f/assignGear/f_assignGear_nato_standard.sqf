@@ -40,6 +40,7 @@ switch (_typeofUnit) do
 // Assistant Autorifleman Loadout:
 	case "aar":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_riflemag, 1];
 		_unit addweapon _rifle;
 		_unit addItem _firstaid ;
@@ -52,14 +53,16 @@ switch (_typeofUnit) do
 // Fire Team Leader Loadout:
 	case "ftl":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 3];
 		_unit addweapon _glrifle;
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_glriflemag, 4];
-		_unit addmagazines [_glriflemag_tr, 2];
+		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glmag, 5];
+		_unit addmagazines [_grenade, 1];
 		_unit addmagazines [_glsmokewhite, 2];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Rangefinder";
@@ -68,16 +71,18 @@ switch (_typeofUnit) do
 // Squad Leader / DC Loadout:
 	case "dc":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 1];
 		_unit addweapon _glrifle;
 		_unit addweapon _pistol;
 		_unit addmagazines [_pistolmag, 1];
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_glriflemag, 4];
-		_unit addmagazines [_glriflemag_tr, 2];
+		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glmag, 5];
+		_unit addmagazines [_grenade, 1];
 		_unit addmagazines [_glsmokewhite, 3];
 		_unit addmagazines [_pistolmag, 2];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
@@ -87,15 +92,17 @@ switch (_typeofUnit) do
 // Platoon CO Loadout:
 	case "co":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 5];
 		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag, 1];
 		_unit addweapon _pistol;
 		_unit addItem _firstaid ;
+		_unit addmagazines [_grenade, 1];
 		_unit addmagazines [_smokegrenade, 2];
 		_unit addmagazines [_glriflemag, 4];
-		_unit addmagazines [_glriflemag_tr, 2];
+		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glsmokewhite, 2];
 		_unit addmagazines [_glsmokered, 2];
 		_unit addmagazines [_pistolmag, 2];
@@ -106,6 +113,7 @@ switch (_typeofUnit) do
 // JTAC Loadout:
 	case "jtac":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glsmokered, 1];
 		_unit addweapon _glrifle;
@@ -114,7 +122,7 @@ switch (_typeofUnit) do
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_glriflemag, 4];
-		_unit addmagazines [_glriflemag_tr, 2];
+		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glsmokered, 8];
 		_unit addmagazines [_pistolmag, 4];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
@@ -133,8 +141,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addItem _medkit;
 		_unit addItem _medkit;
-		_unit addItem _medkit;
-		_unit addItem _medkit;
+		_unit addItem _firstaid;
+		_unit addItem _firstaid;
+		_unit addItem _firstaid;
+		_unit addItem _firstaid;
 		_unit addItem _firstaid;
 		_unit addItem _firstaid;
 	};

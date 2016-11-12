@@ -40,7 +40,7 @@ if (_unitfaction in ["blu_f","blu_t_f","blu_ctrg_f"]) then {
 
 	["GrpNATO_IFV1",_ifv, "IFV1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_IFV2",_ifv, "IFV2", "ColorOrange"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_TNK1",_tnk, "TNK1", "ColorRed"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_TNK1",_tnk, "TNK1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 
 	["GrpNATO_TH1",_hel, "TH1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_TH2",_hel, "TH2", "ColorBlack"] spawn f_fnc_localGroupMarker;

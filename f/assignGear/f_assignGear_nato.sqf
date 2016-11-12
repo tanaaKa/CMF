@@ -204,12 +204,12 @@ _DMriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RATmag = "ACE_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
-_MATmag2 = "NLAW_F";
+_MATmag1 = "ACE_PreloadedMissileDummy";
+_MATmag2 = "ACE_PreloadedMissileDummy";
 
 // Surface Air
 _SAM = "launch_B_Titan_F";
