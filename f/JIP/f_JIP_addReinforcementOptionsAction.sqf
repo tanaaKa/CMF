@@ -7,16 +7,12 @@
 private ["_unit","_textAction"];
 
 // ====================================================================================
-
 // SET KEY VARIABLES
 
 _unit = _this select 0;
 _textAction = localize "STR_f_JIP_reinforcementOptionsAction";
 
-// PREVENT THE JIP AI UNITS FROM FOLLOWING THEIR LEADER/MOVING AWAY
-
 // ====================================================================================
-
 // ADD REINFORCEMENT OPTIONS ACTION TO PLAYER ACTION MENU
 // We add the action to the player's action menu.
 
