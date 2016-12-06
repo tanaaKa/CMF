@@ -38,11 +38,6 @@ class F // Defines the "owner"
 		class GetMarkerColor{};
 		class LocalFTMarkerSync{};
 	};
-	class bodyRemoval
-	{
-		file = "f\removeBody";
-		class removeBody{};
-	};
 	class mapClickTeleport
 	{
 		file = "f\mapClickTeleport";
@@ -68,4 +63,11 @@ class F // Defines the "owner"
 		class HandleMenu{};
 		class showMenu{};
 	};
+	class frespawn {
+		file = "f\respawn";
+		class RespawnDrawMapIcons {};
+		class RespawnLocalClient {};
+		class RespawnWaveServer {};
+		class RespawnInit { postInit = 1; };
+};
 };
