@@ -22,6 +22,7 @@
 #define YELLOW [1,0.970,0,1]
 #define BLACK [0,0,0,0]
 #define ORANGE [1,0.647,0,1]
+#define PURPLE [1,0.87,1,1]
 
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
@@ -68,7 +69,7 @@ respawnMenuGroupNames = [
 ];
 
 respawnMenuRoles = [
-  ["PL", "Platoon Commander"],
+  ["PL", "Platoon Leader"],
   ["SL", "Squad Leader"],
   ["M", "Squad Medic"],
   ["FTL", "Fireteam Leader"],
@@ -108,7 +109,7 @@ fn_respawnSelectClass = {
   switch (_faction) do {
     case "blu_f": {
       switch (_typeOfUnit) do {
-        case "CO": { _type = "B_officer_F"};
+        case "PL": { _type = "B_officer_F"};
         case "SL": { _type = "B_Soldier_SL_F"};
         case "M": { _type = "B_medic_F"};
         case "FTL": { _type = "B_Soldier_TL_F"};
@@ -130,7 +131,7 @@ fn_respawnSelectClass = {
     };
     case "opf_f":{
       switch (_typeOfUnit) do {
-        case "CO": { _type = "O_officer_F"};
+        case "PL": { _type = "O_officer_F"};
         case "SL": { _type = "O_Soldier_SL_F"};
         case "M": { _type = "O_medic_F"};
         case "FTL": { _type = "O_Soldier_TL_F"};
@@ -152,7 +153,7 @@ fn_respawnSelectClass = {
     };
     case "ind_f": {
       switch (_typeOfUnit) do {
-        case "CO": { _type = "I_officer_F"};
+        case "PL": { _type = "I_officer_F"};
         case "SL": { _type = "I_Soldier_SL_F"};
         case "M": { _type = "I_medic_F"};
         case "FTL": { _type = "I_Soldier_TL_F"};
