@@ -29,7 +29,7 @@ f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
 // Standard LongRange
 f_radios_settings_acre2_standardLRRadio = "ACRE_PRC152";
 // Extra radio
-f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
+f_radios_settings_acre2_extraRadio = "ACRE_PRC148";
 
 // ====================================================================================
 // BABEL API
@@ -82,9 +82,9 @@ f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_bluf
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-	["Alpha Net",    ["ASL","A1","A2","A3","ASL_M"]],
-	["Bravo Net",    ["BSL","B1","B2","B3","BSL_M"]],
-	["Charlie Net",  ["CSL","C1","C2","C3","CSL_M"]],
+	["Alpha Net",    ["ASL","A1","A2","A3"]],
+	["Bravo Net",    ["BSL","B1","B2","B3"]],
+	["Charlie Net",  ["CSL","C1","C2","C3"]],
 	["Platoon Net",
 		[
 			"PL",
@@ -129,7 +129,7 @@ f_radios_settings_acre2_lr_groups_indfor = f_radios_settings_acre2_lr_groups_blu
 // ACRE Radio loss settings.
 // Indiciates how much terrian loss should be modelled.
 // Values: 0 no loss, 1 full terrian loss, default: 1
-[1] call acre_api_fnc_setLossModelScale;
+[0] call acre_api_fnc_setLossModelScale;
 
 // ACRE full Duplex
 // Sets the duplex of radio transmissions. If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.
@@ -137,7 +137,7 @@ f_radios_settings_acre2_lr_groups_indfor = f_radios_settings_acre2_lr_groups_blu
 
 // ACRE Interference
 // Sets whether transmissions will interfere with eachother. This, by default, causes signal loss when multiple people are transmitting on the same frequency.
-[true] call acre_api_fnc_setInterference;
+[false] call acre_api_fnc_setInterference;
 
 // ACRE can AI hear players?
 // False - AI not hear players, true - AI hear players.

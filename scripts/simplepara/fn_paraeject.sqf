@@ -11,7 +11,7 @@ _speed = 1;
 
 MoveOut _unit;
 sleep 1;
-_para = "CUP_T10_Parachute" createVehicle _worldPos;
+_para = "NonSteerable_Parachute_F" createVehicle _worldPos;
 _para setPos _worldPos;
 _unit moveIndriver _para;
 _para setVelocity [

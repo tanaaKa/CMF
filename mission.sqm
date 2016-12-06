@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1443.8881,70.450798,663.60321};
-		dir[]={0.85234886,-0.32618979,0.40906966};
-		up[]={0.29431534,0.9452551,0.14125589};
-		aside[]={0.43268412,8.0931932e-007,-0.90154988};
+		pos[]={1019.846,120.98595,697.73737};
+		dir[]={0.7848019,-0.3278389,0.52616632};
+		up[]={0.27253127,0.94466591,0.18272372};
+		aside[]={0.55687475,1.5236437e-006,-0.83059722};
 	};
 };
 binarizationWanted=0;
@@ -1148,7 +1148,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1074.7295,5.0014391,790.92957};
+						position[]={1074.729,5.0014391,790.92999};
 					};
 					side="West";
 					flags=6;
@@ -1158,7 +1158,7 @@ class Mission
 						rank="LIEUTENANT";
 						init="[""co"",this] call f_fnc_assignGear;";
 						name="UnitNATO_CO";
-						description="Platoon Leader";
+						description=" Platoon Leader";
 						isPlayable=1;
 					};
 					id=191;
@@ -1192,7 +1192,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1079.7295,5.0014391,789.28052};
+						position[]={1079.729,5.0014391,789.28101};
 					};
 					side="West";
 					flags=4;
@@ -1202,7 +1202,7 @@ class Mission
 						rank="CORPORAL";
 						init="[""jtac"",this] call f_fnc_assignGear;";
 						name="UnitNATO_CO_JTAC";
-						description=" JTAC";
+						description=" JTAC/Forward Observer";
 						isPlayable=1;
 					};
 					id=192;
@@ -1280,7 +1280,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1084.7295,5.0014391,786.54156};
+						position[]={1084.729,5.0014391,786.54199};
 					};
 					side="West";
 					flags=4;
@@ -1289,7 +1289,7 @@ class Mission
 						skill=0.60000002;
 						init="[""m"",this] call f_fnc_assignGear;";
 						name="UnitNATO_CO_M";
-						description="Platoon Medic";
+						description=" Platoon Medic";
 						isPlayable=1;
 					};
 					id=194;
@@ -4731,7 +4731,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1919.4452,5.0014391,794.41211};
+						position[]={1919.4449,5.0014391,794.41199};
 					};
 					side="East";
 					flags=4;
@@ -4741,7 +4741,7 @@ class Mission
 						rank="CORPORAL";
 						init="[""jtac"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_CO_JTAC";
-						description=" JTAC";
+						description=" JTAC/Forward Observer";
 						isPlayable=1;
 					};
 					id=369;
@@ -4818,7 +4818,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1924.4452,5.0014391,791.67188};
+						position[]={1924.4449,5.0014391,791.672};
 					};
 					side="East";
 					flags=4;
@@ -4827,7 +4827,7 @@ class Mission
 						skill=0.60000002;
 						init="[""m"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_CO_M";
-						description=" Medic";
+						description=" Platoon Medic";
 						isPlayable=1;
 					};
 					id=371;
@@ -8725,7 +8725,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1498.6149,5.0014391,784.38684};
+						position[]={1498.615,5.0014391,784.38696};
 					};
 					side="Independent";
 					flags=4;
@@ -8735,7 +8735,7 @@ class Mission
 						rank="CORPORAL";
 						init="[""jtac"",this] call f_fnc_assignGear;";
 						name="UnitAAF_CO_JTAC";
-						description=" Forward Observer";
+						description=" JTAC/Forward Observer";
 						isPlayable=1;
 					};
 					id=532;
@@ -8789,7 +8789,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1503.6152,5.0014391,781.64758};
+						position[]={1503.615,5.0014391,781.64801};
 					};
 					side="Independent";
 					flags=4;
@@ -8798,11 +8798,34 @@ class Mission
 						skill=0.60000002;
 						init="[""m"",this] call f_fnc_assignGear;";
 						name="UnitAAF_CO_M";
-						description=" Medic";
+						description=" Platoon Medic";
 						isPlayable=1;
 					};
 					id=534;
 					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
