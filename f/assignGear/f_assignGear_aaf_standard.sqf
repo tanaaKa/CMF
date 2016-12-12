@@ -33,7 +33,7 @@ switch (_typeofUnit) do
 		_unit addweapon _RAT;
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_carbinemag, 6];
+		_unit addmagazines [_carbinemag, 7];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 	};
@@ -45,7 +45,7 @@ switch (_typeofUnit) do
 		_unit addweapon _rifle;
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_riflemag, 6];
+		_unit addmagazines [_riflemag, 7];
 		_unit addmagazines [_riflemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_ARmag, 3];
@@ -59,7 +59,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 6];
+		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glmag, 5];
 		_unit addmagazines [_grenade, 1];
@@ -79,10 +79,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag, 1];
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 6];
+		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
-		_unit addmagazines [_glmag, 5];
-		_unit addmagazines [_grenade, 1];
+		_unit addmagazines [_glmag, 7];
+		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_glsmokewhite, 3];
 		_unit addmagazines [_pistolmag, 2];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
@@ -99,9 +99,9 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag, 1];
 		_unit addweapon _pistol;
 		_unit addItem _firstaid ;
-		_unit addmagazines [_grenade, 1];
+		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_smokegrenade, 2];
-		_unit addmagazines [_glriflemag, 6];
+		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glsmokewhite, 2];
 		_unit addmagazines [_glsmokered, 2];
@@ -121,7 +121,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addItem _firstaid ;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 6];
+		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glsmokered, 8];
 		_unit addmagazines [_pistolmag, 4];

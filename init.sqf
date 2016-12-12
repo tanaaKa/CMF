@@ -1,5 +1,4 @@
 // ====================================================================================
-
 // F3 - Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
@@ -8,21 +7,22 @@ if(isServer) then {
 };
 
 // ====================================================================================
-// Adds all AI and placed objects to zeus on mission load
+// Initializes headless client
 
-_scripts_ZeusAddObjects = compileFinal preprocessFileLineNumbers "scripts\Zeus_AddEditorObjects.sqf";
+[] execVM "scripts\tanakaHC.sqf";
+
+// ====================================================================================
+// Adds all AI and placed objects to zeus on mission load
 
 if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
 
 // ====================================================================================
-
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\radios\radio_init.sqf";
 
 // ====================================================================================
-
 // F3 - JIP setup
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -31,92 +31,70 @@ f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
 f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // ====================================================================================
-
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableSaving [false, false];
 
 // ====================================================================================
-
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 {_x setSpeaker "NoVoice"} forEach allUnits;
 
 // ====================================================================================
-
 // F3 - Folk ARPS Group IDs
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 
 // ====================================================================================
-
 // F3 - F3 Folk ARPS Group Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
 
 // ====================================================================================
-
 // F3 - Fireteam Member Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] spawn f_fnc_SetLocalFTMemberMarkers;
 
 // ====================================================================================
-
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
-
 // F3 - Briefing
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
-
 // F3 - ORBAT Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\briefing\f_orbatNotes.sqf";
 
 // ====================================================================================
-
 // F3 - Loadout Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 
 // ====================================================================================
-
 // Misc settings
 setViewDistance 2000;
 
 // ====================================================================================
-
-// F3 - Automatic Body Removal
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// f_var_removeBodyDelay = 180;
-// f_var_removeBodyDistance = 500;
-// f_var_doNotRemoveBodies = [];
-// [] execVM "f\removeBody\f_addRemoveBodyEH.sqf";
-
-// ====================================================================================
-
 // F3 - Assign Gear AI
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // [] execVM "f\assignGear\f_assignGear_AI.sqf";
 
 // ====================================================================================
-
 // F3 - MapClick Teleport
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -128,7 +106,6 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // ====================================================================================
-
 // tanaKa's Paradrop action to all aircraft
 
 _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\fn_paraeject.sqf";
@@ -140,12 +117,6 @@ _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\
 } foreach vehicles;
 
 // ====================================================================================
-
-// tanaKa's JIP script
-// 404 jip tele not found yet
-
-// ====================================================================================
-
 // tanaKa's Safestart and server load script
 
 cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1019.846,120.98595,697.73737};
-		dir[]={0.7848019,-0.3278389,0.52616632};
-		up[]={0.27253127,0.94466591,0.18272372};
-		aside[]={0.55687475,1.5236437e-006,-0.83059722};
+		pos[]={1346.4788,185.49825,594.78857};
+		dir[]={-0.56691355,-0.70273596,0.43014169};
+		up[]={-0.55997974,0.71126425,0.42487356};
+		aside[]={0.60443807,-2.2372697e-006,0.7966401};
 	};
 };
 binarizationWanted=0;
@@ -624,7 +624,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1468.3088,8.5861206,664.66248};
+				position[]={1464.5074,8.5861206,665.01807};
 			};
 			side="Independent";
 			flags=6;
@@ -636,7 +636,6 @@ class Mission
 			};
 			id=2;
 			type="I_Heli_Transport_02_F";
-			atlOffset=-4.7683716e-007;
 		};
 		class Item3
 		{
@@ -11670,7 +11669,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1468.3088,5.0014391,664.71753};
+						position[]={1464.5074,5.0014391,665.07312};
 					};
 					side="Independent";
 					flags=6;
@@ -11691,7 +11690,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1468.3088,5.0014391,664.71753};
+						position[]={1464.5074,5.0014391,665.07312};
 					};
 					side="Independent";
 					flags=4;
@@ -11745,7 +11744,6 @@ class Mission
 				};
 			};
 			id=659;
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15693,10 +15691,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1484.5601,5,1128.145};
+				position[]={1484.5031,5,1123.697};
 			};
+			name="HC";
 			isPlayable=1;
-			description="HC1";
+			description="HC";
 			id=1224;
 			type="HeadlessClient_F";
 		};
