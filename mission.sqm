@@ -636,6 +636,7 @@ class Mission
 			};
 			id=2;
 			type="I_Heli_Transport_02_F";
+			atlOffset=-4.7683716e-007;
 		};
 		class Item3
 		{
@@ -11744,6 +11745,7 @@ class Mission
 				};
 			};
 			id=659;
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
