@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1226;
+		nextID=1227;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1346.4788,185.49825,594.78857};
-		dir[]={-0.56691355,-0.70273596,0.43014169};
-		up[]={-0.55997974,0.71126425,0.42487356};
-		aside[]={0.60443807,-2.2372697e-006,0.7966401};
+		pos[]={1499.7725,212.09094,838.23431};
+		dir[]={-0.39581066,-0.76278108,0.51160538};
+		up[]={-0.46685067,0.64647079,0.60342032};
+		aside[]={0.79091561,-2.4888432e-006,0.61190844};
 	};
 };
 binarizationWanted=0;
@@ -59,13 +59,14 @@ addons[]=
 	"ace_refuel",
 	"ace_medical",
 	"ace_nametags",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"acex_headless"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			className="A3_Air_F_Heli";
@@ -261,6 +262,13 @@ class AddonsMetaData
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
+		};
+		class Item28
+		{
+			className="acex_headless";
+			name="ACEX - Headless";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -581,7 +589,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=140;
+		items=141;
 		class Item0
 		{
 			dataType="Object";
@@ -15700,6 +15708,96 @@ class Mission
 			description="HC";
 			id=1224;
 			type="HeadlessClient_F";
+		};
+		class Item140
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1485.7939,5,939.16803};
+			};
+			id=1226;
+			type="acex_headless_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_module_delay";
+					expression="_this setVariable ['delay',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_module_log";
+					expression="_this setVariable ['log',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acex_headless_module_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acex_headless_module_endMission";
+					expression="_this setVariable ['endMission',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

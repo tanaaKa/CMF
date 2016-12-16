@@ -7,11 +7,6 @@ if(isServer) then {
 };
 
 // ====================================================================================
-// Initializes headless client
-
-[] execVM "scripts\tanakaHC.sqf";
-
-// ====================================================================================
 // Adds all AI and placed objects to zeus on mission load
 
 if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
