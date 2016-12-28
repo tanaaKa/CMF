@@ -153,7 +153,7 @@ _medkit = "Medikit";
 _nvg = "NVGoggles";
 
 // Laserdesignator
-_laserdesignator = "Laserdesignator";
+_Laserdesignator = "Laserdesignator";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA

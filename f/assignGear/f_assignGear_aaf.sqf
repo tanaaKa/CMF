@@ -152,7 +152,7 @@ _medkit = "Medikit";
 _nvg = "NVGoggles_INDEP";
 
 // Laserdesignator
-_laserdesignator = "Laserdesignator_03";
+_Laserdesignator = "Laserdesignator_03";
 
 // UAV Terminal
 _uavterminal = "I_UavTerminal";

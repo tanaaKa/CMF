@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1499.7725,212.09094,838.23431};
-		dir[]={-0.39581066,-0.76278108,0.51160538};
-		up[]={-0.46685067,0.64647079,0.60342032};
-		aside[]={0.79091561,-2.4888432e-006,0.61190844};
+		pos[]={1093.8755,39.596489,731.61395};
+		dir[]={-0.63963568,-0.7688306,-0.003211811};
+		up[]={-0.76896876,0.63926685,-0.0038656776};
+		aside[]={-0.0050232098,-2.1925262e-006,0.99997926};
 	};
 };
 binarizationWanted=0;
@@ -14614,7 +14614,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this disableAI ""MOVE""; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
-						description="JIP Slot";
+						description="JIP1 Slot";
 						isPlayable=1;
 					};
 					id=1179;
