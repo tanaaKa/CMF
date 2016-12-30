@@ -30,9 +30,9 @@ CH12 - Inter-Platoon<br />
 CH1 - Alpha Net<br />
 CH2 - Bravo Net <br />
 CH3 - Charlie Net <br />
-CH4 - Platoon Net <br />
+CH4 - Air Net Net <br />
 CH5 - Armor Net <br />
-CH6 - Air Net <br />
+CH6 - Emergency Net <br />
 "]];
 
 // ====================================================================================
@@ -42,7 +42,9 @@ CH6 - Air Net <br />
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Hold hill 937 at all costs
+<br/><br/>
+Remember, when surrounded by enemies, you don't have to aim.
 "]];
 
 // ====================================================================================
@@ -54,29 +56,29 @@ _exe = player createDiaryRecord ["diary", ["Mission Briefing","
 <br/>
 <font size='18'>OBJECTIVE</font>
 <br/>
-*** Insert objective(s) of the mission***
+In May of 1969, the 101st Airborne began Operation 'Apache Snow' to seize a well known hill deep within NVA territory. After capturing hill 937, the remnants of the 29th NVA reorganized an attempted a counter-attack.
 <br/><br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Hold hill 937 at all costs.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+29th North Vietnamese Army Regiment
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+101st Airborne
 <br/><br/>
 <font size='18'>FIRE SUPPORT</font>
 <br/>
-*** Insert fire support options here. ***
+Artillery support through JTAC/FO
 <br/><br/>
 <font size='18'>ROE STATUS</font>
 <br/>
-*** Green (do not fire), Amber (Fire if fired upon), Red (Fire at will) ***
+Weapons Red - Fire at will
 <br/><br/>
-Mission by: *** Insert mission credits here. ***
+Mission by: tanaKa-
 <br/>
 Made with Coalition Mission Framework (CMF)
 "]];
