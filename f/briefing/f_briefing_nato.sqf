@@ -42,9 +42,7 @@ CH6 - Emergency Net <br />
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-Hold hill 937 at all costs
-<br/><br/>
-Remember, when surrounded by enemies, you don't have to aim.
+*** Insert information on administration and logistics here. ***
 "]];
 
 // ====================================================================================
@@ -56,29 +54,29 @@ _exe = player createDiaryRecord ["diary", ["Mission Briefing","
 <br/>
 <font size='18'>OBJECTIVE</font>
 <br/>
-In May of 1969, the 101st Airborne began Operation 'Apache Snow' to seize a well known hill deep within NVA territory. After capturing hill 937, the remnants of the 29th NVA reorganized an attempted a counter-attack.
+*** Insert objective(s) of the mission***
 <br/><br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-Hold hill 937 at all costs.
+*** Insert very short summary of plan here. ***
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-29th North Vietnamese Army Regiment
+*** Insert information about enemy forces here.***
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-101st Airborne
+*** Insert information about friendly forces here.***
 <br/><br/>
 <font size='18'>FIRE SUPPORT</font>
 <br/>
-Artillery support through JTAC/FO
+*** Insert fire support options here. ***
 <br/><br/>
 <font size='18'>ROE STATUS</font>
 <br/>
-Weapons Red - Fire at will
+*** Green (do not fire), Amber (Fire if fired upon), Red (Fire at will) ***
 <br/><br/>
-Mission by: tanaKa-
+Mission by: *** Insert mission credits here. ***
 <br/>
 Made with Coalition Mission Framework (CMF)
 "]];
