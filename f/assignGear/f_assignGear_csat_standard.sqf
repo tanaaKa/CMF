@@ -36,6 +36,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag, 7];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
+		_unit additem "ACE_EntrenchingTool";
 	};
 // Assistant Autorifleman Loadout:
 	case "aar":
@@ -49,6 +50,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_ARmag, 3];
+		_unit additem "ACE_EntrenchingTool";
 	};
 // Fire Team Leader Loadout:
 	case "ftl":

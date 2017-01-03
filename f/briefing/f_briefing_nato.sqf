@@ -30,9 +30,9 @@ CH12 - Inter-Platoon<br />
 CH1 - Alpha Net<br />
 CH2 - Bravo Net <br />
 CH3 - Charlie Net <br />
-CH4 - Air Net Net <br />
+CH4 - Platoon Net <br />
 CH5 - Armor Net <br />
-CH6 - Emergency Net <br />
+CH6 - Air Net <br />
 "]];
 
 // ====================================================================================
