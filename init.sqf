@@ -78,10 +78,11 @@ f_script_briefing = [] execVM "briefing.sqf";
 
 setViewDistance 2000;
 
-// ====================================================================================
-// Adjusts recoil
-
+//global weapon recoil (2x more than 'normal')
 player setUnitRecoilCoefficient 2;
+
+//tanakas crew-served weapon recoil fix
+[] execVM "scripts\csw_recoil.sqf";
 
 // ====================================================================================
 // F3 - Assign Gear AI

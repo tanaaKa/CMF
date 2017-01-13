@@ -182,27 +182,15 @@ if(!f_radios_settings_acre2_disableRadios) then {
 
 
 	if (_hasSR) then {
-		if (f_var_debugMode == 1) then
-		{
-			player sideChat format["DEBUG (f\radios\acre2\acre2_clientInit.sqf): Setting radio channel for '%1' to %2", _radioSR, _groupChannelIndex + 1];
-		};
 	    [_radioSR, (_groupChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
 	};
 
 
 	if (_hasLR) then {
-		if (f_var_debugMode == 1) then
-		{
-			player sideChat format["DEBUG (f\radios\acre2\acre2_clientInit.sqf): Setting radio channel for '%1' to %2", _radioLR, _groupLRChannelIndex + 1];
-		};
 	    [_radioLR, (_groupLRChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
 	};
 
 	if (_hasExtra) then {
-		if (f_var_debugMode == 1) then
-		{
-			player sideChat format["DEBUG (f\radios\acre2\acre2_clientInit.sqf): Setting radio channel for '%1' to %2", _radioExtra, _groupLRChannelIndex + 1];
-		};
 	    [_radioExtra, (_groupLRChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
 	};
 

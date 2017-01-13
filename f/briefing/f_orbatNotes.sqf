@@ -118,4 +118,4 @@ _orbatText = _orbatText + "<br />VEHICLE CREWS + PASSENGERS<br />";
 
 // Insert final result into subsection ORBAT of section Notes
 waitUntil {scriptDone f_script_briefing};
-player createDiaryRecord ["diary", ["ORBAT", _orbatText]];
+player createDiaryRecord ["diary", ["Platoon Structure", _orbatText]];
