@@ -1,8 +1,8 @@
-respawn = "BIRD";
+respawn = 1;
 respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
-respawnTemplates[] = {"f_spectator"};
+respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
 
 class CfgRespawnTemplates {
   class f_Spectator {

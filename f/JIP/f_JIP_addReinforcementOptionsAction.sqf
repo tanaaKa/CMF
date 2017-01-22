@@ -15,7 +15,3 @@ _textAction = localize "STR_f_JIP_reinforcementOptionsAction";
 // ====================================================================================
 // ADD REINFORCEMENT OPTIONS ACTION TO PLAYER ACTION MENU
 // We add the action to the player's action menu.
-
-if (_unit == player) then {
-	F3_JIP_reinforcementOptionsAction = player addaction ["<t color='#dddd00'>" + _textAction + "</t>","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
-};

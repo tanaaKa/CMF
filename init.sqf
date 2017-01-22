@@ -7,11 +7,6 @@ if(isServer) then {
 };
 
 // ====================================================================================
-// Adds all AI and placed objects to zeus on mission load
-
-if (isServer) then {execVM "scripts\Zeus_AddEditorObjects.sqf";};	//Adds all objects in-mission to Zeus (Disable by placing "//" in front of)
-
-// ====================================================================================
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -78,11 +73,15 @@ f_script_briefing = [] execVM "briefing.sqf";
 
 setViewDistance 2000;
 
+// ====================================================================================
 //global weapon recoil (2x more than 'normal')
+
 player setUnitRecoilCoefficient 2;
 
-//tanakas crew-served weapon recoil fix
-[] execVM "scripts\csw_recoil.sqf";
+// ====================================================================================
+//tanakas crew-served weapon recoil fix - disabled until improved
+
+//[] execVM "scripts\csw_recoil.sqf";
 
 // ====================================================================================
 // F3 - Assign Gear AI
@@ -115,15 +114,4 @@ _scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\
 // ====================================================================================
 // tanaKa's Safestart and server load script
 
-cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										
-
-if ((!isNil "PABST_fnc_safeStart") && (isMultiplayer)) then {[] spawn PABST_fnc_safeStart;}; 
-
-sleep 30; 
-cutText ["Server Initialized. Free to move.", "PLAIN"];
-
-sleep 5;
-
-[ [ ["Mission Name"], ["by Author"] ] , 1, 0.7, "<t align = 'center' shadow = '1' size = '1.0'>%1</t>" ] spawn BIS_fnc_typeText; // CHANGE THIS PER MISSION!
-
-
+[] execVM "scripts\serverstart.sqf";

@@ -19,15 +19,14 @@
 #define RED [0.9,0,0,1]
 #define BLUE [0,0,1,1]
 #define GREEN [0,0.8,0,1]
-#define YELLOW [1,0.970,0,1]
-#define BLACK [0,0,0,0]
+#define WHITE [1,1,1,1]
 #define ORANGE [1,0.647,0,1]
-#define PURPLE [1,0.87,1,1]
 
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
 // Group name, SR net, LR net
 respawnMenuGroupNames = [
+  ["",1,1,UNK,WHITE],
   ["ASL",1,1,HQ,RED],
   ["A1",1,1,INF,RED],
   ["A2",1,1,INF,RED],
@@ -37,7 +36,7 @@ respawnMenuGroupNames = [
   ["CSL",3,1,HQ,GREEN],
   ["C1",3,1,INF,GREEN],
   ["C2",3,1,INF,GREEN],
-  ["PLT",4,1,HQ,YELLOW],
+  ["1PLT",4,1,HQ,ORANGE],
   ["DSL",5,2,HQ,RED],
   ["D1",5,2,INF,RED],
   ["D2",5,2,INF,RED],
@@ -47,29 +46,29 @@ respawnMenuGroupNames = [
   ["FSL",7,2,HQ,GREEN],
   ["F1",7,2,INF,GREEN],
   ["F2",7,2,INF,GREEN],
-  ["1PLT",8,2,HQ,PURPLE],
-  ["MMG1",12,4,MMG,PURPLE],
-  ["MMG2",12,4,MMG,PURPLE],
-  ["MAT1",12,4,MAT,PURPLE],
-  ["MAT2",12,4,MAT,PURPLE],
-  ["MSAM1",12,4,MAT,PURPLE],
-  ["MSAM2",12,4,MAT,PURPLE],
-  ["TH1",10,4,AIR,BLACK],
-  ["TH2",10,4,AIR,BLACK],
-  ["TH3",10,4,AIR,BLACK],
-  ["TH4",10,4,AIR,BLACK],
-  ["IFV1",11,4,IFV,ORANGE],
-  ["IFV2",11,4,IFV,ORANGE],
-  ["IFV3",11,4,IFV,ORANGE],
-  ["IFV4",11,4,IFV,ORANGE],
-  ["AH1",10,4,AIR,BLACK],
-  ["AH2",10,4,AIR,BLACK],
-  ["TNK1",11,4,TNK,ORANGE],
-  ["TNK2",11,4,TNK,ORANGE]
+  ["1PLT",8,2,HQ,ORANGE],
+  ["MMG1",12,4,MMG,ORANGE],
+  ["MMG2",12,4,MMG,ORANGE],
+  ["MAT1",12,4,MAT,ORANGE],
+  ["MAT2",12,4,MAT,ORANGE],
+  ["MSAM1",12,4,MAT,ORANGE],
+  ["MSAM2",12,4,MAT,ORANGE],
+  ["TH1",10,4,AIR,RED],
+  ["TH2",10,4,AIR,BLUE],
+  ["TH3",10,4,AIR,RED],
+  ["TH4",10,4,AIR,BLUE],
+  ["IFV1",11,4,IFV,RED],
+  ["IFV2",11,4,IFV,BLUE],
+  ["IFV3",11,4,IFV,RED],
+  ["IFV4",11,4,IFV,BLUE],
+  ["AH1",10,4,AIR,RED],
+  ["AH2",10,4,AIR,BLUE],
+  ["TNK1",11,4,TNK,RED],
+  ["TNK2",11,4,TNK,BLUE]
 ];
 
 respawnMenuRoles = [
-  ["PL", "Platoon Leader"],
+  ["CO", "Commander"],
   ["SL", "Squad Leader"],
   ["M", "Squad Medic"],
   ["FTL", "Fireteam Leader"],
@@ -109,7 +108,7 @@ fn_respawnSelectClass = {
   switch (_faction) do {
     case "blu_f": {
       switch (_typeOfUnit) do {
-        case "PL": { _type = "B_officer_F"};
+        case "CO": { _type = "B_officer_F"};
         case "SL": { _type = "B_Soldier_SL_F"};
         case "M": { _type = "B_medic_F"};
         case "FTL": { _type = "B_Soldier_TL_F"};
@@ -131,7 +130,7 @@ fn_respawnSelectClass = {
     };
     case "opf_f":{
       switch (_typeOfUnit) do {
-        case "PL": { _type = "O_officer_F"};
+        case "CO": { _type = "O_officer_F"};
         case "SL": { _type = "O_Soldier_SL_F"};
         case "M": { _type = "O_medic_F"};
         case "FTL": { _type = "O_Soldier_TL_F"};
@@ -153,7 +152,7 @@ fn_respawnSelectClass = {
     };
     case "ind_f": {
       switch (_typeOfUnit) do {
-        case "PL": { _type = "I_officer_F"};
+        case "CO": { _type = "I_officer_F"};
         case "SL": { _type = "I_Soldier_SL_F"};
         case "M": { _type = "I_medic_F"};
         case "FTL": { _type = "I_Soldier_TL_F"};

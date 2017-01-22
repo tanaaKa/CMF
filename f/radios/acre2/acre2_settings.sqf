@@ -18,11 +18,11 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 f_radios_settings_acre2_shortRange = nil;
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["co","dc","m","asl","ftl","bsl","csl","mmgag","hmgag","matag","hatag","mtrag","msamag","sp","vc","pp","eng","engm","uav","div"];
+f_radios_settings_acre2_longRange = ["co","dc","m","ftl","mmgag","hmgag","matag","hatag","mtrag","msamag","sp","vc","pp","eng","engm","uav","div"];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
-f_radios_settings_acre2_extraRadios = ["asl","bsl","csl"];
+f_radios_settings_acre2_extraRadios = ["dc"];
 
 // Standard Short
 f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
