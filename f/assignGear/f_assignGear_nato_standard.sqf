@@ -143,12 +143,26 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addItem _medkit;
 		_unit addItem _medkit;
-		_unit addItem _firstaid;
-		_unit addItem _firstaid;
-		_unit addItem _firstaid;
-		_unit addItem _firstaid;
-		_unit addItem _firstaid;
-		_unit addItem _firstaid;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
+		_unit addItem _medpack;
 	};
 // Designated Marksman Loadout:
 	case "dm":

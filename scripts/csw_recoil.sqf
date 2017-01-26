@@ -6,6 +6,7 @@
 	TODO:
 		-Randomize recoil a bit more with algorithms
 		-Improve "vehicle" detection 
+		-Stop the shake of other players
 */
 
 _vehicles = vehicles;

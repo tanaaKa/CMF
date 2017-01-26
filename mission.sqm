@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1501.8322,95.367188,829.74371};
-		dir[]={-0.14505745,-0.52228445,0.84047449};
-		up[]={-0.0888445,0.85268825,0.51475984};
-		aside[]={0.98550224,-1.0179356e-006,0.17008539};
+		pos[]={1395.4153,95.367188,617.75024};
+		dir[]={0.052425232,-0.65372366,0.75506133};
+		up[]={0.045281708,0.75665462,0.65220374};
+		aside[]={0.99766749,-6.9984526e-007,-0.069272235};
 	};
 };
 binarizationWanted=0;
@@ -12823,7 +12823,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1541.6819,5,963.62598};
+				position[]={1541.682,5,963.62598};
 			};
 			id=1156;
 			type="ACE_moduleBasicMedicalSettings";
@@ -14832,7 +14832,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1427.9888,5,1000.3632};
+				position[]={1427.989,5,1000.363};
 			};
 			id=1245;
 			type="ace_advanced_fatigue_moduleSettings";

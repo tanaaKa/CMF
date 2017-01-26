@@ -41,7 +41,7 @@ if (f_var_JIP_GearMenu) then {
 // NB This is on the assumption that the player has made positive selections and not
 // cancelled the menu.
 
-player removeAction F3_JIP_reinforcementOptionsAction;
+player removeAction 0;
 F3_JIP_reinforcementOptionsAction = nil;
 
 // ====================================================================================
