@@ -329,7 +329,6 @@ if (_isMan) then {
 	_unit linkItem "ItemWatch";						// Add and equip a watch
 	_unit linkItem "ItemGPS"; 						// Add and equip a GPS
 	_unit additemtobackpack "ACE_Flashlight_XL50"; 	// Add a map flashlight
-
 };
 
 // ====================================================================================
@@ -337,17 +336,7 @@ if (_isMan) then {
 // SELECT LOADOUT
 // Pick the appropriate loadout depending on the parameter
 
-_loadout = f_param_loadouts;
-
-// Light Loadout
-if (_loadout == 0) then {
-	#include "f_assignGear_nato_light.sqf"
-};
-
-// Standard Loadout
-if (_loadout == 1) then {
-	#include "f_assignGear_nato_standard.sqf"
-};
+#include "f_assignGear_nato_standard.sqf";
 
 // ====================================================================================
 

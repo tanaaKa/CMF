@@ -1,4 +1,4 @@
-params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex"];
+params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex", "loadout"];
 
 _faction = (respawnMenuFactions select _faction) select 0;
 _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
@@ -7,13 +7,13 @@ private _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 (respawnMenuGroupNames select _groupIndex) params ["_groupName","_sr","_lr","_texture","_color"];
 
 private _groupPrefix = switch (_faction) do {
-  case "blu_f": {"BluFor"};
-  case "opf_f":{"OpFor"};
-  case "ind_f": {"Indy"};
+  case "blu_f": {"BLUFOR"};
+  case "opf_f":{"OPFOR"};
+  case "ind_f": {"IND"};
   default {""};
 };
 
-private _groupId = format ["%1 %2, RG:%3", _groupPrefix, _groupName, _groupNum];
+private _groupId = format ["%1 %2", _groupPrefix, _groupName];
 
 private _side = switch (getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side")) do {
   case 0: {east};
@@ -62,6 +62,8 @@ if (_leader) then {
 
   // 'respawn'
   selectPlayer _newUnit;
+  _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  [] spawn f_fnc_SetLocalFTMemberMarkers;
 
   publicVariable _groupVarName;
 }
@@ -83,6 +85,8 @@ else {
 
   // 'respawn'
   selectPlayer _newUnit;
+  _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  [] spawn f_fnc_SetLocalFTMemberMarkers;
 
   _timeOut = time + 10;
   waitUntil{ player == _newUnit || time > _timeOut };

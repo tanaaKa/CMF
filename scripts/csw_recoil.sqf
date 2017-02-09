@@ -2,6 +2,7 @@
 	Crew-served weapon recoil fix
 	By: tanaKa-
 	Increases recoil on all large caliber weapons in all vehicles and statics
+	Doubles 'normal' recoil of all small arms
 	
 	TODO:
 		-Randomize recoil a bit more with algorithms
@@ -9,6 +10,9 @@
 		-Stop the shake of other players
 */
 
+player setUnitRecoilCoefficient 2;
+
+/* 
 _vehicles = vehicles;
 
 {
@@ -26,4 +30,5 @@ _vehicles = vehicles;
 			];
 		}];
 	};
-} forEach vehicles;
+} forEach vehicles; 
+*/

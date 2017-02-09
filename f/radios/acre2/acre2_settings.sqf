@@ -41,8 +41,8 @@ f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"]
 // defines the language that a player can speak.
 // can define multiple
 f_radios_settings_acre2_language_blufor = ["english"];
-f_radios_settings_acre2_language_opfor = ["russian"];
-f_radios_settings_acre2_language_indfor = ["arabic"];
+f_radios_settings_acre2_language_opfor = ["english"];
+f_radios_settings_acre2_language_indfor = ["english"];
 
 // Channel names and group defaults
 // first item in the array will correspond to the first channel

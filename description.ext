@@ -8,14 +8,42 @@ class Header
 disableChannels[] = {2,4,5,6};
 
 // ============================================================================================
+// Respawn Settings
 
-// F3 - Respawn Settings
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+respawn = 1;
+respawndelay = 3;
+respawnButton = 1;
+respawnOnStart = 0;
+respawnTemplates[] = {"f_spectator"};
 
-#include "cfg\respawn.hpp"
+class CfgRespawnTemplates 
+{
+	class f_Spectator 
+	{
+		onPlayerRespawn = "f_fnc_CamInit";
+	};
+};
+
+#include "f\spect\config.hpp"
+#include "f\respawn\defines.hpp"
+#include "f\respawn\dialogs.hpp"
+
 // ============================================================================================
+// cfgFnc
 
+class CfgFunctions {
+	#include "f\common\functions.hpp"
+	class SC
+	{	
+		class simplepara
+		{
+			file = "scripts\simplepara";			
+			class paraeject{};						
+		};
+	};
+};
 
+// ============================================================================================
 // F3 - Start of Notifications block.
 
 class cfgNotifications
@@ -40,19 +68,11 @@ class cfgNotifications
 };
 
 // ============================================================================================
-
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 class Params
 {
-
-// ============================================================================================
-
-// F3 - Debug Mode
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// WARNING: DO NOT DISABLE THIS COMPONENT
-
     class f_param_debugMode
     {
             title = "$STR_f_param_debugMode";
@@ -60,25 +80,6 @@ class Params
             texts[] = {"Off","On"};
             default = 0;
     };
-
-// ============================================================================================
-
-// F3 - Folk Assign Gear Script
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_loadouts
-    {
-            title = "$STR_f_param_loadouts";
-            values[] = {0,1};
-            texts[] = {"Light","Standard"};
-            default = 1;
-    };
-
-// ============================================================================================
-
-// F3 - Radio Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
     class f_param_radios
     {
             title = "Radio System";
@@ -86,16 +87,9 @@ class Params
             texts[] = {"Off","TFR","ACRE2"};
             default = 3;
     };
-
-// ============================================================================================
-
-// F3 - End of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
 };
 
 // ============================================================================================
-
 // F3 - Menu components
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
@@ -104,28 +98,18 @@ class Params
 #include "f\JIP\f_JIP_grppicker.h"
 
 // ============================================================================================
-
-// F3 - Functions
-// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
-
-class CfgFunctions
-{
-	#include "f\common\functions.hpp"
-	
-	class SC
-	{	
-		class simplepara
-		{
-			file = "scripts\simplepara";			// DO NOT CHANGE
-			class paraeject{};						// DO NOT CHANGE
-		};
-	};
-};
-
-// ============================================================================================
-
 // F3 - Custom Insignia
 
 class CfgUnitInsignia {
 	#include "f\assignGear\insignia\define.hpp"
+};
+
+// ============================================================================================
+// Coalition Kill Tracker (ACEX)
+
+class CfgDebriefingSections {
+	class acex_killTracker {
+		title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
 };

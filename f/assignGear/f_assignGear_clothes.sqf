@@ -21,11 +21,7 @@ _helmet = _baseHelmet;
 _glasses = _baseGlasses;
 
 // Select the default rig
-_rig = switch (f_param_loadouts) do {
-	case 0:{_lightRig};
-	case 1:{_standardRig};
-	default{_standardRig};
-};
+_rig = _standardRig;
 
 // Flip through unit to assign specialized uniforms
 

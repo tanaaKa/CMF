@@ -18,14 +18,6 @@ class F // Defines the "owner"
 		file = "f\setGroupID";
 		class setGroupID{};
 	};
-	class missionConditions
-	{
-		file = "f\missionConditions";
-		class SetTime{};
-		class SetFog{};
-		class SetWeather{};
-		class SetWind{};
-	};
 	class groupMarkers {
 		file = "f\groupMarkers";
 		class localGroupMarker{};
@@ -69,5 +61,5 @@ class F // Defines the "owner"
 		class RespawnLocalClient {};
 		class RespawnWaveServer {};
 		class RespawnInit { postInit = 1; };
-};
+	};
 };

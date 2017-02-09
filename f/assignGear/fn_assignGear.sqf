@@ -72,7 +72,6 @@ if (f_param_debugMode == 1) then
 };
 
 // ====================================================================================
-
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the unit belongs to the NATO faction; it
 // automatically includes a file which contains the appropriate equipment data.
@@ -83,18 +82,6 @@ if (_faction in ["blu_f","nato"]) then {
 };
 
 // ====================================================================================
-
-// GEAR: BLUFOR > NATO (Pacific)
-// The following block of code executes only if the unit belongs to the NATO (Pacific) faction; it
-// automatically includes a file which contains the appropriate equipment data.
-
-if (_faction in ["blu_t_f","natopacific"]) then {
-	#include "f_assignGear_natoPacific.sqf"
-};
-
-// ====================================================================================
-
-
 // GEAR: OPFOR > CSAT
 // The following block of code executes only if the unit belongs to the CSAT faction; it
 // automatically includes a file which contains the appropriate equipment data.
@@ -105,17 +92,6 @@ if (_faction in ["opf_f","csat"]) then {
 };
 
 // ====================================================================================
-
-// GEAR: OPFOR > CSAT (Pacific)
-// The following block of code executes only if the unit belongs to the CSAT (Pacific) faction; it
-// automatically includes a file which contains the appropriate equipment data.
-
-if (_faction in ["opf_t_f","csatpacific"]) then {
-	#include "f_assignGear_csatPacific.sqf"
-};
-
-// ====================================================================================
-
 // GEAR: INDEPEDENT > AAF
 // The following block of code executes only if the unit belongs to the AAF faction; it
 // automatically includes a file which contains the appropriate equipment data.
@@ -125,7 +101,6 @@ if (_faction in ["ind_f","aaf"]) then {
 };
 
 // ====================================================================================
-
 // This variable simply tracks the progress of the gear assignation process, for other
 // scripts to reference.
 

@@ -21,21 +21,23 @@
 #define GREEN [0,0.8,0,1]
 #define WHITE [1,1,1,1]
 #define ORANGE [1,0.647,0,1]
+#define YEL [1,0.9,0,1]
 
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
 // Group name, SR net, LR net
 respawnMenuGroupNames = [
   ["",1,1,UNK,WHITE],
-  ["ASL",1,1,HQ,RED],
+  ["PLT",1,4,HQ,YEL],
+  ["ASL",13,1,HQ,RED],
   ["A1",1,1,INF,RED],
-  ["A2",1,1,INF,RED],
-  ["BSL",2,1,HQ,BLUE],
-  ["B1",2,1,INF,BLUE],
-  ["B2",2,1,INF,BLUE],
-  ["CSL",3,1,HQ,GREEN],
-  ["C1",3,1,INF,GREEN],
-  ["C2",3,1,INF,GREEN],
+  ["A2",2,1,INF,RED],
+  ["BSL",14,2,HQ,BLUE],
+  ["B1",3,2,INF,BLUE],
+  ["B2",4,2,INF,BLUE],
+  ["CSL",15,3,HQ,GREEN],
+  ["C1",5,3,INF,GREEN],
+  ["C2",6,3,INF,GREEN],
   ["MMG1",12,4,MMG,ORANGE],
   ["MMG2",12,4,MMG,ORANGE],
   ["MAT1",12,4,MAT,ORANGE],
@@ -88,31 +90,31 @@ respawnMenuFactions = [
 // This function is designed to choose the classname of a new unit based on the faction and specified unit type.
 // This is important as the ability to perform certain tasks can be derived from being a certain class.
 fn_respawnSelectClass = {
-  params["_faction","_typeOfUnit"];
+  params["_faction","_typeOfUnit","_loadout"];
 
   //Setup a default value.
   _type = "C_man_1";
   switch (_faction) do {
     case "blu_f": {
       switch (_typeOfUnit) do {
-        case "CO": { _type = "B_officer_F"};
-        case "SL": { _type = "B_Soldier_SL_F"};
-        case "M": { _type = "B_medic_F"};
-        case "FTL": { _type = "B_Soldier_TL_F"};
-        case "AR": { _type = "B_soldier_AR_F"};
-        case "AAR": { _type = "B_Soldier_AAR_F"};
-        case "RAT": { _type = "B_Soldier_LAT_F"};
-        case "MMGG": { _type = "B_support_MG_F"};
-        case "MMGAG": { _type = "B_Soldier_A_F"};
-        case "MATG": { _type = "B_soldier_AT_F"};
-        case "MATAG": { _type = "B_soldier_AAT_F"};
-        case "MSAMG": { _type = "B_soldier_AA_F"};
-        case "MSAMAG": { _type = "B_soldier_AAA_F"};
-        case "C": { _type = "B_crew_F"};
-        case "D": { _type = "B_soldier_repair_F"};
-        case "PP": { _type = "B_Helipilot_F"};
-        case "PCC": { _type = "B_soldier_repair_F"};
-        default  { _type = "B_Soldier_F"; };
+        case "CO": { _type = "B_officer_F"; _loadout = "co"};
+        case "SL": { _type = "B_Soldier_SL_F"; _loadout = "dc"};
+        case "M": { _type = "B_medic_F"; _loadout = "m"};
+        case "FTL": { _type = "B_Soldier_TL_F"; _loadout = "ftl"};
+        case "AR": { _type = "B_soldier_AR_F"; _loadout = "ar"};
+        case "AAR": { _type = "B_Soldier_AAR_F"; _loadout = "aar"};
+        case "RAT": { _type = "B_Soldier_LAT_F"; _loadout = "rat"};
+        case "MMGG": { _type = "B_support_MG_F"; _loadout = "mmgg"};
+        case "MMGAG": { _type = "B_Soldier_A_F"; _loadout = "mmgag"};
+        case "MATG": { _type = "B_soldier_AT_F"; _loadout = "matg"};
+        case "MATAG": { _type = "B_soldier_AAT_F"; _loadout = "matag"};
+        case "MSAMG": { _type = "B_soldier_AA_F"; _loadout = "msamg"};
+        case "MSAMAG": { _type = "B_soldier_AAA_F"; _loadout = "MSAMAG"};
+        case "C": { _type = "B_crew_F"; _loadout = "vc"};
+        case "D": { _type = "B_soldier_repair_F"; _loadout = "vd"};
+        case "PP": { _type = "B_Helipilot_F"; _loadout = "pp"};
+        case "PCC": { _type = "B_soldier_repair_F"; _loadout = "pcc"};
+        default  { _type = "B_Soldier_F"; _loadout = "rat"};
       };
     };
     case "opf_f":{

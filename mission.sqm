@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1249;
+		nextID=1253;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1395.4153,95.367188,617.75024};
-		dir[]={0.052425232,-0.65372366,0.75506133};
-		up[]={0.045281708,0.75665462,0.65220374};
-		aside[]={0.99766749,-6.9984526e-007,-0.069272235};
+		pos[]={1501.463,119.84215,491.88461};
+		dir[]={0.010223479,-0.37940475,0.92530632};
+		up[]={0.0041898489,0.92514127,0.37950867};
+		aside[]={1.0000085,-9.5022733e-007,-0.011049613};
 	};
 };
 binarizationWanted=0;
@@ -60,13 +60,14 @@ addons[]=
 	"ace_nametags",
 	"A3_Ui_F",
 	"acex_headless",
-	"ace_advanced_fatigue"
+	"ace_advanced_fatigue",
+	"r0ed_SurvivableCrashes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			className="A3_Air_F_Heli";
@@ -269,6 +270,12 @@ class AddonsMetaData
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item29
+		{
+			className="r0ed_SurvivableCrashes";
+			name="r0ed_SurvivableCrashes";
+			author="Rafael09ED";
 		};
 	};
 };
@@ -593,7 +600,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=142;
+		items=143;
 		class Item0
 		{
 			dataType="Object";
@@ -14945,6 +14952,210 @@ class Mission
 			};
 			id=1246;
 			type="ACE_moduleEquipFRIES";
+		};
+		class Item142
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1457.5535,5,940.5033};
+			};
+			id=1250;
+			type="r0ed_ModuleSurvivableCrashes";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="r0ed_ModuleSurvivableCrashes_VehicleRestCode";
+					expression="_this setVariable ['VehicleRestCode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="params[""_veh""]; sleep (40 + random 40); _veh allowDamage true; _veh setDamage 1;";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="r0ed_ModuleSurvivableCrashes_VisualEffects";
+					expression="_this setVariable ['VisualEffects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="r0ed_ModuleSurvivableCrashes_CrewDamageMultiplier";
+					expression="_this setVariable ['CrewDamageMultiplier',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="r0ed_ModuleSurvivableCrashes_ModEnabled";
+					expression="_this setVariable ['ModEnabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="r0ed_ModuleSurvivableCrashes_CrewPostCrashCode";
+					expression="_this setVariable ['CrewPostCrashCode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="params[""_unit""];";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="r0ed_ModuleSurvivableCrashes_MedicalSystem";
+					expression="_this setVariable ['MedicalSystem',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ACE";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="r0ed_ModuleSurvivableCrashes_OnCrashCode";
+					expression="_this setVariable ['OnCrashCode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="params[""_vehicle"", ""_event""];";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="r0ed_ModuleSurvivableCrashes_ExaggeratedEffects";
+					expression="_this setVariable ['ExaggeratedEffects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="r0ed_ModuleSurvivableCrashes_SoundEffects";
+					expression="_this setVariable ['SoundEffects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="r0ed_ModuleSurvivableCrashes_VehicleKindWhitelist";
+					expression="_this setVariable ['VehicleKindWhitelist',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[""Air""]";
+						};
+					};
+				};
+				nAttributes=10;
+			};
 		};
 	};
 };

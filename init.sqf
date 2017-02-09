@@ -21,18 +21,6 @@ f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
 f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // ====================================================================================
-// F3 - Disable Saving and Auto Saving
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-enableSaving [false, false];
-
-// ====================================================================================
-// F3 - Mute Orders and Reports
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-{_x setSpeaker "NoVoice"} forEach allUnits;
-
-// ====================================================================================
 // F3 - Folk ARPS Group IDs
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -48,7 +36,7 @@ f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf"
 // F3 - Fireteam Member Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[] spawn f_fnc_SetLocalFTMemberMarkers;
+//[] spawn f_fnc_SetLocalFTMemberMarkers;
 
 // ====================================================================================
 // F3 - Briefing
@@ -69,27 +57,6 @@ f_script_briefing = [] execVM "briefing.sqf";
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 
 // ====================================================================================
-// Misc settings
-
-setViewDistance 2000;
-
-// ====================================================================================
-//global weapon recoil (2x more than 'normal')
-
-player setUnitRecoilCoefficient 2;
-
-// ====================================================================================
-//tanakas crew-served weapon recoil fix - disabled until improved
-
-//[] execVM "scripts\csw_recoil.sqf";
-
-// ====================================================================================
-// F3 - Assign Gear AI
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// [] execVM "f\assignGear\f_assignGear_AI.sqf";
-
-// ====================================================================================
 // F3 - MapClick Teleport
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -101,15 +68,26 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // ====================================================================================
+// F3 - Assign Gear AI
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+// [] execVM "f\assignGear\f_assignGear_AI.sqf";
+
+// ====================================================================================
+// Misc settings
+enableSaving [false, false];
+setViewDistance 2000;
+{_x setSpeaker "NoVoice"} forEach allUnits;
+
+// ====================================================================================
+//tanakas crew-served weapon recoil fix
+
+[] execVM "scripts\csw_recoil.sqf";
+
+// ====================================================================================
 // tanaKa's Paradrop action to all aircraft
 
-_scripts_paraeject = compileFinal preprocessFileLineNumbers "scripts\simplepara\fn_paraeject.sqf";
-
-{
-	if (_x isKindOf "Air") then {
-		_x addaction [("<t color=""#DF0101"">" + ("PARADROP") + "</t>"), "scripts\simplepara\fn_paraeject.sqf", "", 10, false, true, "", "(getPosATL _target select 2) > 100"]; 
-	};
-} foreach vehicles;
+[] execVM "scripts\paradrop.sqf";
 
 // ====================================================================================
 // tanaKa's Safestart and server load script

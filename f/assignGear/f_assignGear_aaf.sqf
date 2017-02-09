@@ -330,19 +330,7 @@ if (_isMan) then {
 // SELECT LOADOUT
 // Pick the appropriate loadout depending on the parameter
 
-_loadout = f_param_loadouts;
-
-// Light Loadout
-if (_loadout == 0) then {
-	#include "f_assignGear_aaf_light.sqf"
-};
-
-// Standard Loadout
-if (_loadout == 1) then {
-	#include "f_assignGear_aaf_standard.sqf"
-};
-
-// ====================================================================================
+#include "f_assignGear_aaf_standard.sqf";
 
 // If this isn't run on an infantry unit we can exit
 if !(_isMan) exitWith {};

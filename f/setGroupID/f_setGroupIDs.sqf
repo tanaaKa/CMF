@@ -108,53 +108,53 @@ _groups = [
 
 // ====================================================================================
 
-// GROUP IDs: INDEPENDENT > AAF
+// GROUP IDs: INDEPENDENT > IND
 // Automatically assigns intelligible names to groups
 
-["UnitAAF_CO","AAF PL"],
+["UnitIND_CO","IND PL"],
 
-["UnitAAF_ASL","AAF ASL"],
-["UnitAAF_A1","AAF A1"],
-["UnitAAF_A2","AAF A2"],
+["UnitIND_ASL","IND ASL"],
+["UnitIND_A1","IND A1"],
+["UnitIND_A2","IND A2"],
 
-["UnitAAF_BSL","AAF BSL"],
-["UnitAAF_B1","AAF B1"],
-["UnitAAF_B2","AAF B2"],
+["UnitIND_BSL","IND BSL"],
+["UnitIND_B1","IND B1"],
+["UnitIND_B2","IND B2"],
 
-["UnitAAF_CSL","AAF CSL"],
-["UnitAAF_C1","AAF C1"],
-["UnitAAF_C2","AAF C2"],
+["UnitIND_CSL","IND CSL"],
+["UnitIND_C1","IND C1"],
+["UnitIND_C2","IND C2"],
 
-["UnitAAF_JSL","AAF JSL"],
-["UnitAAF_J1","AAF J1"],
-["UnitAAF_J2","AAF J2"],
+["UnitIND_JSL","IND JSL"],
+["UnitIND_J1","IND J1"],
+["UnitIND_J2","IND J2"],
 
-["UnitAAF_MMG1","AAF MMG1"],
-["UnitAAF_MMG2","AAF MMG2"],
-["UnitAAF_HMG1","AAF HMG1"],
-["UnitAAF_MAT1","AAF MAT1"],
-["UnitAAF_MAT2","AAF MAT2"],
-["UnitAAF_HAT1","AAF HAT1"],
-["UnitAAF_MTR1","AAF MTR1"],
-["UnitAAF_MSAM1","AAF MSAM1"],
-["UnitAAF_HSAM1","AAF HSAM1"],
-["UnitAAF_ST1","AAF ST1"],
-["UnitAAF_DT1","AAF DT1"],
-["UnitAAF_ENG1","AAF ENG1"],
+["UnitIND_MMG1","IND MMG1"],
+["UnitIND_MMG2","IND MMG2"],
+["UnitIND_HMG1","IND HMG1"],
+["UnitIND_MAT1","IND MAT1"],
+["UnitIND_MAT2","IND MAT2"],
+["UnitIND_HAT1","IND HAT1"],
+["UnitIND_MTR1","IND MTR1"],
+["UnitIND_MSAM1","IND MSAM1"],
+["UnitIND_HSAM1","IND HSAM1"],
+["UnitIND_ST1","IND ST1"],
+["UnitIND_DT1","IND DT1"],
+["UnitIND_ENG1","IND ENG1"],
 
-["UnitAAF_IFV1","AAF IFV1"],
-["UnitAAF_IFV2","AAF IFV2"],
-["UnitAAF_TNK1","AAF TNK1"],
+["UnitIND_IFV1","IND IFV1"],
+["UnitIND_IFV2","IND IFV2"],
+["UnitIND_TNK1","IND TNK1"],
 
-["UnitAAF_TH1","AAF TH1"],
-["UnitAAF_TH2","AAF TH2"],
-["UnitAAF_TH3","AAF TH3"],
-["UnitAAF_TH4","AAF TH4"],
-["UnitAAF_TH5","AAF TH5"],
-["UnitAAF_TH6","AAF TH6"],
-["UnitAAF_TH7","AAF TH7"],
-["UnitAAF_TH8","AAF TH8"],
-["UnitAAF_AH1","AAF AH1"]
+["UnitIND_TH1","IND TH1"],
+["UnitIND_TH2","IND TH2"],
+["UnitIND_TH3","IND TH3"],
+["UnitIND_TH4","IND TH4"],
+["UnitIND_TH5","IND TH5"],
+["UnitIND_TH6","IND TH6"],
+["UnitIND_TH7","IND TH7"],
+["UnitIND_TH8","IND TH8"],
+["UnitIND_AH1","IND AH1"]
 
 // Always make sure there's no comma after the last entry!
 
