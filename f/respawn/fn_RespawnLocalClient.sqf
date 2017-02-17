@@ -37,15 +37,15 @@ if (_leader) then {
   private _newGroup = createGroup _side;
   _newGroup setGroupIdGlobal [_groupId];
 
-  _newGroup setVariable ["potato_radios_srChannel", _sr, true];
+/*   _newGroup setVariable ["potato_radios_srChannel", _sr, true];
   _newGroup setVariable ["potato_radios_mrChannel", _lr, true];
-  _newGroup setVariable ["potato_radios_lrChannel", _lr, true];
+  _newGroup setVariable ["potato_radios_lrChannel", _lr, true]; */
 
-  _newGroup setVariable ["potato_markers_addMarker", true, true];
+/*   _newGroup setVariable ["potato_markers_addMarker", true, true];
   _newGroup setVariable ["potato_markers_markerText", _groupName, true];
   _newGroup setVariable ["potato_markers_markerTexture", _texture, true];
   _newGroup setVariable ["potato_markers_markerColor", _color, true];
-  _newGroup setVariable ["potato_markers_markerSize", 24, true];
+  _newGroup setVariable ["potato_markers_markerSize", 24, true]; */
 
   // Create the unit
   private _newUnit = _newGroup createUnit [_class, _position, [], 5, "NONE"];
@@ -55,7 +55,6 @@ if (_leader) then {
   // Wait till the unit is created
   private _timeOut = time + 10;
   waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
 
   // Exit Spectator
   [true] call F_fnc_ForceExit;
@@ -63,7 +62,6 @@ if (_leader) then {
   // 'respawn'
   selectPlayer _newUnit;
   _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
-  [] spawn f_fnc_SetLocalFTMemberMarkers;
 
   publicVariable _groupVarName;
 }
@@ -78,7 +76,6 @@ else {
   // Wait till the unit is created
   private _timeOut = time + 10;
   waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died, new unit wasn't created"; };
 
   // Exit Spectator
   [true] call F_fnc_ForceExit;
@@ -86,15 +83,12 @@ else {
   // 'respawn'
   selectPlayer _newUnit;
   _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
-  [] spawn f_fnc_SetLocalFTMemberMarkers;
 
   _timeOut = time + 10;
   waitUntil{ player == _newUnit || time > _timeOut };
-  if (player != _newUnit) exitWith { diag_log "[bwmf] - Respawn died, player didn't transfer"; };
 
   _timeOut = time + 10;
   waitUntil{ !isNil _groupVarName || time > _timeOut };
-  if (isNil _groupVarName) exitWith { diag_log "[bwmf] - Respawn died, group wasn't created"; };
 
   private _newGroup = grpNull;
   {
@@ -114,5 +108,5 @@ player setVariable ["f_respawnUID", getPlayerUID player, true];
 
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   [false] call acre_api_fnc_setSpectator;
-  [{[player] call acre_api_fnc_isInitialized}, potato_radios_fnc_configureRadios] call CBA_fnc_waitUntilAndExecute;
+  [{[player] call acre_api_fnc_isInitialized}, f_radios_settings_acre2_sr_groups_blufor, f_radios_settings_acre2_lr_groups_blufor] call CBA_fnc_waitUntilAndExecute;
 };

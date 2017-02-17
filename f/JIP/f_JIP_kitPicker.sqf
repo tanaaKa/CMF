@@ -11,8 +11,9 @@ KitPickInit =
     USEBUTTON ctrlEnable false;
 
     private "_idx";
-    _idx = COMBO lbAdd "Commander"; COMBO lbSetData [_idx, "co"];
-    _idx = COMBO lbAdd "Deputy Commander"; COMBO lbSetData [_idx, "dc"];
+    _idx = COMBO lbAdd "Platoon Leader"; COMBO lbSetData [_idx, "co"];
+    _idx = COMBO lbAdd "Squad Leader"; COMBO lbSetData [_idx, "dc"];
+	_idx = COMBO lbAdd "Medic"; COMBO lbSetData [_idx, "m"];
     COMBO lbAdd "----";
 
     _idx = COMBO lbAdd "Fire Team Leader"; COMBO lbSetData [_idx, "ftl"];
@@ -21,12 +22,20 @@ KitPickInit =
     _idx = COMBO lbAdd "Rifleman (AT)"; COMBO lbSetData [_idx, "rat"];
     COMBO lbAdd "----";
 
-    _idx = COMBO lbAdd "Engineer (no repair)"; COMBO lbSetData [_idx, "eng"];
+	_idx = COMBO lbAdd "MMG - Team Leader"; COMBO lbSetData [_idx, "mmgag"];
+	_idx = COMBO lbAdd "MMG - Gunner"; COMBO lbSetData [_idx, "mmgg"];
+	_idx = COMBO lbAdd "MAT - Team Leader"; COMBO lbSetData [_idx, "matgag"];
+	_idx = COMBO lbAdd "MAT - Gunner"; COMBO lbSetData [_idx, "matg"];
+    _idx = COMBO lbAdd "Engineer"; COMBO lbSetData [_idx, "eng"];
     COMBO lbAdd "----";
 	
-    _idx = COMBO lbAdd "Rifleman"; COMBO lbSetData [_idx, "r"];
-    _idx = COMBO lbAdd "Carabineer"; COMBO lbSetData [_idx, "car"];
-	_idx = COMBO lbAdd "Submachinegunner"; COMBO lbSetData [_idx, "smg"];
+    _idx = COMBO lbAdd "Crew - Driver (repair)"; COMBO lbSetData [_idx, "vd"];
+    _idx = COMBO lbAdd "Crew - Gunner"; COMBO lbSetData [_idx, "vg"];
+	_idx = COMBO lbAdd "Crew - Commander"; COMBO lbSetData [_idx, "vc"];
+	COMBO lbAdd "----";
+	
+    _idx = COMBO lbAdd "Pilot"; COMBO lbSetData [_idx, "pc"];
+    _idx = COMBO lbAdd "Co-Pilot"; COMBO lbSetData [_idx, "pcc"];
 	
     _sel = player getVariable "KitPicker_Selection";
     if (!isNil '_sel') then
