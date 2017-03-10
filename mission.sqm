@@ -1784,7 +1784,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""ar"",this] call f_fnc_assignGear; this assignteam ""yellow"";";
+						init="[""aar"",this] call f_fnc_assignGear; this assignteam ""yellow"";";
 						name="UnitNATO_A2_AR2";
 						description=" Alpha 2 AAR";
 						isPlayable=1;
