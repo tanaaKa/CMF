@@ -9,5 +9,8 @@ params["_grid","_name"];
 
 _grid = mapGridPosition player; //define grid location of CCP for hint
 _name = name player; //define name of player for hint
+_hintString = format ["%1 is requesting reinforcements at the GR#%2 CCP!",_name,_grid]; //define global hint
 
-hint format ["%1 has requested reinforcements to the CCP at GR#%2!",_name,_grid];
+_hintString remoteExec ["hint", 0];
+sleep 10;
+hint"";
