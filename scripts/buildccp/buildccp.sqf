@@ -14,10 +14,11 @@ _name = name player; //define name of player for hint
 
 _ccp = "MASH" createVehicle _pos;
 _ccp addaction ["<t color=""#990415"">" +"Request Reinforcements","scripts\buildccp\reinforcements.sqf"];
+_ccp addaction ["<t color=""#990415"">" +"Pack-up CCP","scripts\buildccp\packup.sqf"];
 _ccp addItemCargoGlobal ["ACE_epinephrine", 10];
 _ccp addItemCargoGlobal ["ACE_morphine", 10];
 _ccp addItemCargoGlobal ["ACE_Bodybag", 10];
-player removeAction 0; //remove 'Build CCP' hint from player
+removeAllActions player; //remove 'Build CCP' hint from player
 
 _marker = createMarker ["CCP", player];
 _marker setMarkerShape "ICON";
