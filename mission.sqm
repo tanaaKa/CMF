@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1501.463,119.84215,491.88461};
-		dir[]={0.010223479,-0.37940475,0.92530632};
-		up[]={0.0041898489,0.92514127,0.37950867};
-		aside[]={1.0000085,-9.5022733e-007,-0.011049613};
+		pos[]={1314.2484,44.54961,669.16614};
+		dir[]={0.750467,-0.31701967,0.58012557};
+		up[]={0.25092772,0.94833368,0.19397569};
+		aside[]={0.61162502,-4.558824e-007,-0.79121339};
 	};
 };
 binarizationWanted=0;
@@ -27,6 +27,7 @@ addons[]=
 {
 	"A3_Air_F_Heli_Heli_Transport_03",
 	"ace_realisticnames",
+	"ace_aircraft",
 	"A3_Air_F_Heli_Heli_Transport_04",
 	"ace_fastroping",
 	"A3_Air_F_Beta_Heli_Transport_02",
@@ -45,6 +46,7 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
 	"ace_explosives",
+	"ace_nouniformrestrictions",
 	"A3_Data_F_Curator_Virtual",
 	"ace_advanced_ballistics",
 	"ace_advanced_throwing",
@@ -67,20 +69,20 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -94,7 +96,7 @@ class AddonsMetaData
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircrafts";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
@@ -108,14 +110,14 @@ class AddonsMetaData
 			className="A3_Armor_F_EPC";
 			name="Arma 3 Win Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
@@ -129,28 +131,28 @@ class AddonsMetaData
 			className="A3_Armor_F_EPB";
 			name="Arma 3 Adapt Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
 			className="A3_Air_F_EPB";
 			name="Arma 3 Adapt Episode - Aircrafts";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item12
 		{
@@ -161,117 +163,124 @@ class AddonsMetaData
 		};
 		class Item13
 		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item14
+		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_advanced_ballistics";
 			name="ACE3 - Advanced Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ace_advanced_throwing";
 			name="ACE3 - Advanced Throwing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item17
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item18
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_map_gestures";
 			name="ACE3 - Map Gestures";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item20
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item21
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_ui";
 			name="ACE3 - UI";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="acex_headless";
 			name="ACEX - Headless";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item29
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item29
+		class Item30
 		{
 			className="r0ed_SurvivableCrashes";
 			name="r0ed_SurvivableCrashes";
@@ -1299,14 +1308,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1347.465,5.0014391,771.91278};
+						position[]={1347.465,5.0014391,771.91296};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitNATO_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -1316,6 +1325,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1334,7 +1362,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -1423,20 +1451,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1322.0375,5.0014391,767.78052};
+						position[]={1322.037,5.0014391,767.78101};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitNATO_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
 					};
 					id=206;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1944,20 +2014,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1341.9269,5.0014391,765.97217};
+						position[]={1341.927,5.0014391,765.97198};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitNATO_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
 					};
 					id=227;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -2465,20 +2577,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1360.7993,5.0014391,763.04529};
+						position[]={1360.799,5.0014391,763.04498};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitNATO_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
 					};
 					id=248;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -4531,14 +4685,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1640.6375,5.0014391,781.534};
+						position[]={1640.637,5.0014391,781.534};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitCSAT_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -4548,6 +4702,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4566,7 +4739,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -4656,7 +4829,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1614.9019,5.0014391,774.6228};
+						position[]={1614.902,5.0014391,774.62299};
 					};
 					side="East";
 					flags=4;
@@ -4664,7 +4837,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitCSAT_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -4674,6 +4847,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4692,7 +4884,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -5210,7 +5402,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1635.0519,5.0014391,772.84515};
+						position[]={1635.052,5.0014391,772.84497};
 					};
 					side="East";
 					flags=4;
@@ -5218,7 +5410,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitCSAT_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -5228,6 +5420,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5246,7 +5457,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -5764,7 +5975,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1654.6599,5.0014391,771.89331};
+						position[]={1654.66,5.0014391,771.89301};
 					};
 					side="East";
 					flags=4;
@@ -5772,7 +5983,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitCSAT_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
@@ -5782,6 +5993,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5800,7 +6030,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -8167,14 +8397,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1496.3513,5.0014391,776.46558};
+						position[]={1496.351,5.0014391,776.466};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitAAF_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -8184,6 +8414,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -8202,7 +8451,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -8291,20 +8540,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1469.5292,5.0014391,771.38873};
+						position[]={1469.5291,5.0014391,771.38898};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitAAF_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
 					};
 					id=546;
 					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -8812,20 +9103,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1491.0604,5.0014391,769.8775};
+						position[]={1491.0601,5.0014391,769.87799};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitAAF_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
 					};
 					id=567;
 					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -9333,20 +9666,62 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1510.2557,5.0014391,767.6344};
+						position[]={1510.256,5.0014391,767.63397};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear;";
+						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
 						name="UnitAAF_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
 					};
 					id=588;
 					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes

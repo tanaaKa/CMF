@@ -62,7 +62,8 @@ if (_leader) then {
   // 'respawn'
   selectPlayer _newUnit;
   _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
-
+  _newUnit setSpeaker "NoVoice";
+  
   publicVariable _groupVarName;
 }
 else {
@@ -83,6 +84,7 @@ else {
   // 'respawn'
   selectPlayer _newUnit;
   _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  _newUnit setSpeaker "NoVoice";
 
   _timeOut = time + 10;
   waitUntil{ player == _newUnit || time > _timeOut };
@@ -94,13 +96,10 @@ else {
   {
     if (groupId _x == _groupId) exitWith { _newGroup = _x; };
   } forEach allGroups;
-
-  diag_log format ["[bwmf] - Respawn 'pre' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
   if (!isNull _newGroup) then {
     [_newUnit] joinSilent _newGroup;
     deleteGroup _tempGroup;
   };
-  diag_log format ["[bwmf] - Respawn 'post' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
 };
 
 player setVariable ["f_respawnName", name player, true];

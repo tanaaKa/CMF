@@ -69,6 +69,7 @@ switch (_typeofUnit) do
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadegreen, 2];
+		_unit additemtovest "ACRE_PRC152";
 	};
 // Squad Leader / DC Loadout:
 	case "dc":
@@ -90,6 +91,8 @@ switch (_typeofUnit) do
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadepurple, 3];
+		_unit additemtovest "ACRE_PRC152";
+		_unit additemtovest "ACRE_PRC148";
 	};
 // Platoon CO Loadout:
 	case "co":
@@ -111,6 +114,7 @@ switch (_typeofUnit) do
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadepurple, 2];
+		_unit additemtovest "ACRE_PRC152";
 	};
 // JTAC Loadout:
 	case "jtac":

@@ -77,7 +77,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 // Misc settings
 enableSaving [false, false];
 setViewDistance 2000;
-{_x setSpeaker "NoVoice"} forEach allUnits;
+{_x setSpeaker "NoVoice"} forEach playableUnits;
 
 // ====================================================================================
 //tanakas crew-served weapon recoil fix
