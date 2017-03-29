@@ -284,7 +284,7 @@ fn_respawnMap_keyUp = {
         _pos = markerPos (format["f3_respawnPoint%1", f3_respawnMousePos]);
         if (!(_pos isEqualTo [0,0,0])) then { _position = _pos; };
       };
-      hint "Group created on ground.";
+      hint "Group created";
 
       [var2_groupIndex, _position, var1_faction, selectedRespawnGroup] remoteExecCall ["F_fnc_RespawnWaveServer", 2, false];
       selectedRespawnGroup = [];

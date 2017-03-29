@@ -1,4 +1,5 @@
-params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex", "loadout"];
+#include "respawn_settings.sqf";
+params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex"];
 
 _faction = (respawnMenuFactions select _faction) select 0;
 _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
@@ -61,7 +62,8 @@ if (_leader) then {
 
   // 'respawn'
   selectPlayer _newUnit;
-  _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  //_newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  [_typeOfUnit,_newUnit] call f_fnc_assignGear;
   _newUnit setSpeaker "NoVoice";
   
   publicVariable _groupVarName;
@@ -83,7 +85,8 @@ else {
 
   // 'respawn'
   selectPlayer _newUnit;
-  _newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  //_newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
+  [_typeOfUnit,_newUnit] call f_fnc_assignGear;
   _newUnit setSpeaker "NoVoice";
 
   _timeOut = time + 10;

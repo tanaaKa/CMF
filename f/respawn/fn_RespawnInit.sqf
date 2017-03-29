@@ -1,4 +1,4 @@
-#include "respawn_settings.sqf"
+#include "respawn_settings.sqf";
 #include "respawn_gui_code.sqf";
 
 if (isServer) then {
