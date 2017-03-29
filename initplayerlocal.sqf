@@ -80,3 +80,21 @@ if (player in (call bis_fnc_listcuratorplayers)) then {
 /////////////////////////////////////////////////////////
 /////////////////////End FPS Script//////////////////////
 /////////////////////////////////////////////////////////
+
+//Disables auto hover because we don't use that here
+
+(findDisplay 46) displayAddEventHandler 
+[
+"KeyDown", 
+{
+	_handled = false;
+
+	if ((_this select 1) in (actionKeys "AutoHover") || (_this select 1) in (actionKeys "AutoHoverCancel")) then
+	{
+		_handled = true;
+	};
+_handled;
+}
+];
+
+//End of autohover disable

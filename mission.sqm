@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1496.2482,180.06274,507.3356};
-		dir[]={0.014185591,-0.52184939,0.85306108};
-		up[]={0.0086738346,0.85293764,0.52187169};
-		aside[]={0.99990863,-1.0353069e-006,-0.016624855};
+		pos[]={1620.9492,180.06274,617.23181};
+		dir[]={0.010444921,-0.6417926,0.76696295};
+		up[]={0.008735775,0.76678276,0.64178985};
+		aside[]={0.99995077,-1.4139805e-006,-0.013615415};
 	};
 };
 binarizationWanted=0;
@@ -1315,7 +1315,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitNATO_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -1458,7 +1458,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitNATO_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -2021,7 +2021,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitNATO_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -2584,7 +2584,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitNATO_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
@@ -4692,7 +4692,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitCSAT_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -4837,7 +4837,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitCSAT_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -5410,7 +5410,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitCSAT_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -5983,7 +5983,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitCSAT_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
@@ -8404,7 +8404,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitAAF_CO_M";
 						description=" Platoon Medic";
 						isPlayable=1;
@@ -8547,7 +8547,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitAAF_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -9110,7 +9110,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitAAF_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -9673,7 +9673,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""m"",this] call f_fnc_assignGear; this addaction [""<t color=""""#990415"""">"" +""Build CCP"",""scripts\buildccp\buildccp.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="[""m"",this] call f_fnc_assignGear; CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"",""f\assignGear\insignia\NATO_Medic.paa"",{[] execVM ""scripts\buildccp\unpack.sqf"";},{true}] call ace_interact_menu_fnc_createAction;    " \n "[this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;";
 						name="UnitAAF_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
