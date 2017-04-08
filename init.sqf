@@ -77,6 +77,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 // Misc settings
 enableSaving [false, false];
 setViewDistance 2000;
+player addRating 90000; // Prevents needing to 'pardon' people.
 {_x setSpeaker "NoVoice"} forEach playableUnits;
 
 // ====================================================================================
