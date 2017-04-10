@@ -44,6 +44,20 @@ class CfgFunctions {
 };
 
 // ============================================================================================
+// EH for various scenarios
+
+class Extended_InitPost_EventHandlers {
+  class Car 
+  {
+    class cmf_nothermals { init = "(_this select 0) disableTIEquipment true;"; };
+  };
+  class Tank
+  {
+    class cmf_nothermals { init = "(_this select 0) disableTIEquipment true;"; };
+  };
+};
+
+// ============================================================================================
 // F3 - Start of Notifications block.
 
 class cfgNotifications

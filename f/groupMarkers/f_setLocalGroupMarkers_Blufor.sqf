@@ -27,16 +27,16 @@ if (_unitfaction in ["blu_f","blu_t_f","blu_ctrg_f"]) then {
 
 	["GrpNATO_MMG1",_sup, "MMG1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_MMG2",_sup, "MMG2", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_HMG1",_sup, "HMG1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_HMG1",_sup, "HMG", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_MAT1",_lau, "MAT1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_MAT2",_lau, "MAT2", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_HAT1",_lau, "HAT1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_MTR1",_mor, "MTR1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_MSAM1",_lau, "MSAM1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_HSAM1",_lau, "HSAM1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_HAT1",_lau, "HAT", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_MTR1",_mor, "MTR", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_MSAM1",_lau, "MSAM", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_HSAM1",_lau, "HSAM", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_ST1",_rec, "ST1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_DT1",_rec, "DT1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
-	["GrpNATO_ENG1",_eng, "ENG1", "ColorCivilian"] spawn f_fnc_localGroupMarker;
+	["GrpNATO_ENG1",_eng, "ENG", "ColorCivilian"] spawn f_fnc_localGroupMarker;
 
 	["GrpNATO_IFV1",_ifv, "IFV1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 	["GrpNATO_IFV2",_ifv, "IFV2", "ColorOrange"] spawn f_fnc_localGroupMarker;

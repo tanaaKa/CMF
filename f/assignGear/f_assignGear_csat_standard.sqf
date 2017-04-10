@@ -17,11 +17,11 @@ switch (_typeofUnit) do
 		_unit addmagazines [_ARmag, 1];
 		_unit addweapon _AR;
 		_attachments pushback (_bipod1); // Adds the bipod
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_ARmag, 3];
 		_unit addmagazines [_ARmag_tr, 2];
-		_unit addmagazines [_grenade, 2];
+		_unit addmagazines [_grenade, 1];
 	};
 // Rifleman (AT) Loadout:
 	case "rat":
@@ -31,7 +31,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_RATmag, 1];
 		_unit addweapon _RAT;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_carbinemag, 7];
 		_unit addmagazines [_carbinemag_tr, 2];
@@ -44,10 +44,10 @@ switch (_typeofUnit) do
 		_unit addBackpack _bag;
 		_unit addmagazines [_riflemag, 1];
 		_unit addweapon _rifle;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_riflemag, 7];
-		_unit addmagazines [_riflemag_tr, 2];
+		_unit addmagazines [_riflemag, 3];
+		_unit addmagazines [_riflemag_tr, 6];
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_ARmag, 3];
 		_unit additem "ACE_EntrenchingTool";
@@ -59,13 +59,15 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 3];
 		_unit addweapon _glrifle;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
+		_unit addmagazines [_glsmokered, 5];
 		_unit addmagazines [_glmag, 5];
+		_unit addmagazines [_glflarewhite, 3];
 		_unit addmagazines [_grenade, 2];
-		_unit addmagazines [_glsmokewhite, 2];
+		_unit addmagazines [_glsmokewhite, 3];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadegreen, 2];
@@ -86,11 +88,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag_tr, 3];
 		_unit addmagazines [_glmag, 7];
 		_unit addmagazines [_grenade, 2];
+		_unit addmagazines [_glflarewhite, 3];
 		_unit addmagazines [_glsmokewhite, 3];
 		_unit addmagazines [_pistolmag, 2];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
-		_unit addmagazines [_smokegrenadepurple, 3];
+		_unit addmagazines [_smokegrenadepurple, 2];
 		_unit additemtovest "ACRE_PRC152";
 		_unit additemtovest "ACRE_PRC148";
 	};
@@ -99,17 +102,17 @@ switch (_typeofUnit) do
 	{
 		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
-		_unit addmagazines [_glmag, 8];
+		_unit addmagazines [_glmag, 5];
 		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag, 1];
 		_unit addweapon _pistol;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_smokegrenade, 2];
 		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
+		_unit addmagazines [_glflarewhite, 3];
 		_unit addmagazines [_glsmokewhite, 2];
-		_unit addmagazines [_glsmokered, 2];
 		_unit addmagazines [_pistolmag, 2];
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
@@ -125,7 +128,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;
 		_unit addmagazines [_pistolmag, 1];
 		_unit addweapon _pistol;
-		_unit addItem _firstaid ;
+		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_glriflemag, 7];
 		_unit addmagazines [_glriflemag_tr, 3];
@@ -143,17 +146,11 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
+		_unit addmagazines [_smokegrenadegreen, 3];		
 		_unit addmagazines [_carbinemag, 4];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addItem _medkit;
 		_unit addItem _medkit;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
-		_unit addItem _medpack;
 		_unit addItem _medpack;
 		_unit addItem _medpack;
 		_unit addItem _medpack;

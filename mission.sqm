@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1253;
+		nextID=1254;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1492.839,199.73256,477.13785};
-		dir[]={-0.0013272165,-0.4354952,0.90032238};
-		up[]={-0.00064659555,0.90009302,0.43561068};
-		aside[]={1.0000403,-7.5997832e-007,0.0014770527};
+		pos[]={1488.6489,199.73256,772.45587};
+		dir[]={-0.0073738303,-0.70646971,0.70787388};
+		up[]={-0.0073635983,0.70765579,0.7064659};
+		aside[]={0.99998713,-1.6450758e-006,0.010419158};
 	};
 };
 binarizationWanted=0;
@@ -63,13 +63,14 @@ addons[]=
 	"A3_Ui_F",
 	"acex_headless",
 	"ace_advanced_fatigue",
-	"r0ed_SurvivableCrashes"
+	"r0ed_SurvivableCrashes",
+	"ace_optionsmenu"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Air_F_Heli";
@@ -285,6 +286,13 @@ class AddonsMetaData
 			className="r0ed_SurvivableCrashes";
 			name="r0ed_SurvivableCrashes";
 			author="Rafael09ED";
+		};
+		class Item31
+		{
+			className="ace_optionsmenu";
+			name="ACE3 - Options Menu";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -609,7 +617,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=143;
+		items=144;
 		class Item0
 		{
 			dataType="Object";
@@ -15530,6 +15538,39 @@ class Mission
 					};
 				};
 				nAttributes=10;
+			};
+		};
+		class Item143
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1540.3409,5,938.03003};
+			};
+			id=1253;
+			type="ACE_moduleAllowConfigExport";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAllowConfigExport_allowconfigurationExport";
+					expression="_this setVariable ['allowconfigurationExport',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

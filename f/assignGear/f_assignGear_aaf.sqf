@@ -171,10 +171,10 @@ _bagLarge = "B_Kitbag_rgr";				// Larger bag for some special purpose classes
 // Special Backpacks
 _bagdiver =  "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
-_baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
-_baghmgag = "I_HMG_01_support_F";			// used by Heavy MG assistant gunner
-_baghatg = "I_AT_01_weapon_F";				// used by Heavy AT gunner
-_baghatag = "I_HMG_01_support_F";			// used by Heavy AT assistant gunner
+_baghmgg = "RHS_DShkM_Gun_Bag";				// RHS DSHKm Gun
+_baghmgag = "RHS_DShkM_TripodHigh_Bag";			// RHS DSHKm Tripod
+_baghatg = "RHS_Metis_Gun_Bag";				// RHS Metis Tube
+_baghatag = "RHS_Metis_Tripod_Bag";			// RHS Metis Tripod
 _bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
