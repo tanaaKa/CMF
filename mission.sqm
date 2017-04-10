@@ -62,15 +62,13 @@ addons[]=
 	"ace_nametags",
 	"A3_Ui_F",
 	"acex_headless",
-	"ace_advanced_fatigue",
-	"r0ed_SurvivableCrashes",
-	"ace_optionsmenu"
+	"ace_advanced_fatigue"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=30;
 		class Item0
 		{
 			className="A3_Air_F_Heli";
@@ -278,19 +276,6 @@ class AddonsMetaData
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item30
-		{
-			className="r0ed_SurvivableCrashes";
-			name="r0ed_SurvivableCrashes";
-			author="Rafael09ED";
-		};
-		class Item31
-		{
-			className="ace_optionsmenu";
-			name="ACE3 - Options Menu";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -617,7 +602,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=144;
+		items=142;
 		class Item0
 		{
 			dataType="Object";
@@ -15335,243 +15320,6 @@ class Mission
 			};
 			id=1246;
 			type="ACE_moduleEquipFRIES";
-		};
-		class Item142
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={1457.5535,5,940.5033};
-			};
-			id=1250;
-			type="r0ed_ModuleSurvivableCrashes";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="r0ed_ModuleSurvivableCrashes_VehicleRestCode";
-					expression="_this setVariable ['VehicleRestCode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="params[""_veh""]; sleep (40 + random 40); _veh allowDamage true; _veh setDamage 1;";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="r0ed_ModuleSurvivableCrashes_VisualEffects";
-					expression="_this setVariable ['VisualEffects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="r0ed_ModuleSurvivableCrashes_CrewDamageMultiplier";
-					expression="_this setVariable ['CrewDamageMultiplier',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="r0ed_ModuleSurvivableCrashes_ModEnabled";
-					expression="_this setVariable ['ModEnabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="r0ed_ModuleSurvivableCrashes_CrewPostCrashCode";
-					expression="_this setVariable ['CrewPostCrashCode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="params[""_unit""];";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="r0ed_ModuleSurvivableCrashes_MedicalSystem";
-					expression="_this setVariable ['MedicalSystem',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ACE";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="r0ed_ModuleSurvivableCrashes_OnCrashCode";
-					expression="_this setVariable ['OnCrashCode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="params[""_vehicle"", ""_event""];";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="r0ed_ModuleSurvivableCrashes_ExaggeratedEffects";
-					expression="_this setVariable ['ExaggeratedEffects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="r0ed_ModuleSurvivableCrashes_SoundEffects";
-					expression="_this setVariable ['SoundEffects',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="r0ed_ModuleSurvivableCrashes_VehicleKindWhitelist";
-					expression="_this setVariable ['VehicleKindWhitelist',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[""Air""]";
-						};
-					};
-				};
-				nAttributes=10;
-			};
-		};
-		class Item143
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={1540.3409,5,938.03003};
-			};
-			id=1253;
-			type="ACE_moduleAllowConfigExport";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ACE_moduleAllowConfigExport_allowconfigurationExport";
-					expression="_this setVariable ['allowconfigurationExport',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 	};
 };
