@@ -141,7 +141,8 @@ switch (_typeofUnit) do
 // Medic Loadout:
 	case "m":
 	{
-		_unit addBackpack _bag;
+		_unit addBackpack _medicbag;
+		clearAllItemsFromBackpack _unit;
 		_unit addmagazines [_carbinemag, 1];
 		_unit addweapon _carbine;
 		_unit addItem _firstaid;

@@ -167,6 +167,7 @@ _chemblue = "Chemlight_blue";
 // Backpacks
 _bag = "B_AssaultPack_ocamo";			// carries 120, weighs 20
 _baglarge =  "B_Carryall_ocamo"; 			// carries 320, weighs 40
+_medicbag = "rhs_medic_bag";
 _bagdiver =  "B_AssaultPack_rgr";		// used by divers
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_Kord_Gun_Bag";				// RHS KORD Gun
@@ -261,7 +262,6 @@ _baseGlasses = [];
 //_baseHelmet = ["H_HelmetO_oucamo"];
 
 // Vests
-_lightRig = ["V_HarnessO_brn"];
 _standardRig = ["V_HarnessO_brn"];
 
 // Urban Vests

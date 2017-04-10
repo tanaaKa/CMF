@@ -167,6 +167,7 @@ _chemblue = "Chemlight_blue";
 // Standard Backpacks
 _bag = "B_AssaultPack_dgtl";			// The standard bag for most classes
 _bagLarge = "B_Kitbag_rgr";				// Larger bag for some special purpose classes
+_medicbag = "rhs_medic_bag";
 
 // Special Backpacks
 _bagdiver =  "B_AssaultPack_blk";		// used by divers
@@ -247,7 +248,6 @@ _baseHelmet = ["H_HelmetIA"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["V_Chestrig_khk"];
 _standardRig = ["V_PlateCarrierIA2_dgtl"];
 
 // Diver
