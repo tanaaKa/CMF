@@ -40,9 +40,9 @@ if (_leader) then {
 
 /*   _newGroup setVariable ["potato_radios_srChannel", _sr, true];
   _newGroup setVariable ["potato_radios_mrChannel", _lr, true];
-  _newGroup setVariable ["potato_radios_lrChannel", _lr, true]; */
+  _newGroup setVariable ["potato_radios_lrChannel", _lr, true]; 
 
-/*   _newGroup setVariable ["potato_markers_addMarker", true, true];
+  _newGroup setVariable ["potato_markers_addMarker", true, true];
   _newGroup setVariable ["potato_markers_markerText", _groupName, true];
   _newGroup setVariable ["potato_markers_markerTexture", _texture, true];
   _newGroup setVariable ["potato_markers_markerColor", _color, true];
@@ -52,6 +52,7 @@ if (_leader) then {
   private _newUnit = _newGroup createUnit [_class, _position, [], 5, "NONE"];
   _newUnit setRank _rankName;
   _newUnit addRating 10000;
+  
 
   // Wait till the unit is created
   private _timeOut = time + 10;
@@ -65,6 +66,7 @@ if (_leader) then {
   //_newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
   [_typeOfUnit,_newUnit] call f_fnc_assignGear;
   _newUnit setSpeaker "NoVoice";
+  hintC format ["You have respawned as the leader of %1.",_newGroup];
   
   publicVariable _groupVarName;
 }
@@ -88,6 +90,7 @@ else {
   //_newUnit addaction ["<t color=""#dddd00"">" +"JIP Menu","f\JIP\f_JIP_reinforcementOptions.sqf",[],6,true,false,"","_target == player"];
   [_typeOfUnit,_newUnit] call f_fnc_assignGear;
   _newUnit setSpeaker "NoVoice";
+  hintC format ["You have respawned as %1 in %2.",_typeOfUnit,_tempGroup];
 
   _timeOut = time + 10;
   waitUntil{ player == _newUnit || time > _timeOut };
@@ -110,5 +113,5 @@ player setVariable ["f_respawnUID", getPlayerUID player, true];
 
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   [false] call acre_api_fnc_setSpectator;
-  [{[player] call acre_api_fnc_isInitialized}, f_radios_settings_acre2_sr_groups_blufor, f_radios_settings_acre2_lr_groups_blufor] call CBA_fnc_waitUntilAndExecute;
+  /* [{[player] call acre_api_fnc_isInitialized}, f_radios_settings_acre2_sr_groups_blufor, f_radios_settings_acre2_lr_groups_blufor] call CBA_fnc_waitUntilAndExecute; */
 };
