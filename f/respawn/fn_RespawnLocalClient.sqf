@@ -8,8 +8,8 @@ private _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 (respawnMenuGroupNames select _groupIndex) params ["_groupName","_sr","_lr","_texture","_color"];
 
 private _groupPrefix = switch (_faction) do {
-  case "blu_f": {"BLUFOR"};
-  case "opf_f":{"OPFOR"};
+  case "blu_f": {"BLU"};
+  case "opf_f":{"OPF"};
   case "ind_f": {"IND"};
   default {""};
 };
