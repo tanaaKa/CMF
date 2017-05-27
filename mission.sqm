@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1435.8339,74.020927,646.4472};
-		dir[]={-0.5278098,-0.57260108,0.62752002};
-		up[]={-0.36863014,0.81972855,0.43826225};
-		aside[]={0.76531547,-1.2489036e-006,0.64371353};
+		pos[]={1487.5342,106.76261,657.92517};
+		dir[]={-0.13923331,-0.60843563,0.78144151};
+		up[]={-0.10674512,0.79349411,0.59906894};
+		aside[]={0.98452783,-1.3705576e-006,0.17542242};
 	};
 };
 binarizationWanted=0;
@@ -281,7 +281,18 @@ class AddonsMetaData
 		};
 	};
 };
+class DynamicSimulation
+{
+	class EnableRadiuses
+	{
+		Prop=500;
+		EmptyVehicle=500;
+		Vehicle=1500;
+		Group=1000;
+	};
+};
 randomSeed=1116085;
+assetType="Free";
 class ScenarioData
 {
 	author="*** Insert mission author name here. ***";
@@ -1471,7 +1482,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1337.465,5.0014391,776.30078};
+						position[]={1337.465,5.0014391,776.30096};
 					};
 					side="West";
 					flags=6;
@@ -1480,7 +1491,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="[""co"",this] call f_fnc_assignGear;";
-						name="UnitNATO_CO";
+						name="UnitNATO_PL";
 						description=" Platoon Leader";
 						isPlayable=1;
 					};
@@ -1509,6 +1520,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -1526,7 +1556,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -1739,7 +1769,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GrpNATO_CO";
+				name="GrpNATO_PL";
 			};
 			id=190;
 			class CustomAttributes
@@ -1759,7 +1789,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU CO";
+							value="BLU PL -";
 						};
 					};
 				};
@@ -2264,7 +2294,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU A1";
+							value="BLU A1 -";
 						};
 					};
 				};
@@ -2569,7 +2599,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU A2";
+							value="BLU A2 -";
 						};
 					};
 				};
@@ -2769,7 +2799,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU BSL";
+							value="BLU BSL -";
 						};
 					};
 				};
@@ -3074,7 +3104,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU B1";
+							value="BLU B1 -";
 						};
 					};
 				};
@@ -3379,7 +3409,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU B2";
+							value="BLU B2 -";
 						};
 					};
 				};
@@ -3579,7 +3609,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU CSL";
+							value="BLU CSL -";
 						};
 					};
 				};
@@ -3884,7 +3914,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU C1";
+							value="BLU C1 -";
 						};
 					};
 				};
@@ -4189,7 +4219,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BLU C2";
+							value="BLU C2 -";
 						};
 					};
 				};
@@ -6860,7 +6890,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1630.6375,5.0014391,785.92499};
+						position[]={1630.637,5.0014391,785.92499};
 					};
 					side="East";
 					flags=6;
@@ -6870,7 +6900,7 @@ class Mission
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
 						init="[""co"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_CO";
+						name="UnitCSAT_PL";
 						description=" Platoon Leader";
 						isPlayable=1;
 					};
@@ -6899,6 +6929,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -6916,7 +6965,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -7128,7 +7177,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GrpCSAT_CO";
+				name="GrpCSAT_PL";
 			};
 			id=367;
 			class CustomAttributes
@@ -7148,7 +7197,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="OPF CO";
+							value="OPF PL";
 						};
 					};
 				};
@@ -12624,7 +12673,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1486.3513,5.0014391,780.85455};
+						position[]={1486.351,5.0014391,780.85498};
 					};
 					side="Independent";
 					flags=6;
@@ -12633,7 +12682,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="[""co"",this] call f_fnc_assignGear;";
-						name="UnitAAF_CO";
+						name="UnitAAF_PL";
 						description=" Platoon Leader";
 						isPlayable=1;
 					};
@@ -12662,6 +12711,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -12679,7 +12747,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -12872,7 +12940,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GrpAAF_CO";
+				name="GrpAAF_PL";
 			};
 			id=530;
 			class CustomAttributes
@@ -12892,7 +12960,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IND CO";
+							value="IND PL";
 						};
 					};
 				};

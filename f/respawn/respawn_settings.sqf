@@ -60,20 +60,19 @@ respawnMenuGroupNames = [
 
 respawnMenuRoles = [
   ["CO", "Commander"],
-  ["SL", "Squad Leader"],
+  ["DC", "Squad Leader"],
   ["M", "Squad Medic"],
   ["FTL", "Fireteam Leader"],
   ["AR", "Automatic Rifleman"],
   ["AAR", "Assistant Automatic Rifleman"],
   ["RAT", "Rifleman: Antitank"],
   ["MMGG", "MMG - Gunner"],
-  ["MMGAG", "MMG - Assistant"],
+  ["MMGAG", "MMG - Team Leader"],
   ["MATG", "MAT - Gunner"],
-  ["MATAG", "MAT - Assistant"],
-  ["MSAMG", "MSAM - Gunner"],
-  ["MSAMAG", "MSAM - Assistant"],
-  ["C", "Crewman - Vehicle Crew"],
-  ["D", "Crewman - Vehicle Driver"],
+  ["MATAG", "MAT - Team Leader"],
+  ["VC", "Crewman - Vehicle Commander"],
+  ["VG", "Crewman - Vehicle Gunner"],
+  ["VD", "Crewman - Vehicle Driver"],
   ["PP", "Aircrewman - Pilot"],
   ["PCC", "Aircrewman - Crew Chief (Repair)"]
 ];
@@ -81,9 +80,9 @@ respawnMenuRoles = [
 // Factions that will appear in the respawn GUI.
 // These MUST be defined in CfgFactionClasses
 respawnMenuFactions = [
-  ["blu_f", "NATO"],
-  ["opf_f", "CSAT"],
-  ["ind_f", "AAF"]
+  ["blu_f", "BLU"],
+  ["opf_f", "OPF"],
+  ["ind_f", "IND"]
 ];
 
 // Respawn Classes

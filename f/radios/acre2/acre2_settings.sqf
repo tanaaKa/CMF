@@ -60,8 +60,8 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Charlie 2",  ["C2"]],
 	["Charlie 3",  ["C3"]],
 	["Armor",      ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
-	["Air",        ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
-	["Platoon",    ["CO","MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ENG1"]],
+	["Air",        ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1","AH2"]],
+	["Platoon",    ["PL","MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ENG1"]],
 	["Alpha",      ["ASL","ASL_M"]],
 	["Bravo", 	   ["BSL","BSL_M"]],
 	["Charlie",    ["CSL","CSL_M"]],
@@ -87,13 +87,13 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Charlie Net",  ["CSL","C1","C2","C3"]],
 	["Platoon Net",
 		[
-			"CO",
+			"PL",
 			"ASL","BSL","CSL",
 			"MMG1","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1",
 			"ST1","DT1","ENG1",
 			"IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1",
 			"TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8",
-			"AH1"
+			"AH1","AH2"
 		]
 	],
 	["Air Net",  []],
