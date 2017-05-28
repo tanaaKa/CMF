@@ -6,7 +6,7 @@
 // Markers seen by players in CSAT & CSAT (Pacific) slots.
 
 if (_unitfaction in ["opf_f","opf_t_f"]) then {
-	["GrpCSAT_CO",_hq, "PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
+	["GrpCSAT_PL",_hq, "PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 	["GrpCSAT_ASL",_hq, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 	["GrpCSAT_A1",_ft, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;

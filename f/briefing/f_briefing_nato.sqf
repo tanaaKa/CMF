@@ -76,9 +76,13 @@ _exe = player createDiaryRecord ["diary", ["Mission Briefing","
 <br/>
 *** Green (do not fire), Amber (Fire if fired upon), Red (Fire at will) ***
 <br/><br/>
+<font size='18'>TIME OF DAY</font>
+<br/>
+*** Dusk, Dawn, Mid-day, etc... ***
+<br/><br/>
 Mission by: *** Insert mission credits here. ***
 <br/>
-Made with Coalition Mission Framework (CMF) 3.1
+Made with Coalition Mission Framework (CMF) 3.5
 "]];
 
 // ====================================================================================

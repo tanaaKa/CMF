@@ -6,7 +6,7 @@
 // Markers seen by players in AAF slots.
 
 if (_unitfaction in ["ind_f"]) then {
-	["GrpAAF_CO",_hq, "PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
+	["GrpAAF_PL",_hq, "PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 	["GrpAAF_ASL",_hq, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 	["GrpAAF_A1",_ft, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;

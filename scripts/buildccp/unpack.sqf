@@ -24,7 +24,7 @@ if ((player distance _pos)>6) exitWith {
 	private["_site"];
 	
 	// Spawn backpacks the CCP can be constructed from. Rotates packs towards player.
-	_site = "Land_LuggageHeap_02_F" createVehicle _pos;
+	_site = "Misc_BackpackHeap" createVehicle _pos;
 	_rot = [_site, player] call BIS_fnc_relativeDirTo;
 	_site setDir (getDir _site)+_rot;
 

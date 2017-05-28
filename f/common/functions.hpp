@@ -23,13 +23,6 @@ class F // Defines the "owner"
 		class localGroupMarker{};
 		class localSpecialistMarker{};
 	};
-	class FTMemberMarkers
-	{
-		file = "f\FTMemberMarkers";
-		class SetLocalFTMemberMarkers{};
-		class GetMarkerColor{};
-		class LocalFTMarkerSync{};
-	};
 	class mapClickTeleport
 	{
 		file = "f\mapClickTeleport";

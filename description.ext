@@ -8,6 +8,11 @@ class Header
 disableChannels[] = {2,4,5,6};
 
 // ============================================================================================
+// Plank Settings
+
+#include "plank\plank.h"
+
+// ============================================================================================
 // Respawn Settings
 
 respawn = 1;
@@ -125,5 +130,47 @@ class CfgDebriefingSections {
 	class acex_killTracker {
 		title = "Acex Killed Events";
         variable = "acex_killTracker_outputText";
+    };
+};
+
+// ============================================================================================
+// ACE Settings
+
+class ACE_Settings {
+    class ace_frag_maxTrack {
+        typeName = "SCALAR";
+        value = 2;
+    };
+    class ace_gforces_enabledFor {
+        typeName = "SCALAR";
+        value = 0;
+    };
+    class ace_goggles_effects { //Disable rotor-wash and prone dust effects
+        typeName = "SCALAR";
+        value = 1;
+    };
+    class ace_medical_blood_enabledFor {
+        typeName = "SCALAR";
+        value = 1;
+    };
+    class ace_overheating_enabled {
+        typeName = "BOOL";
+        value = 0;
+    };
+    class ace_overheating_unJamOnreload { //Normal (R key) reload will fix jams
+        typeName = "BOOL";
+        value = 1;
+    };
+    class ace_overheating_unJamFailChance {
+        typeName = "SCALAR";
+        value = 0;
+    };
+    class ace_respawn_removeDeadBodiesDisconnected {
+        typeName = "BOOL";
+        value = 0;
+    };
+    class ace_zeus_autoAddObjects {
+        typeName = "BOOL";
+        value = 1;
     };
 };
