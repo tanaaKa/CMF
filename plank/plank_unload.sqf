@@ -12,56 +12,26 @@ switch (_type) do
 //^ DONT TOUCH ABOVE
 
 // Individual objects
-	case "smallbunker":
-	{
-		[_caller, [1, 0, 0, 0, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Small Bunker...";
-	};
-	case "bunker":
+	case "ladder":
 	{
 		[_caller, [0, 1, 0, 0, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Bunker...";
-	};
-	case "widesand":
-	{
-		[_caller, [0, 0, 1, 0, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Wide Sandbag Wall...";
-	};
-	case "watchtower":
-	{
-		[_caller, [0, 0, 0, 1, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Watchtower...";
-	};
-	case "shortsand":
-	{
-		[_caller, [0, 0, 0, 0, 1, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Short Sandbag Wall...";
-	};
-	case "razor":
-	{
-		[_caller, [0, 0, 0, 0, 0, 1, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Razor Wire...";
-	};
-	case "concrete":
-	{
-		[_caller, [0, 0, 0, 0, 0, 0, 1, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Concrete Wall...";
-	};
-	case "bunkertower":
-	{
-		[_caller, [0, 0, 0, 0, 0, 0, 0, 1]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Bunker Tower...";
+		hint "Unloading Ladder";
 	};
 //Prefab Groups of Objects
-	case "roadblock":
+	case "ftl":
 	{
-		[_caller, [1, 0, 2, 0, 2, 2, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Roadblock...";
+		[_caller, [2, 1, 6, 0, 3, 2, 0, 0, 1]] call plank_api_fnc_forceAddFortifications;
+		hint "Unloading FTL Supplies";
 	};
-	case "fob":
+	case "sl":
 	{
-		[_caller, [1, 1, 4, 1, 4, 4, 1, 1]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading FOB...";
+		[_caller, [1, 1, 4, 1, 4, 4, 4, 0, 1]] call plank_api_fnc_forceAddFortifications;
+		hint "Unloading SL Supplies";
+	};
+	case "pl":
+	{
+		[_caller, [1, 1, 4, 1, 4, 4, 4, 1, 2]] call plank_api_fnc_forceAddFortifications;
+		hint "Unloading PL Supplies";
 	};
 /*	case "_____":
 	{

@@ -8,8 +8,8 @@
 */
 
 cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										
+[true] call potato_safeStart_fnc_toggleSafeStart;
 
-if ((!isNil "PABST_fnc_safeStart") && (isMultiplayer)) then {[] spawn PABST_fnc_safeStart;}; 
 
 sleep 30; 
 cutText ["Server Initialized. Free to move.", "PLAIN"];
