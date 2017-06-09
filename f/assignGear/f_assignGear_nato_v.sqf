@@ -196,7 +196,6 @@
 		_unit addMagazineCargoGlobal [_mgrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addItemCargoGlobal [_firstaid, 6];
     };
 
 // CRATE: Medium, ammo for 1 squad
@@ -217,7 +216,6 @@
 		_unit addMagazineCargoGlobal [_mgrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
-		_unit addItemCargoGlobal [_firstaid, 25];
     };
 
 // CRATE: Large, ammo for 1 platoon
@@ -238,5 +236,4 @@
 		_unit addMagazineCargoGlobal [_mgrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
-		_unit addItemCargoGlobal [_firstaid, 75];
     };
