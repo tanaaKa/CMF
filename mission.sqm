@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1274;
+		nextID=1276;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1573.1327,106.19688,632.84454};
-		dir[]={0.18361206,-0.62862492,0.75587875};
-		up[]={0.1483963,0.77757776,0.61092764};
-		aside[]={0.97177064,-1.1275988e-006,-0.23605211};
+		pos[]={1486.4874,124.38637,774.72009};
+		dir[]={-0.050260566,-0.62686616,0.77765661};
+		up[]={-0.040440291,0.77899003,0.62563074};
+		aside[]={0.99794704,-1.6013073e-006,0.064501733};
 	};
 };
 binarizationWanted=0;
@@ -67,13 +67,14 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_01",
 	"ace_cargo",
 	"A3_Soft_F_Gamma_Truck_02",
-	"A3_Supplies_F_Heli_CargoNets"
+	"A3_Supplies_F_Heli_CargoNets",
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=35;
 		class Item0
 		{
 			className="DS_OBE_Layer";
@@ -310,6 +311,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item34
+		{
+			className="A3_Data_F_Exp_A";
+			name="Arma 3 Nexus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 class DynamicSimulation
@@ -346,24 +354,252 @@ class CustomAttributes
 		name="potato_briefing_briefings";
 		class Attribute0
 		{
+			property="potato_briefing_briefEastSituation";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="potato_briefing_zeusIntent";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="potato_briefing_briefCivilianSituation";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="potato_briefing_briefWestMission";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="potato_briefing_briefIndependentAdministration";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute5
+		{
 			property="potato_briefing_briefWestSituation";
 			expression="false";
 			class Value
 			{
 				class data
 				{
+					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"STRING"
+							"ANY"
 						};
 					};
-					value="TESTETSTETST";
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute6
+		{
+			property="potato_briefing_briefEastAdministration";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="potato_briefing_briefIndependentMission";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="potato_briefing_briefWestAdministration";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="potato_briefing_briefIndependentSituation";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="potato_briefing_briefCivilianMission";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="potato_briefing_briefEastMission";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute12
+		{
+			property="potato_briefing_briefCivilianAdministration";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					nil=1;
+					class type
+					{
+						type[]=
+						{
+							"ANY"
+						};
+					};
+				};
+			};
+		};
+		nAttributes=13;
 	};
 	class Category1
 	{
@@ -970,7 +1206,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=148;
+		items=149;
 		class Item0
 		{
 			dataType="Object";
@@ -22718,6 +22954,118 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item148
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1484.905,5,1048.094};
+			};
+			name="ccamera";
+			init="[] call BIS_fnc_cameraOld;";
+			isPlayable=1;
+			description="Combat Camera";
+			id=1275;
+			type="VirtualSpectator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};

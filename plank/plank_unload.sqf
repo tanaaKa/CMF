@@ -33,6 +33,11 @@ switch (_type) do
 		[_caller, [1, 1, 4, 1, 4, 4, 4, 1, 2]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading PL Supplies";
 	};
+	case "rif":
+	{
+		[_caller, [0, 0, 3, 0, 2, 1, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
+		hint "Unloading Rifleman Supplies";
+	};
 /*	case "_____":
 	{
 		[_caller, [1, 1, 1, 1, 1, 1, 1, 1]] call plank_api_fnc_forceAddFortifications;
