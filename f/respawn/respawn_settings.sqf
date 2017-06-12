@@ -27,7 +27,7 @@
 // Format: AssignGear Role, GUI Display Name
 // Group name, SR net, LR net
 respawnMenuGroupNames = [
-  ["",1,1,UNK,WHITE],
+  ["REINFORCEMENTS",1,1,INF,WHITE],
   ["PLT",1,4,HQ,YEL],
   ["ASL",13,1,HQ,RED],
   ["A1",1,1,INF,RED],
