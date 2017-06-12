@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1486.4874,124.38637,774.72009};
-		dir[]={-0.050260566,-0.62686616,0.77765661};
-		up[]={-0.040440291,0.77899003,0.62563074};
-		aside[]={0.99794704,-1.6013073e-006,0.064501733};
+		pos[]={1506.6628,149.60008,644.01215};
+		dir[]={-0.0043979324,-0.69161403,0.72241426};
+		up[]={-0.0042155813,0.72213417,0.69164479};
+		aside[]={1.0000072,-2.1005617e-006,0.0060914569};
 	};
 };
 binarizationWanted=0;
@@ -2148,6 +2148,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -2165,7 +2184,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -2210,6 +2248,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2227,7 +2284,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2246,7 +2303,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -2258,25 +2334,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="BLU ASL";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="acex_headless_blacklist";
 					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
@@ -2295,7 +2352,45 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU ASL -";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							nil=1;
+							class type
+							{
+								type[]=
+								{
+									"ANY"
+								};
+							};
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item22
