@@ -56,6 +56,7 @@ switch (_typeofUnit) do
 	case "ftl":
 	{
 		_unit addBackpack _bag;
+		_unit additem "ACRE_PRC152";
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 3];
 		_unit addweapon _glrifle;
@@ -71,12 +72,13 @@ switch (_typeofUnit) do
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadegreen, 2];
-		_unit additemtovest "ACRE_PRC152";
 	};
 // Squad Leader / DC Loadout:
 	case "dc":
 	{
 		_unit addBackpack _bag;
+		_unit additem "ACRE_PRC152";
+		_unit additem "ACRE_PRC148";
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 1];
 		_unit addweapon _glrifle;
@@ -94,8 +96,6 @@ switch (_typeofUnit) do
 		_attachments pushback (_attach1); // Adds laser pointer, keeps default scope
 		_unit addWeapon "Binocular";
 		_unit addmagazines [_smokegrenadepurple, 2];
-		_unit additemtovest "ACRE_PRC152";
-		_unit additemtovest "ACRE_PRC148";
 	};
 // Platoon CO Loadout:
 	case "co":
