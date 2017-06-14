@@ -146,6 +146,14 @@ class CfgDebriefingSections {
 // ACE Settings
 
 class ACE_Settings {
+	class potato_markers_groupAndUnitEnabled {
+		typeName = "BOOL";
+		value = 1;
+	};
+	class potato_markers_intraFireteamEnabled {
+		typeName = "BOOL";
+		value = 0;
+	};
 	class potato_safeStart_enabled {
 		typeName = "BOOL";
 		value = 1;

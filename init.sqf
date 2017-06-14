@@ -20,7 +20,7 @@ f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 
 // ====================================================================================
 // Group Map Markers
-f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
+//f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
 
 // ====================================================================================
 // F3 - Briefing
