@@ -28,10 +28,6 @@ f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf"
 f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
-// Briefing ORBAT
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// ====================================================================================
 // Briefing Loadout
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 

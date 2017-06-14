@@ -54,11 +54,20 @@ class CfgFunctions {
 class Extended_InitPost_EventHandlers {
   class Car 
   {
-    class cmf_nothermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class cmf_nothermals { 
+	init = "(_this select 0) disableTIEquipment true;"; 
+	};
   };
   class Tank
   {
-    class cmf_nothermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class cmf_nothermals { 
+	init = "(_this select 0) disableTIEquipment true;"; 
+	};
+  };
+  class Helicopter {
+    class cmf_nothermals { 
+	init = "(_this select 0) disableTIEquipment true;"; 
+	};
   };
 };
 
@@ -137,6 +146,14 @@ class CfgDebriefingSections {
 // ACE Settings
 
 class ACE_Settings {
+	class potato_safeStart_enabled {
+		typeName = "BOOL";
+		value = 1;
+	};
+	class potato_briefing_brief_addOrbat {
+		typeName = "BOOL";
+		value = 1;
+	};
     class ace_frag_maxTrack {
         typeName = "SCALAR";
         value = 2;
