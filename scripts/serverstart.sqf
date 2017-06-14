@@ -8,12 +8,15 @@
 */
 
 cutText ["Initializing. Do not move.", "BLACK IN", 30]; 										
-[true] call potato_safeStart_fnc_toggleSafeStart;
-
 
 sleep 30; 
 cutText ["Server Initialized. Free to move.", "PLAIN"];
-
 sleep 5;
 
-["<t color='#FFFFFF' size = '.8'>**Mission Title**<br />**By Author**</t>",1,1,7,1,0] spawn BIS_fnc_dynamicText;
+[
+    [
+        ["MISSION NAME", "<t align = 'center' shadow = '1' size = '0.9'>%1</t><br/>",5],
+        ["By: Author","<t align = 'center' shadow = '1' size = '0.6'>%1</t><br/>",5],
+         [format ["%3/%2/%1 %4:%5",date select 0, date select 1, date select 2,date select 3, date select 4],"<t align = 'center' shadow = '1' size = '0.4'>%1</t>",10]
+    ] , 1, 1.05
+] spawn BIS_fnc_typeText;
