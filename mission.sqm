@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1336.7773,34.580933,753.18658};
-		dir[]={0.063913144,-0.75972289,0.64727587};
-		up[]={0.074651547,0.6500833,0.75607985};
-		aside[]={0.99516535,-3.2418757e-006,-0.098262385};
+		pos[]={1457.9891,98.898582,642.39014};
+		dir[]={0.014031491,-0.55807894,0.82980925};
+		up[]={0.0094331056,0.82958966,0.55814266};
+		aside[]={0.99986112,-2.6846574e-006,-0.016904833};
 	};
 };
 binarizationWanted=0;
@@ -1198,7 +1198,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=150;
+		items=149;
 		class Item0
 		{
 			dataType="Object";
@@ -1773,7 +1773,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="[""co"",this] call f_fnc_assignGear; this allowdamage false;";
+						init="[""co"",this] call f_fnc_assignGear;";
 						name="UnitNATO_PL";
 						description=" Platoon Leader";
 						isPlayable=1;
@@ -26628,96 +26628,6 @@ class Mission
 			description="Combat Camera";
 			id=1276;
 			type="VirtualCurator_F";
-		};
-		class Item149
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1338.053,5.0014391,788.62799};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=1279;
-					type="O_Soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1277;
 		};
 	};
 };
