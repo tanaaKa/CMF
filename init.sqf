@@ -72,3 +72,7 @@ call compile preprocessFileLineNumbers "plank\plank_init.sqf";
 //Tao Settings
 tao_foldmap_changePermitted = false;
 tao_foldmap_alternateDrawPaper = true;
+
+// ====================================================================================	
+// tanaKa's inventory clear script (on death)
+[] execVM "scripts\removegear.sqf";
