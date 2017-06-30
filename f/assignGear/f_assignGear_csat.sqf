@@ -338,8 +338,7 @@ if (_isMan) then {
 	_unit linkItem "ItemCompass";					// Add and equip a compass
 	_unit linkItem "ItemRadio";						// Add and equip A3's default radio
 	_unit linkItem "ItemWatch";						// Add and equip a watch
-	_unit linkItem "ItemGPS"; 						// Add and equip a GPS
-	_unit additemtobackpack "ACE_Flashlight_XL50"; 	// Add a map flashlight
+	_unit additem "ACE_Flashlight_XL50"; 	// Add a map flashlight
 };
 
 // ====================================================================================
