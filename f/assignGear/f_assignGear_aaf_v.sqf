@@ -207,7 +207,8 @@
 		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_glmag, 20];
 		_unit addMagazineCargoGlobal [_glsmokewhite,16];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
+		_unit addMagazineCargoGlobal [_rat, 3];
+		_unit addMagazineCargoGlobal [_ratmag, 3];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_mgrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
