@@ -29,8 +29,6 @@
       <Key ID="STR_f_mapClickHALODone">
         <English> Open at 200m! </English>
       </Key>
-      <Key ID="STR_f_JIP_reinforcementOptionsAction">
-        <English> Select Reinforcement Options </English>
       </Key>
     </Container>
   </Package>

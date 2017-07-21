@@ -19,6 +19,7 @@ KitPickInit =
     _idx = COMBO lbAdd "Fire Team Leader"; COMBO lbSetData [_idx, "ftl"];
     _idx = COMBO lbAdd "Automatic Rifleman"; COMBO lbSetData [_idx, "ar"];
     _idx = COMBO lbAdd "Asst. Automatic Rifleman"; COMBO lbSetData [_idx, "aar"];
+	_idx = COMBO lbAdd "Grenadier"; COMBO lbSetData [_idx, "gren"];
     _idx = COMBO lbAdd "Rifleman (AT)"; COMBO lbSetData [_idx, "rat"];
     COMBO lbAdd "----";
 

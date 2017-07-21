@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1458.5764,92.699722,688.51276};
-		dir[]={0.017507965,-0.73786265,0.67488796};
-		up[]={0.019133503,0.67472374,0.73766977};
-		aside[]={0.99965841,-2.3660759e-006,-0.025932664};
+		pos[]={1489.2177,209.63406,502.12827};
+		dir[]={-0.0033189761,-0.53069907,0.84756166};
+		up[]={-0.002085099,0.84755498,0.53070629};
+		aside[]={1.0000018,5.8234546e-006,0.0039189267};
 	};
 };
 binarizationWanted=0;
@@ -32639,15 +32639,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1486.3298,5.0014391,735.81964};
-						angles[]={0,0.0019730027,0};
+						position[]={1486.33,5.0014391,735.82001};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -32656,6 +32656,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -32674,7 +32712,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -32683,6 +32721,29 @@ class Mission
 				name="GrpAAF_A2_5";
 			};
 			id=1170;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item115
 		{
@@ -32890,15 +32951,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1332.6594,5.0014391,743.16101};
-						angles[]={0,6.2821393,0};
+						position[]={1332.6591,5.0014391,743.16101};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -32907,6 +32968,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -32925,7 +33024,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -32934,6 +33033,48 @@ class Mission
 				name="GrpNATO_A2_1";
 			};
 			id=1178;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP8";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item119
 		{
@@ -32947,15 +33088,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1335.5796,5.0014391,743.13409};
-						angles[]={0,6.2821393,0};
+						position[]={1335.58,5.0014391,743.13397};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -32964,6 +33105,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -32982,7 +33161,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -32991,6 +33170,48 @@ class Mission
 				name="GrpNATO_A2_2";
 			};
 			id=1180;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP7";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item120
 		{
@@ -33004,15 +33225,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1338.1273,5.0014391,743.31177};
-						angles[]={0,6.2821393,0};
+						position[]={1338.127,5.0014391,743.31201};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33021,6 +33242,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33039,7 +33298,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -33048,6 +33307,48 @@ class Mission
 				name="GrpNATO_A2_3";
 			};
 			id=1182;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP6";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item121
 		{
@@ -33061,15 +33362,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1340.8334,5.0014391,743.19556};
-						angles[]={0,6.2821393,0};
+						position[]={1340.833,5.0014391,743.19598};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33078,6 +33379,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33096,7 +33435,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -33105,6 +33444,48 @@ class Mission
 				name="GrpNATO_A2_4";
 			};
 			id=1184;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item122
 		{
@@ -33118,15 +33499,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1342.9945,5.0014391,743.07086};
-						angles[]={0,6.2821393,0};
+						position[]={1342.995,5.0014391,743.07098};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.28169879;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33135,6 +33516,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33153,7 +33572,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -33162,6 +33581,48 @@ class Mission
 				name="GrpNATO_A2_5";
 			};
 			id=1186;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP4";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item123
 		{
@@ -33175,15 +33636,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1345.6813,5.0014391,743.33362};
-						angles[]={0,6.2821393,0};
+						position[]={1345.681,5.0014391,743.33398};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33192,6 +33653,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33210,7 +33709,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -33219,6 +33718,48 @@ class Mission
 				name="GrpNATO_A2_6";
 			};
 			id=1188;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP3";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item124
 		{
@@ -33232,15 +33773,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1348.3363,5.0014391,743.30243};
-						angles[]={0,6.2821393,0};
+						position[]={1348.3361,5.0014391,743.302};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33249,6 +33790,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33267,7 +33846,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -33276,6 +33855,48 @@ class Mission
 				name="GrpNATO_A2_7";
 			};
 			id=1190;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BLU JIP2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item125
 		{
@@ -33289,8 +33910,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1350.9045,5.0014391,743.06012};
-						angles[]={0,6.2821393,0};
+						position[]={1350.905,5.0014391,743.06};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -33298,7 +33919,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];";
+						init="call{this disableAI ""MOVE""; this addaction [""<t color=""""#dddd00"""">"" +""JIP Menu"",""f\JIP\f_JIP_reinforcementOptions.sqf"",[],6,true,false,"""",""_target == player""];}";
 						description="JIP Slot";
 						isPlayable=1;
 					};
@@ -33307,6 +33928,44 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -33325,13 +33984,12 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
 			class Attributes
 			{
-				init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 			};
 			id=1192;
 			class CustomAttributes
@@ -33351,11 +34009,30 @@ class Mission
 									"STRING"
 								};
 							};
-							value="jip1";
+							value="BLU JIP1";
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item126
