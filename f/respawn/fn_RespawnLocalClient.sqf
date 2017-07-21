@@ -67,7 +67,6 @@ if (_leader) then {
   [_typeOfUnit,_newUnit] call f_fnc_assignGear;
   _newUnit setSpeaker "NoVoice";
   hintC format ["You have respawned as the leader of %1.",_newGroup];
-  
   publicVariable _groupVarName;
 }
 else {

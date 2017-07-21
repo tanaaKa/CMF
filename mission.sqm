@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1290;
+		nextID=1475;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1376.426,136.89346,636.61072};
-		dir[]={0.0090622474,-0.8213554,0.57054007};
-		up[]={0.013039657,0.57023525,0.8212629};
-		aside[]={0.9998731,-3.3514407e-006,-0.015878847};
+		pos[]={1433.9253,183.67061,633.39636};
+		dir[]={-0.00079327804,-0.72070849,0.69339764};
+		up[]={-0.00082774344,0.69300812,0.72077304};
+		aside[]={0.99999398,-2.351529e-006,0.0011445574};
 	};
 };
 binarizationWanted=0;
@@ -2206,8 +2206,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1319.114,5.0014391,784.71899};
-						angles[]={0,6.2821379,0};
+						position[]={1312.3944,5.0014391,781.44604};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -2346,8 +2346,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1324.1147,5.0014391,783.07471};
-						angles[]={0,6.2821393,0};
+						position[]={1317.3951,5.0014391,779.80176};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -2554,14 +2554,14 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1320.048,5.0014391,774.24799};
-						angles[]={0,6.2821379,0};
+						position[]={1313.3284,5.0014391,770.97504};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -2700,8 +2700,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1325.05,5.0014391,772.60297};
-						angles[]={0,6.2821379,0};
+						position[]={1318.3304,5.0014391,769.33002};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -2751,7 +2751,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -2839,8 +2839,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1315.05,5.0014391,772.59198};
-						angles[]={0,6.2821379,0};
+						position[]={1308.3304,5.0014391,769.31903};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -2890,7 +2890,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -2978,7 +2978,106 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1330.053,5.0014391,769.86896};
+						position[]={1304.297,5.0014391,766.815};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_A1_GR";
+						description=" Alpha 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1320;
+					type="B_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1323.333,5.0014391,766.59601};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -3029,7 +3128,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="GREEN";
 								};
 							};
 						};
@@ -3112,6 +3211,105 @@ class Mission
 						nAttributes=6;
 					};
 				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1300.512,5.0014391,765.271};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_A1_AT2";
+						description=" Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1321;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -3186,14 +3384,14 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1319.703,5.0014391,762.32397};
-						angles[]={0,6.2821379,0};
+						position[]={1312.9834,5.0014391,759.05103};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -3332,8 +3530,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1324.705,5.0014391,760.67798};
-						angles[]={0,6.2821379,0};
+						position[]={1317.9854,5.0014391,757.40503};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -3383,7 +3581,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -3471,7 +3669,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1314.705,5.0014391,760.66797};
+						position[]={1307.985,5.0014391,757.39496};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -3484,8 +3682,8 @@ class Mission
 						description=" Alpha 2 AAR";
 						isPlayable=1;
 					};
-					id=217;
-					type="B_soldier_AR_F";
+					id=1323;
+					type="B_soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3522,7 +3720,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -3610,7 +3808,285 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1329.708,5.0014391,757.94501};
+						position[]={1303.774,5.0014391,755.67596};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_AR3";
+						description=" Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1297;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1300.225,5.0014391,753.79596};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_AR4";
+						description=" Alpha 2 AAR";
+						isPlayable=1;
+					};
+					id=1322;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1322.988,5.0014391,754.672};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -3661,7 +4137,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="GREEN";
 								};
 							};
 						};
@@ -4115,7 +4591,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -4312,7 +4788,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -4451,7 +4927,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -4539,8 +5015,107 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1350.1558,5.0014391,767.88989};
-						angles[]={0,6.2821393,0};
+						position[]={1331.491,5.0014391,768.12097};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_B1_GR";
+						description=" Bravo 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1326;
+					type="B_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1350.156,5.0014391,767.89001};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -4583,14 +5158,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="GREEN";
 								};
 							};
 						};
@@ -4640,14 +5215,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"BOOL"
 										};
 									};
+									value=1;
 								};
 							};
 						};
@@ -4659,18 +5234,117 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
 						nAttributes=6;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1328.1479,5.0014391,766.19501};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_B1_AT2";
+						description=" Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1327;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -4747,7 +5421,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -4944,7 +5618,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -5045,8 +5719,8 @@ class Mission
 						description=" Bravo 2 AAR";
 						isPlayable=1;
 					};
-					id=238;
-					type="B_soldier_AR_F";
+					id=1325;
+					type="B_soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5083,7 +5757,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -5171,8 +5845,286 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1349.4232,5.0014391,755.96515};
-						angles[]={0,6.2821393,0};
+						position[]={1331.426,5.0014391,756.68701};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_AR3";
+						description=" Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1306;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1327.887,5.0014391,754.26996};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_AR4";
+						description=" Bravo 2 AAR";
+						isPlayable=1;
+					};
+					id=1324;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1349.423,5.0014391,755.96497};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -5215,14 +6167,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="GREEN";
 								};
 							};
 						};
@@ -5272,14 +6224,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"BOOL"
 										};
 									};
+									value=1;
 								};
 							};
 						};
@@ -5291,14 +6243,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -5385,8 +6337,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1357.881,5.0014391,780.02197};
-						angles[]={0,6.2821379,0};
+						position[]={1364.0894,5.0014391,781.26593};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -5468,8 +6420,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1362.8817,5.0014391,778.37921};
-						angles[]={0,6.2821393,0};
+						position[]={1369.0901,5.0014391,779.62317};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -5619,14 +6571,14 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1358.88,5.0014391,768.56299};
-						angles[]={0,6.2821379,0};
+						position[]={1365.0884,5.0014391,769.80695};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -5765,8 +6717,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1363.882,5.0014391,766.91797};
-						angles[]={0,6.2821379,0};
+						position[]={1370.0903,5.0014391,768.16193};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -5816,7 +6768,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -5904,7 +6856,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1353.882,5.0014391,766.90796};
+						position[]={1360.09,5.0014391,768.15198};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -5955,7 +6907,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -6043,8 +6995,107 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1368.8845,5.0014391,764.18451};
-						angles[]={0,6.2821393,0};
+						position[]={1356.918,5.0014391,766.36499};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_C1_GR";
+						description=" Charlie  1 Grenadier";
+						isPlayable=1;
+					};
+					id=1311;
+					type="B_Soldier_lite_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1375.093,5.0014391,765.42902};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -6087,14 +7138,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="GREEN";
 								};
 							};
 						};
@@ -6144,14 +7195,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -6163,18 +7214,117 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
 						nAttributes=6;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1353.978,5.0014391,765.20099};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitNATO_C1_AT2";
+						description=" Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1345;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -6251,14 +7401,14 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1359.015,5.0014391,756.76599};
-						angles[]={0,6.2821379,0};
+						position[]={1365.2234,5.0014391,758.00995};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -6397,8 +7547,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1364.017,5.0014391,755.12097};
-						angles[]={0,6.2821379,0};
+						position[]={1370.2253,5.0014391,756.36493};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -6448,7 +7598,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -6536,7 +7686,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1354.017,5.0014391,755.11096};
+						position[]={1360.225,5.0014391,756.35498};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -6549,8 +7699,8 @@ class Mission
 						description=" Charlie 2 AAR";
 						isPlayable=1;
 					};
-					id=259;
-					type="B_soldier_AR_F";
+					id=1370;
+					type="B_soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6587,7 +7737,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -6675,8 +7825,286 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1369.02,5.0014391,752.38763};
-						angles[]={0,6.2821393,0};
+						position[]={1357.0601,5.0014391,755.24097};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_AR3";
+						description=" Charlie  2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1316;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1354.23,5.0014391,754.505};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_AR4";
+						description=" Charlie  2 AAR";
+						isPlayable=1;
+					};
+					id=1344;
+					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1375.228,5.0014391,753.63196};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -6719,14 +8147,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="GREEN";
 								};
 							};
 						};
@@ -6776,14 +8204,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -6795,14 +8223,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -6889,8 +8317,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1375.604,5.0014391,781.19299};
-						angles[]={0,6.2821379,0};
+						position[]={1380.0665,5.0014391,780.58514};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -6972,8 +8400,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1380.6058,5.0014391,779.54816};
-						angles[]={0,6.2821393,0};
+						position[]={1385.0684,5.0014391,778.94031};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -7110,8 +8538,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1375.652,5.0014391,774.83698};
-						angles[]={0,6.2821379,0};
+						position[]={1380.1145,5.0014391,774.22913};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -7193,8 +8621,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1380.6538,5.0014772,773.19177};
-						angles[]={0,6.2821393,0};
+						position[]={1385.1163,5.0014772,772.58392};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -7313,8 +8741,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1375.682,5.0014391,768.31};
-						angles[]={0,6.2821379,0};
+						position[]={1380.1445,5.0014391,767.70215};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -7396,8 +8824,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1380.6842,5.0015001,766.66437};
-						angles[]={0,6.2821393,0};
+						position[]={1385.1467,5.0015001,766.05652};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -7516,8 +8944,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1376.137,5.0014391,762.14398};
-						angles[]={0,6.2821379,0};
+						position[]={1380.5995,5.0014391,761.53613};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -7599,8 +9027,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.1379,5.0014391,760.49896};
-						angles[]={0,6.2821379,0};
+						position[]={1385.6005,5.0014391,759.89111};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -7757,8 +9185,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1376.234,5.0014391,756.073};
-						angles[]={0,6.2821379,0};
+						position[]={1380.6965,5.0014391,755.46515};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -7840,8 +9268,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.236,5.0014391,754.42798};
-						angles[]={0,6.2821379,0};
+						position[]={1385.6985,5.0014391,753.82013};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -7997,8 +9425,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1376.3409,5.0014391,750.10602};
-						angles[]={0,6.2821379,0};
+						position[]={1380.8035,5.0014391,749.49817};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -8080,8 +9508,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.343,5.0014391,748.461};
-						angles[]={0,6.2821379,0};
+						position[]={1385.8055,5.0014391,747.85315};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -8238,7 +9666,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1376.59,5.3294392,744.05896};
+						position[]={1381.0525,5.3294392,743.45111};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -8322,7 +9750,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.592,5.3684392,742.414};
+						position[]={1386.0546,5.3684392,741.80615};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -8481,7 +9909,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1376.609,5.4464393,738.383};
+						position[]={1381.0715,5.4464393,737.77515};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -8565,7 +9993,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.611,5.522439,736.737};
+						position[]={1386.0735,5.522439,736.12915};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -8724,8 +10152,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1378.6021,5.0014391,728.46399};
-						angles[]={0,6.2821379,0};
+						position[]={1383.0646,5.0014391,727.85614};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -8826,8 +10254,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1383.6038,5.0014391,726.81787};
-						angles[]={0,6.2821393,0};
+						position[]={1388.0663,5.0014391,726.21002};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -8927,8 +10355,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1373.6038,5.0014391,726.80743};
-						angles[]={0,6.2821393,0};
+						position[]={1378.0663,5.0014391,726.19958};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -9028,8 +10456,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1388.6066,5.0014391,724.08411};
-						angles[]={0,6.2821393,0};
+						position[]={1393.0691,5.0014391,723.47626};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -11017,8 +12445,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1604.573,5.0014391,781.51099};
-						angles[]={0,0.00099483761,0};
+						position[]={1596.7795,5.0014391,781.22119};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -11101,8 +12529,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1609.5713,5.0014391,779.85547};
-						angles[]={0,0.00099769956,0};
+						position[]={1601.7778,5.0014391,779.56567};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -11253,14 +12681,14 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1604.412,5.0014391,770.263};
-						angles[]={0,0.00099483761,0};
+						position[]={1596.6185,5.0014391,769.97321};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -11269,7 +12697,7 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="[""FTL"",this] call f_fnc_assignGear;  this assignteam ""blue"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A1_FTL";
 						description=" Alpha 1 Fire Team Leader@Alpha 1";
 						isPlayable=1;
@@ -11343,8 +12771,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1609.41,5.0014391,768.60864};
-						angles[]={0,0.00099769956,0};
+						position[]={1601.6166,5.0014391,768.31921};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -11352,7 +12780,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A1_AR1";
 						description=" Alpha 1 Automatic Rifleman";
 						isPlayable=1;
@@ -11388,14 +12816,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -11445,14 +12873,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -11464,14 +12892,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -11483,8 +12911,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1599.41,5.0014391,768.61859};
-						angles[]={0,0.00099769956,0};
+						position[]={1591.6169,5.0014391,768.32898};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -11492,13 +12920,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A1_AR2";
 						description=" Alpha 1 AAR";
 						isPlayable=1;
 					};
-					id=387;
-					type="O_Soldier_AR_F";
+					id=1447;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11528,14 +12956,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -11585,14 +13013,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -11604,14 +13032,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -11623,8 +13051,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1614.4072,5.0014391,765.86328};
-						angles[]={0,0.00099769956,0};
+						position[]={1586.609,5.0014391,766.35498};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A1_GR";
+						description=" Alpha 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1421;
+					type="O_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1581.899,5.0014391,763.58698};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A1_AT2";
+						description=" Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1423;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1606.614,5.0014391,765.573};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -11632,7 +13258,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A1_AT";
 						description=" Alpha 1 Rifleman (AT)";
 						isPlayable=1;
@@ -11662,6 +13288,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -11679,7 +13343,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -11756,14 +13420,14 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1605.208,5.0014391,756.93298};
-						angles[]={0,0.00099483761,0};
+						position[]={1597.4146,5.0014391,756.64319};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -11846,8 +13510,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1610.2068,5.0014391,755.27783};
-						angles[]={0,0.00099769956,0};
+						position[]={1602.4139,5.0014391,754.98798};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -11855,7 +13519,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A2_AR1";
 						description=" Alpha 2 Automatic Rifleman";
 						isPlayable=1;
@@ -11891,14 +13555,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -11948,14 +13612,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -11967,14 +13631,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -11986,8 +13650,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1600.2068,5.0014391,755.28778};
-						angles[]={0,0.00099769956,0};
+						position[]={1592.4139,5.0014391,754.99799};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -11995,13 +13659,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A2_AR2";
 						description=" Alpha 2 AAR";
 						isPlayable=1;
 					};
-					id=394;
-					type="O_Soldier_AR_F";
+					id=1451;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12031,14 +13695,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -12088,14 +13752,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -12107,14 +13771,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -12126,8 +13790,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1615.2041,5.0014391,752.5332};
-						angles[]={0,0.00099769956,0};
+						position[]={1587.234,5.0014391,753.09698};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A2_AR3";
+						description=" Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1425;
+					type="O_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1582.601,5.0014391,751.52399};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_A2_AR4";
+						description=" Alpha 2 AAR";
+						isPlayable=1;
+					};
+					id=1427;
+					type="O_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1607.411,5.0014391,752.24298};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -12135,7 +13997,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_A2_AT";
 						description=" Alpha 2 Rifleman (AT)";
 						isPlayable=1;
@@ -12165,6 +14027,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -12182,7 +14082,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -12501,7 +14401,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -12591,8 +14491,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1629.6808,5.0014391,766.24841};
-						angles[]={0,0.00099769956,0};
+						position[]={1629.681,5.0014391,766.24799};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -12600,7 +14500,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B1_AR1";
 						description=" Bravo 1 Automatic Rifleman";
 						isPlayable=1;
@@ -12636,14 +14536,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -12693,14 +14593,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -12712,14 +14612,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -12731,8 +14631,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1619.6808,5.0014391,766.25842};
-						angles[]={0,0.00099769956,0};
+						position[]={1619.681,5.0014391,766.258};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -12740,13 +14640,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B1_AR2";
 						description=" Bravo 1 AAR";
 						isPlayable=1;
 					};
-					id=408;
-					type="O_Soldier_AR_F";
+					id=1457;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12776,14 +14676,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -12833,14 +14733,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -12852,14 +14752,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -12871,8 +14771,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1634.6775,5.0014391,763.50208};
-						angles[]={0,0.00099769956,0};
+						position[]={1616.686,5.0014391,765.21301};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B1_GR";
+						description=" Bravo 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1429;
+					type="O_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1611.976,5.0014391,762.44501};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B1_AT2";
+						description=" Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1431;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1634.677,5.0014391,763.50201};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -12880,7 +14978,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B1_AT";
 						description=" Bravo 1 Rifleman (AT)";
 						isPlayable=1;
@@ -12910,6 +15008,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -12927,7 +15063,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -13004,7 +15140,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -13094,8 +15230,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1629.7773,5.0014391,752.86731};
-						angles[]={0,0.00099769956,0};
+						position[]={1629.777,5.0014391,752.867};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -13103,7 +15239,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B2_AR1";
 						description=" Bravo 2 Automatic Rifleman";
 						isPlayable=1;
@@ -13139,14 +15275,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -13196,14 +15332,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -13215,14 +15351,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -13234,8 +15370,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1619.7773,5.0014391,752.87726};
-						angles[]={0,0.00099769956,0};
+						position[]={1619.777,5.0014391,752.87701};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -13243,13 +15379,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B2_AR2";
 						description=" Bravo 2 AAR";
 						isPlayable=1;
 					};
-					id=415;
-					type="O_Soldier_AR_F";
+					id=1466;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13279,14 +15415,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -13336,14 +15472,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -13355,14 +15491,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -13374,8 +15510,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1634.7743,5.0014391,750.12268};
-						angles[]={0,0.00099769956,0};
+						position[]={1617.312,5.0014391,751.95502};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B2_AR3";
+						description=" Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1433;
+					type="O_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1612.678,5.0014391,750.38196};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_B2_AR4";
+						description=" Bravo 2 AAR";
+						isPlayable=1;
+					};
+					id=1435;
+					type="O_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1634.774,5.0014391,750.12299};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -13383,7 +15717,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_B2_AT";
 						description=" Bravo 2 Rifleman (AT)";
 						isPlayable=1;
@@ -13413,6 +15747,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -13430,7 +15802,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -13513,8 +15885,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1644.328,5.0014391,778.74097};
-						angles[]={0,0.00099483761,0};
+						position[]={1656.9034,5.0014391,777.61737};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -13597,8 +15969,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1649.3265,5.0014391,777.08582};
-						angles[]={0,0.00099769956,0};
+						position[]={1661.902,5.0014391,775.96222};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -13749,14 +16121,14 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1643.9041,5.0014391,766.85297};
-						angles[]={0,0.00099483761,0};
+						position[]={1656.4795,5.0014391,765.72937};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -13839,8 +16211,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1648.9027,5.0014391,765.1972};
-						angles[]={0,0.00099769956,0};
+						position[]={1661.478,5.0014391,764.073};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -13848,7 +16220,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_C1_AR1";
 						description=" Charlie 1 Automatic Rifleman";
 						isPlayable=1;
@@ -13884,14 +16256,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -13941,14 +16313,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -13960,14 +16332,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -13979,8 +16351,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1638.9027,5.0014391,765.20721};
-						angles[]={0,0.00099769956,0};
+						position[]={1651.478,5.0014391,764.08301};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -13988,13 +16360,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_C1_AR2";
 						description=" Charlie 1 AAR";
 						isPlayable=1;
 					};
-					id=429;
-					type="O_Soldier_AR_F";
+					id=1474;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14024,14 +16396,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -14081,14 +16453,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -14100,14 +16472,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -14119,8 +16491,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1653.8997,5.0014391,762.45294};
-						angles[]={0,0.00099769956,0};
+						position[]={1647.256,5.0014391,762.20001};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C1_GR";
+						description=" Charlie 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1437;
+					type="O_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1642.546,5.0014391,759.43201};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C1_AT2";
+						description=" Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1439;
+					type="O_Soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1666.475,5.0014391,761.32898};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -14158,6 +16728,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -14175,7 +16783,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -14252,14 +16860,14 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1644.215,5.0014391,753.83398};
-						angles[]={0,0.00099483761,0};
+						position[]={1656.7904,5.0014391,752.71039};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -14342,8 +16950,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1649.2137,5.0014391,752.17889};
-						angles[]={0,0.00099769956,0};
+						position[]={1661.7889,5.0014391,751.05499};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -14351,7 +16959,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_C2_AR1";
 						description=" Charlie 2 Automatic Rifleman";
 						isPlayable=1;
@@ -14387,14 +16995,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -14444,14 +17052,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -14463,14 +17071,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -14482,8 +17090,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1639.2137,5.0014391,752.1889};
-						angles[]={0,0.00099769956,0};
+						position[]={1651.7889,5.0014391,751.065};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -14491,13 +17099,13 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitCSAT_C2_AR2";
 						description=" Charlie 2 AAR";
 						isPlayable=1;
 					};
-					id=436;
-					type="O_Soldier_AR_F";
+					id=1473;
+					type="O_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14527,14 +17135,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -14584,14 +17192,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -14603,14 +17211,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -14622,8 +17230,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1654.2107,5.0014391,749.43433};
-						angles[]={0,0.00099769956,0};
+						position[]={1647.882,5.0014391,748.94202};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C2_AR3";
+						description=" Charlie 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1441;
+					type="O_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1643.248,5.0014391,747.36896};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitCSAT_C2_AR4";
+						description=" Charlie 2 AAR";
+						isPlayable=1;
+					};
+					id=1443;
+					type="O_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1666.786,5.0014391,748.31097};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -14661,6 +17467,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -14678,7 +17522,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -14761,8 +17605,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1663.4351,5.0014391,785.58496};
-						angles[]={0,0.00099483761,0};
+						position[]={1675.4147,5.0014391,785.33905};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -14845,8 +17689,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1668.4333,5.0014391,783.92932};
-						angles[]={0,0.00099769956,0};
+						position[]={1680.413,5.0014391,783.68341};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -14984,8 +17828,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1663.079,5.0014391,778.37};
-						angles[]={0,0.00099483761,0};
+						position[]={1675.0586,5.0014391,778.12408};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -15068,8 +17912,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1668.077,5.0014391,776.7146};
-						angles[]={0,0.00099769956,0};
+						position[]={1680.0566,5.0014391,776.46869};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -15207,8 +18051,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1662.552,5.0014391,771.24298};
-						angles[]={0,0.00099483761,0};
+						position[]={1674.5316,5.0014391,770.99707};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -15290,8 +18134,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1667.5508,5.0014391,769.58728};
-						angles[]={0,0.00099769956,0};
+						position[]={1679.5304,5.0014391,769.34137};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -15447,8 +18291,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1662.65,5.0014391,763.125};
-						angles[]={0,0.00099483761,0};
+						position[]={1674.6296,5.0014391,762.87909};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -15530,8 +18374,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1667.6481,5.0014391,761.46936};
-						angles[]={0,0.00099769956,0};
+						position[]={1679.6277,5.0014391,761.22345};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -15668,8 +18512,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1662.478,5.0014391,754.36298};
-						angles[]={0,0.00099483761,0};
+						position[]={1674.4576,5.0014391,754.11707};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -15751,8 +18595,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1667.476,5.0014391,752.70801};
-						angles[]={0,0.00099483761,0};
+						position[]={1679.4556,5.0014391,752.4621};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -15908,8 +18752,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1661.988,5.0014391,745.93298};
-						angles[]={0,0.00099483761,0};
+						position[]={1673.9677,5.0014391,745.68707};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -15991,8 +18835,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1666.9871,5.0014391,744.27802};
-						angles[]={0,0.00099483761,0};
+						position[]={1678.9667,5.0014391,744.0321};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -16148,8 +18992,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1661.572,5.0014391,738.56299};
-						angles[]={0,0.00099483761,0};
+						position[]={1673.5516,5.0014391,738.31708};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -16231,8 +19075,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1666.571,5.0014391,736.90796};
-						angles[]={0,0.00099483761,0};
+						position[]={1678.5507,5.0014391,736.66205};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -16388,8 +19232,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1661.838,5.0014391,731.14197};
-						angles[]={0,0.00099483761,0};
+						position[]={1673.8176,5.0014391,730.89606};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -16471,8 +19315,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1666.837,5.0014391,729.48596};
-						angles[]={0,0.00099483761,0};
+						position[]={1678.8167,5.0014391,729.24005};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -16628,8 +19472,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1662.988,5.0014391,719.50598};
-						angles[]={0,0.00099483761,0};
+						position[]={1674.9677,5.0014391,719.26007};
+						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -16711,8 +19555,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1667.9874,5.0014391,717.8512};
-						angles[]={0,0.00099769956,0};
+						position[]={1679.967,5.0014391,717.60529};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -16812,8 +19656,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1657.9874,5.0014391,717.86115};
-						angles[]={0,0.00099769956,0};
+						position[]={1669.967,5.0014391,717.61523};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -16913,8 +19757,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1672.9847,5.0014391,715.1062};
-						angles[]={0,0.00099769956,0};
+						position[]={1684.9644,5.0014391,714.86029};
+						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -18806,8 +21650,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1460.9561,5.0014391,782.08301};
-						angles[]={0,0.001972222,0};
+						position[]={1456.1431,5.0014391,781.87805};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -18889,8 +21733,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1465.953,5.0014391,780.42297};
-						angles[]={0,0.0019730027,0};
+						position[]={1461.14,5.0014391,780.21802};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -19040,13 +21884,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1462.474,5.0014391,770.60999};
+						position[]={1457.661,5.0014391,770.40497};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -19055,7 +21899,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""FTL"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_A1_FTL";
 						description=" Alpha 1 Fire Team Leader@Alpha 1";
 						isPlayable=1;
@@ -19129,8 +21973,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1467.4702,5.0014391,768.95001};
-						angles[]={0,0.0019730027,0};
+						position[]={1462.657,5.0014391,768.74506};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -19173,14 +22017,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -19230,14 +22074,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value=",24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -19249,14 +22093,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -19268,21 +22112,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1457.4702,5.0014391,768.96973};
-						angles[]={0,0.0019730027,0};
+						position[]={1452.657,5.0014391,768.76501};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_A1_AR2";
 						description=" Alpha 1 AAR";
 						isPlayable=1;
 					};
-					id=550;
-					type="I_Soldier_AR_F";
+					id=1415;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19312,14 +22156,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -19369,14 +22213,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -19388,14 +22232,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -19407,8 +22251,107 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1472.4652,5.0014391,766.20233};
-						angles[]={0,0.0019730027,0};
+						position[]={1448.335,5.0014391,766.83997};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_A1_GR";
+						description=" Alpha 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1335;
+					type="I_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1467.652,5.0014391,765.99701};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -19445,6 +22388,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -19462,7 +22443,106 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1444.9771,5.0014391,765.43701};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_A1_AT2";
+						description=" Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1337;
+					type="I_Soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -19539,14 +22619,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1460.818,5.0014391,756.37897};
-						angles[]={0,0.001972222,0};
+						position[]={1456.005,5.0014391,756.17401};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -19628,8 +22708,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1465.8149,5.0014391,754.71802};
-						angles[]={0,0.001972222,0};
+						position[]={1461.002,5.0014391,754.51306};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -19679,7 +22759,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -19767,7 +22847,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1455.8149,5.0014391,754.73798};
+						position[]={1451.002,5.0014391,754.53296};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -19775,13 +22855,13 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_A2_AR2";
 						description=" Alpha 2 AAR";
 						isPlayable=1;
 					};
-					id=557;
-					type="I_Soldier_AR_F";
+					id=1383;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19818,7 +22898,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -19906,8 +22986,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1470.8093,5.0014391,751.96948};
-						angles[]={0,0.0019730027,0};
+						position[]={1447.8051,5.0014391,753.52496};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_A2_AR3";
+						description=" Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1347;
+					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1444.447,5.0014391,752.12201};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_A2_AR4";
+						description=" Alpha 2 AAR";
+						isPlayable=1;
+					};
+					id=1346;
+					type="I_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1465.996,5.0014391,751.76501};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -19944,6 +23222,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -19961,7 +23277,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -20278,7 +23594,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -20293,7 +23609,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""FTL"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B1_FTL";
 						description=" Bravo 1 Fire Team Leader@Bravo 1";
 						isPlayable=1;
@@ -20367,8 +23683,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1488.3149,5.0014391,767.24786};
-						angles[]={0,0.0019730027,0};
+						position[]={1488.3149,5.0014391,767.24799};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -20411,14 +23727,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -20468,14 +23784,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value=",24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -20487,14 +23803,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -20506,21 +23822,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1478.3149,5.0014391,767.26758};
-						angles[]={0,0.0019730027,0};
+						position[]={1478.3149,5.0014391,767.26801};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B1_AR2";
 						description=" Bravo 1 AAR";
 						isPlayable=1;
 					};
-					id=571;
-					type="I_Soldier_AR_F";
+					id=1416;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20550,14 +23866,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -20607,14 +23923,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -20626,14 +23942,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -20645,8 +23961,206 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1493.3096,5.0014391,764.49933};
-						angles[]={0,0.0019730027,0};
+						position[]={1475.053,5.0014391,765.508};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_B1_GR";
+						description=" Bravo 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1372;
+					type="I_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1471.6949,5.0014391,764.10498};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_B1_AT2";
+						description=" Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1373;
+					type="I_Soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1493.3101,5.0014391,764.49896};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -20683,6 +24197,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -20700,7 +24252,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -20777,7 +24329,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -20792,7 +24344,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""FTL"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B2_FTL";
 						description=" Bravo 2 Fire Team Leader@Bravo 2";
 						isPlayable=1;
@@ -20866,15 +24418,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1486.6049,5.0014391,752.54523};
-						angles[]={0,0.0019730027,0};
+						position[]={1486.605,5.0014391,752.54498};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B2_AR1";
 						description=" Bravo 2 Automatic Rifleman";
 						isPlayable=1;
@@ -20910,14 +24462,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -20967,14 +24519,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -20986,14 +24538,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -21005,21 +24557,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1476.6049,5.0014391,752.56494};
-						angles[]={0,0.0019730027,0};
+						position[]={1477.955,5.0014391,753.211};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B2_AR2";
 						description=" Bravo 2 AAR";
 						isPlayable=1;
 					};
-					id=578;
-					type="I_Soldier_AR_F";
+					id=1417;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21049,14 +24601,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -21106,14 +24658,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -21125,14 +24677,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -21144,15 +24696,213 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1491.5996,5.0014391,749.79559};
-						angles[]={0,0.0019730027,0};
+						position[]={1474.5229,5.0014391,752.19299};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_B2_AR3";
+						description=" Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1376;
+					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1471.165,5.0014391,750.78998};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_B2_AR4";
+						description=" Bravo 2 AAR";
+						isPlayable=1;
+					};
+					id=1375;
+					type="I_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1491.6,5.0014391,749.79596};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_B2_AT";
 						description=" Bravo 2 Rifleman (AT)";
 						isPlayable=1;
@@ -21182,6 +24932,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -21199,7 +24987,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -21282,8 +25070,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1501.675,5.0014391,778.24799};
-						angles[]={0,0.001972222,0};
+						position[]={1511.4412,5.0014391,778.29236};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -21365,8 +25153,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1506.6724,5.0014391,776.58765};
-						angles[]={0,0.0019730027,0};
+						position[]={1516.4385,5.0014391,776.63202};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -21516,13 +25304,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1502.912,5.0014391,765.74396};
+						position[]={1512.678,5.0014391,765.78796};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -21531,7 +25319,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""FTL"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C1_FTL";
 						description=" Charlie 1 Fire Team Leader@Charlie 1";
 						isPlayable=1;
@@ -21605,15 +25393,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1507.9087,5.0014391,764.08417};
-						angles[]={0,0.0019730027,0};
+						position[]={1517.675,5.0014391,764.12799};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C1_AR1";
 						description=" Charlie 1 Automatic Rifleman";
 						isPlayable=1;
@@ -21649,14 +25437,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -21706,14 +25494,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -21725,14 +25513,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -21744,21 +25532,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1497.9087,5.0014391,764.10394};
-						angles[]={0,0.0019730027,0};
+						position[]={1507.675,5.0014391,764.14801};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C1_AR2";
 						description=" Charlie 1 AAR";
 						isPlayable=1;
 					};
-					id=592;
-					type="I_Soldier_AR_F";
+					id=1418;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21788,14 +25576,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -21845,14 +25633,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -21864,14 +25652,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -21883,15 +25671,213 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1512.9038,5.0014391,761.33411};
-						angles[]={0,0.0019730027,0};
+						position[]={1504.324,5.0014391,763.414};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""gren"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_C1_GR";
+						description=" Charlie 1 Grenadier";
+						isPlayable=1;
+					};
+					id=1378;
+					type="I_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1500.9659,5.0014391,762.01099};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_C1_AT2";
+						description=" Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1379;
+					type="I_Soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1522.67,5.0014391,761.37799};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""blue"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C1_AT";
 						description=" Charlie 1 Rifleman (AT)";
 						isPlayable=1;
@@ -21921,6 +25907,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -21938,7 +25962,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -22015,13 +26039,13 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1501.201,5.0014391,752.396};
+						position[]={1510.967,5.0014391,752.44};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -22030,7 +26054,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""FTL"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""FTL"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C2_FTL";
 						description=" Charlie 2 Fire Team Leader@Charlie 2";
 						isPlayable=1;
@@ -22104,15 +26128,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1506.1984,5.0014391,750.7345};
-						angles[]={0,0.0019730027,0};
+						position[]={1515.964,5.0014391,750.77899};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""ar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C2_AR1";
 						description=" Charlie 2 Automatic Rifleman";
 						isPlayable=1;
@@ -22148,14 +26172,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -22205,14 +26229,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -22224,14 +26248,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -22243,21 +26267,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1496.1985,5.0014391,750.75427};
-						angles[]={0,0.0019730027,0};
+						position[]={1507.381,5.0014391,751.23297};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""aar"",this] call f_fnc_assignGear; [this, 'RED'] call potato_teamColors_fnc_setColor;";
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C2_AR2";
 						description=" Charlie 2 AAR";
 						isPlayable=1;
 					};
-					id=599;
-					type="I_Soldier_AR_F";
+					id=1419;
+					type="I_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22287,14 +26311,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="RED";
 								};
 							};
 						};
@@ -22344,14 +26368,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="24,24,white,\z\potato\addons\markers\data\unknown.paa";
 								};
 							};
 						};
@@ -22363,14 +26387,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -22382,15 +26406,213 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1511.1926,5.0014391,747.98639};
-						angles[]={0,0.0019730027,0};
+						position[]={1503.7939,5.0014391,750.099};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""ar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_C2_AR3";
+						description=" Charlie 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1382;
+					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1500.436,5.0014391,748.69598};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""aar"",this] call f_fnc_assignGear;}";
+						name="UnitAAF_C2_AR4";
+						description=" Charlie 2 AAR";
+						isPlayable=1;
+					};
+					id=1381;
+					type="I_Soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1520.959,5.0014391,748.03101};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="[""rat"",this] call f_fnc_assignGear; this assignteam ""green"";";
+						init="call{[""rat"",this] call f_fnc_assignGear;}";
 						name="UnitAAF_C2_AT";
 						description=" Charlie 2 Rifleman (AT)";
 						isPlayable=1;
@@ -22420,6 +26642,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -22437,7 +26697,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -22520,8 +26780,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1522.261,5.0014391,784.46497};
-						angles[]={0,0.001972222,0};
+						position[]={1529.4976,5.0014391,784.10883};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -22603,8 +26863,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1527.2581,5.0014391,782.80469};
-						angles[]={0,0.0019730027,0};
+						position[]={1534.4946,5.0014391,782.44855};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -22722,8 +26982,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1522.084,5.0014391,776.297};
-						angles[]={0,0.001972222,0};
+						position[]={1529.3206,5.0014391,775.94086};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -22805,8 +27065,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1527.0803,5.0014391,774.63696};
-						angles[]={0,0.0019730027,0};
+						position[]={1534.3169,5.0014391,774.28082};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -22924,8 +27184,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.717,5.0014391,768.14099};
-						angles[]={0,0.032899454,0};
+						position[]={1528.9536,5.0014391,767.78485};
+						angles[]={-0,0.032899454,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23007,8 +27267,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.7133,5.0014391,766.48126};
-						angles[]={0,0.0019730027,0};
+						position[]={1533.9498,5.0014391,766.12512};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -23145,8 +27405,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.656,5.0014391,759.55298};
-						angles[]={0,0.001972222,0};
+						position[]={1528.8926,5.0014391,759.19684};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23228,8 +27488,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.6531,5.0014391,757.89294};
-						angles[]={0,0.0019730027,0};
+						position[]={1533.8896,5.0014391,757.5368};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -23347,8 +27607,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.605,5.0014391,752.64801};
-						angles[]={0,0.001972222,0};
+						position[]={1528.8416,5.0014391,752.29187};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23430,8 +27690,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.601,5.0014391,750.98798};
-						angles[]={0,0.001972222,0};
+						position[]={1533.8375,5.0014391,750.63184};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -23587,8 +27847,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.552,5.0014391,745.64001};
-						angles[]={0,0.001972222,0};
+						position[]={1528.7886,5.0014391,745.28387};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23670,8 +27930,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.549,5.0014391,743.97998};
-						angles[]={0,0.001972222,0};
+						position[]={1533.7855,5.0014391,743.62384};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -23827,8 +28087,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.42,5.0014391,739.026};
-						angles[]={0,0.001972222,0};
+						position[]={1528.6566,5.0014391,738.66986};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23910,8 +28170,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.417,5.0014391,737.36597};
-						angles[]={0,0.001972222,0};
+						position[]={1533.6536,5.0014391,737.00983};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -24067,8 +28327,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1521.299,5.0014391,732.95197};
-						angles[]={0,0.001972222,0};
+						position[]={1528.5355,5.0014391,732.59583};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -24150,8 +28410,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1526.296,5.0014391,731.29199};
-						angles[]={0,0.001972222,0};
+						position[]={1533.5326,5.0014391,730.93585};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -24307,8 +28567,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1522.86,5.0014391,723.68701};
-						angles[]={0,0.001972222,0};
+						position[]={1530.0966,5.0014391,723.33087};
+						angles[]={-0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -24390,8 +28650,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1527.8568,5.0014391,722.02771};
-						angles[]={0,0.0019730027,0};
+						position[]={1535.0934,5.0014391,721.67157};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -24491,8 +28751,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1517.8558,5.0014391,722.04651};
-						angles[]={0,0.0019730027,0};
+						position[]={1525.0924,5.0014391,721.69037};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -24592,8 +28852,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1532.8513,5.0014391,719.27692};
-						angles[]={0,0.0019730027,0};
+						position[]={1540.0879,5.0014391,718.92078};
+						angles[]={-0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -29873,8 +34133,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1393.4762,7.3134775,722.89539};
-				angles[]={0,6.271493,0};
+				position[]={1397.9387,7.3134775,722.28754};
+				angles[]={-0,6.271493,0};
 			};
 			side="Empty";
 			flags=4;
@@ -29913,8 +34173,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1538.1967,7.3817043,719.48212};
-				angles[]={0,6.2745123,0};
+				position[]={1545.4332,7.3817043,719.12598};
+				angles[]={-0,6.2745123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -29953,8 +34213,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1678.0486,7.3817043,714.42853};
-				angles[]={0,6.2735367,0};
+				position[]={1690.0282,7.3817043,714.18262};
+				angles[]={-0,6.2735367,0};
 			};
 			side="Empty";
 			flags=4;

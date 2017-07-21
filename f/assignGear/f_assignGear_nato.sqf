@@ -120,7 +120,7 @@ _glrifle = "arifle_MX_GL_F";
 _glriflemag = "30Rnd_65x39_caseless_mag";
 _glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glmaglarge = "3Rnd_HE_Grenade_shell";
+_glmaglarge = "1Rnd_HE_Grenade_shell";
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_SmokeRed_Grenade_shell";
@@ -128,10 +128,10 @@ _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-_glflarered = "3Rnd_UGL_FlareRed_F";
-_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-_glflaregreen = "3Rnd_UGL_FlareGreen_F";
+_glflarewhite = "UGL_FlareWhite_F";
+_glflarered = "UGL_FlareRed_F";
+_glflareyellow = "UGL_FlareYellow_F";
+_glflaregreen = "UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 _pistol = "hgun_Pistol_heavy_01_F";
