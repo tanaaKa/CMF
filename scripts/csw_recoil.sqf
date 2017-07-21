@@ -11,7 +11,7 @@
 */
 
 player setUnitRecoilCoefficient 2;
-player setCustomAimCoef 0.5;
+player setCustomAimCoef 0.35;
 
 /* {
 	_gunner = 
