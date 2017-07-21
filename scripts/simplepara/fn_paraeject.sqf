@@ -1,6 +1,6 @@
 _veh = _this select 0;
 _unit = _this select 1;
-_Offset = [[0,-15,-10],[0,-25,-10],[0,-35,-10]] call BIS_fnc_selectRandom; 
+_Offset = [[0,-15,-10],[0,-25,-10],[0,-35,-10],[0,-25,-15],[0,-10,-15]] call BIS_fnc_selectRandom; 
 _worldPos = _veh modelToWorld _Offset;
 _vel = velocity _veh;
 _dir = direction _veh;
