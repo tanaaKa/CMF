@@ -53,7 +53,7 @@ if (f_var_mapClickTeleport_GroupTeleport && player != leader group player)  exit
 
 _string = if (f_var_mapClickTeleport_Height == 0) then {"Teleport"} else {"HALO"};
 
-f_var_mapClickTeleport_textAction = localize format ["STR_f_mapClick%1Action",_string];
+f_var_mapClickTeleport_textAction = "Deploy";
 f_var_mapClickTeleport_textDone = localize format ["STR_f_mapClick%1Done",_string];
 f_var_mapClickTeleport_textSelect = localize format ["STR_f_mapClick%1Select",_string];
 
