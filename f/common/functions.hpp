@@ -18,11 +18,6 @@ class F // Defines the "owner"
 		file = "f\setGroupID";
 		class setGroupID{};
 	};
-	class groupMarkers {
-		file = "f\groupMarkers";
-		class localGroupMarker{};
-		class localSpecialistMarker{};
-	};
 	class mapClickTeleport
 	{
 		file = "f\mapClickTeleport";

@@ -64,6 +64,7 @@ respawnMenuRoles = [
   ["FTL", "Fireteam Leader"],
   ["AR", "Automatic Rifleman"],
   ["AAR", "Assistant Automatic Rifleman"],
+  ["GREN", "Grenadier"],
   ["RAT", "Rifleman: Antitank"],
   ["MMGG", "MMG - Gunner"],
   ["MMGAG", "MMG - Team Leader"],
