@@ -3,14 +3,6 @@
 <Project ID="Arma3">
   <Package ID="Missions">
     <Container ID="">
-      <Key ID="STR_f_param_debugMode">
-        <English> Debug Mode </English>
-        <Czech> Debug mód </Czech>
-        <German> Debug-Modus </German>
-        <Polish> Debug Mode </Polish>
-        <Russian> Режим отладки </Russian>
-        <Spanish> Modo Debug </Spanish>
-        <French> Mode Debug </French>
       <Key ID="STR_f_mapClickTeleportAction">
         <English> Deploy </English>
       </Key>

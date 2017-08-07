@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1479;
+		nextID=1481;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1489.0027,140.30081,954.66187};
+		pos[]={1489.864,325.84479,520.45319};
 		dir[]={-0.0011477724,-0.81694251,0.5767315};
 		up[]={-0.0016326774,0.57671398,0.8169471};
 		aside[]={1.0000083,4.2086444e-006,0.0019951845};
@@ -67,13 +67,15 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Supplies_F_Heli_CargoNets",
 	"acex_headless",
-	"A3_Data_F_Exp_A_Virtual"
+	"A3_Data_F_Exp_A_Virtual",
+	"L_Suppress_Suppress_sys",
+	"potato_respawn"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=37;
 		class Item0
 		{
 			className="DS_OBE_Layer";
@@ -316,6 +318,18 @@ class AddonsMetaData
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item35
+		{
+			className="L_Suppress_Suppress_sys";
+			name="L_Suppress_Suppress_sys";
+			author="LAxemann and jokoho482";
+		};
+		class Item36
+		{
+			className="potato_respawn";
+			name="potato_respawn";
+			author="Potato";
 		};
 	};
 };
@@ -601,6 +615,290 @@ class CustomAttributes
 	};
 	class Category1
 	{
+		name="potato_radios_configureAcre";
+		class Attribute0
+		{
+			property="potato_radios_acreGlobalConfig";
+			expression="[nil,_value] call potato_radios_fnc_acreGlobalAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="false,false,false,0,Negotiations,20,false,false";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="potato_radios_acreSideConfig";
+			expression="[nil,_value] call potato_radios_fnc_acreSideAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=17;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false,false,false,false,false,false,false,false";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="en";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ru";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ar";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ar";
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
+							};
+						};
+						class Item6
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item7
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item8
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
+							};
+						};
+						class Item9
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item10
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item11
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
+							};
+						};
+						class Item12
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item13
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item14
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
+							};
+						};
+						class Item15
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+						class Item16
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category2
+	{
 		name="Multiplayer";
 		class Attribute0
 		{
@@ -631,7 +929,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="Spectator";
+								value="potato_spectate";
 							};
 						};
 					};
@@ -830,7 +1128,7 @@ class CustomAttributes
 		};
 		nAttributes=11;
 	};
-	class Category2
+	class Category3
 	{
 		name="Scenario";
 		class Attribute0
@@ -1381,7 +1679,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=150;
+		items=152;
 		class Item0
 		{
 			dataType="Object";
@@ -35540,6 +35838,49 @@ class Mission
 					};
 				};
 				nAttributes=5;
+			};
+		};
+		class Item150
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1539.7841,5,970.81085};
+			};
+			id=1479;
+			type="L_ModuleSuppress";
+		};
+		class Item151
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1490.921,5,670.97198};
+			};
+			id=1480;
+			type="potato_respawn_placeRespawnPoint";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_respawn_rpName";
+					expression="_this setVariable ['potato_respawn_rpName', _value, true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Test";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
