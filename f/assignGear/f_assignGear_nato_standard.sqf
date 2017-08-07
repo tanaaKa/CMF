@@ -167,6 +167,9 @@ switch (_typeofUnit) do
 		_unit addItem _medpack;
 		_unit addItem _medpack;
 		_unit addItem _medpack;
+		_unit additem "ACE_tourniquet";
+		_unit additem "ACE_tourniquet";
+		_unit additem "ACE_tourniquet";
 	};
 // Designated Marksman Loadout:
 	case "dm":
@@ -295,6 +298,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_carbinemag, 2];
 		_unit addmagazines [_carbinemag_tr, 2];
+		_unit additem "ACE_RangeTable_82mm";
+		_unit additem "ACE_MapTools";
 	};
 // Mortar Team Leader Loadout:
 	case "mtrag":
@@ -308,6 +313,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 		_unit addWeapon "Binocular";
+		_unit additem "ACE_RangeTable_82mm";
+		_unit additem "ACE_MapTools";
 	};
 // Medium SAM Gunner Loadout:
 	case "msamg":

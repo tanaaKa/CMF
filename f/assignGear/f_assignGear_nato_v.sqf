@@ -217,6 +217,8 @@
 		_unit addMagazineCargoGlobal [_mgrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
+		_unit additemcargoglobal "ACE_RangeTable_82mm";
+		_unit additemcargoglobal "ACE_RangeTable_82mm";
     };
 
 // CRATE: Large, ammo for 1 platoon

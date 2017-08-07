@@ -30,6 +30,11 @@ params["_site"];
 	_ccp addItemCargoGlobal ["ACE_epinephrine", 10];
 	_ccp addItemCargoGlobal ["ACE_morphine", 10];
 	_ccp addItemCargoGlobal ["ACE_Bodybag", 10];
+	_ccp addItemCargoGlobal ["ACE_quikclot", 10];
+	_ccp addItemCargoGlobal ["ACE_bloodIV", 10];
+	_ccp addItemCargoGlobal ["ACE_plasmaIV", 10];
+	_ccp addItemCargoGlobal ["ACE_salineIV", 10];
+	_ccp addItemCargoGlobal ["ACE_tourniquet", 10];
 	_ccp setDir (getDir _site);
 	
 	// Add ACE interact to call reinforcements

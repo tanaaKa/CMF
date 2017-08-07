@@ -167,6 +167,9 @@ switch (_typeofUnit) do
 		_unit addItem _medpack;
 		_unit addItem _medpack;
 		_unit addItem _medpack;
+		_unit additem "ACE_tourniquet";
+		_unit additem "ACE_tourniquet";
+		_unit additem "ACE_tourniquet";
 	};
 // Designated Marksman Loadout:
 	case "dm":
