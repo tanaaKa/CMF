@@ -22,7 +22,7 @@ plank_deploy_fortData = [
 ["Short Sandbag wall",                 	"Land_BagFence_Short_F",                3,              0,                  360,            {}],
 ["Razor Wire",                          "Land_Razorwire_F",                     6,              0,                  360,            {}],
 ["Concrete Barrier",                  	"Land_CncBarrier_F",                    4,              0,                  360,            {}],
-["Bunker Tower",                        "Land_BagBunker_Tower_F",               10,             90,                  360,           {}],
-["Rampart",                  			"Land_Fort_Rampart",                    5,              0,                  360,            {}]
-
+["Bunker Tower",                        "Land_BagBunker_Tower_F",               10,             90,                 360,            {}],
+["Rampart",                  			"Land_Fort_Rampart",                    5,              0,                  360,            {}],
+["Floodlight",                          "Land_PortableLight_double_F",          4,              180,                360,            {}]
 ];
