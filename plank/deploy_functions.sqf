@@ -66,9 +66,9 @@ plank_deploy_fnc_addPlacementActions = {
     FUN_ARGS_1(_unit);
 
     private ["_confirmActionId", "_cancelActionId", "_openActionId"];
-    _confirmActionId = _unit addAction ['<t color="#3748E3">Confirm Deployment</t>', "plank\confirm_fort_action.sqf", [], 100, false, false, "", "driver _target == _this"];
-    _cancelActionId = _unit addAction ['<t color="#FF0000">Cancel Deployment</t>', "plank\cancel_fort_action.sqf", [], 99, false, false, "", "driver _target == _this"];
-    _openActionId = _unit addAction ['<t color="#00FF00">Open Settings</t>', "plank\open_settings_action.sqf", [], 98, false, false, "", "driver _target == _this"];
+    _confirmActionId = _unit addAction ['<t color="#1EFB04">Place</t>', "plank\confirm_fort_action.sqf", [], 100, false, false, "", "driver _target == _this"];
+    _cancelActionId = _unit addAction ['<t color="#FB0B04">Cancel</t>', "plank\cancel_fort_action.sqf", [], 99, false, false, "", "driver _target == _this"];
+    _openActionId = _unit addAction ['<t color="#DBE502">Change</t>', "plank\open_settings_action.sqf", [], 98, false, false, "", "driver _target == _this"];
     _unit setVariable ["plank_deploy_confirmActionId", _confirmActionId, false];
     _unit setVariable ["plank_deploy_cancelActionId", _cancelActionId, false];
     _unit setVariable ["plank_deploy_openActionId", _openActionId, false];

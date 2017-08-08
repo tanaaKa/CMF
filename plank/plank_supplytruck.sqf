@@ -11,17 +11,17 @@ if (!isDedicated) then
 		supplytruck1 addaction ["Take FTL Supplies", "plank\plank_unload.sqf", "ftl", 1.90, false, true, "", ""];
 		supplytruck1 addaction ["Take SL Supplies", "plank\plank_unload.sqf", "sl", 1.90, false, true, "", ""];
 		supplytruck1 addaction ["Take PL Supplies", "plank\plank_unload.sqf", "pl", 1.90, false, true, "", ""];
-		supplytruck1 addaction ["Rifleman Building Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
+		supplytruck1 addaction ["Take GI Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
 		supplytruck1 addaction ["Take Floodlight", "plank\plank_unload.sqf", "light", 1.90, false, true, "", ""];
 		//	_supplytruck addaction ["Unload ____", "plank\plank_unload.sqf", "_____", 1.89, false, true, "", ""];
 	}
 	else
 	{
 	{
-		_x addaction ["Take FTL Supplies", "plank\plank_unload.sqf", "ftl", 1.90, false, true, "", ""];
-		_x addaction ["Take SL Supplies", "plank\plank_unload.sqf", "sl", 1.90, false, true, "", ""];
-		_x addaction ["Take PL Supplies", "plank\plank_unload.sqf", "pl", 1.90, false, true, "", ""];
-		_x addaction ["Rifleman Building Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
+		_x addaction ["FTL Supplies", "plank\plank_unload.sqf", "ftl", 1.90, false, true, "", ""];
+		_x addaction ["SL Supplies", "plank\plank_unload.sqf", "sl", 1.90, false, true, "", ""];
+		_x addaction ["PL Supplies", "plank\plank_unload.sqf", "pl", 1.90, false, true, "", ""];
+		_x addaction ["GI Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
 		_x addaction ["Take Floodlight", "plank\plank_unload.sqf", "light", 1.90, false, true, "", ""];
 		//	_x addaction ["Unload ____", "plank\plank_unload.sqf", "_____", 1.89, false, true, "", ""];
 	} foreach _supplytrucksarray;

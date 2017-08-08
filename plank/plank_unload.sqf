@@ -36,7 +36,7 @@ switch (_type) do
 	case "rif":
 	{
 		[_caller, [0, 0, 3, 0, 2, 1, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
-		hint "Unloading Rifleman Supplies";
+		hint "Unloading GI Supplies";
 	};
 	case "light":
 	{
