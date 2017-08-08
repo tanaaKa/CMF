@@ -20,7 +20,7 @@ switch (_type) do
 //Prefab Groups of Objects
 	case "ftl":
 	{
-		[_caller, [2, 1, 6, 0, 3, 2, 0, 0, 1, 0]] call plank_api_fnc_forceAddFortifications;
+		[_caller, [2, 1, 6, 0, 3, 2, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading FTL Supplies";
 	};
 	case "sl":
