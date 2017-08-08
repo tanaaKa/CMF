@@ -20,23 +20,28 @@ switch (_type) do
 //Prefab Groups of Objects
 	case "ftl":
 	{
-		[_caller, [2, 1, 6, 0, 3, 2, 0, 0, 1]] call plank_api_fnc_forceAddFortifications;
+		[_caller, [2, 1, 6, 0, 3, 2, 0, 0, 1, 0]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading FTL Supplies";
 	};
 	case "sl":
 	{
-		[_caller, [1, 1, 4, 1, 4, 4, 4, 0, 1]] call plank_api_fnc_forceAddFortifications;
+		[_caller, [1, 1, 4, 1, 4, 4, 4, 0, 1, 0]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading SL Supplies";
 	};
 	case "pl":
 	{
-		[_caller, [1, 1, 4, 1, 4, 4, 4, 1, 2]] call plank_api_fnc_forceAddFortifications;
+		[_caller, [1, 1, 4, 1, 4, 4, 4, 1, 2, 0]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading PL Supplies";
 	};
 	case "rif":
 	{
-		[_caller, [0, 0, 3, 0, 2, 1, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
+		[_caller, [0, 0, 3, 0, 2, 1, 0, 0, 0, 0]] call plank_api_fnc_forceAddFortifications;
 		hint "Unloading Rifleman Supplies";
+	};
+	case "light":
+	{
+		[_caller, [0, 0, 0, 0, 0, 0, 0, 0, 0, 2]] call plank_api_fnc_forceAddFortifications;
+		hint "Unloading Floodlights...";
 	};
 /*	case "_____":
 	{

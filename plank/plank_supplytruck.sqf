@@ -12,6 +12,7 @@ if (!isDedicated) then
 		supplytruck1 addaction ["Take SL Supplies", "plank\plank_unload.sqf", "sl", 1.90, false, true, "", ""];
 		supplytruck1 addaction ["Take PL Supplies", "plank\plank_unload.sqf", "pl", 1.90, false, true, "", ""];
 		supplytruck1 addaction ["Rifleman Building Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
+		supplytruck1 addaction ["Take Floodlight", "plank\plank_unload.sqf", "light", 1.90, false, true, "", ""];
 		//	_supplytruck addaction ["Unload ____", "plank\plank_unload.sqf", "_____", 1.89, false, true, "", ""];
 	}
 	else
@@ -21,6 +22,7 @@ if (!isDedicated) then
 		_x addaction ["Take SL Supplies", "plank\plank_unload.sqf", "sl", 1.90, false, true, "", ""];
 		_x addaction ["Take PL Supplies", "plank\plank_unload.sqf", "pl", 1.90, false, true, "", ""];
 		_x addaction ["Rifleman Building Supplies", "plank\plank_unload.sqf", "rif", 1.90, false, true, "", ""];
+		_x addaction ["Take Floodlight", "plank\plank_unload.sqf", "light", 1.90, false, true, "", ""];
 		//	_x addaction ["Unload ____", "plank\plank_unload.sqf", "_____", 1.89, false, true, "", ""];
 	} foreach _supplytrucksarray;
 	};
