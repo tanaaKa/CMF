@@ -16,7 +16,7 @@
 #define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item"
 #define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
 #define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
-//#define COMMON_LEADER_LINKED "ItemGPS"
+//#define COMMON_LEADER_LINKED RADIO_MR
 #define BASE_SMOKES "SmokeShell:2"
 #define LEADER_SMOKES "SmokeShell:2","SmokeShellGreen:2"
 #define MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"

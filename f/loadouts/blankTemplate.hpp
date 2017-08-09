@@ -73,21 +73,22 @@ class Fic_Soldier_Carbine: Soldier_F {// carbine-man
 class Soldier_TL_F: Soldier_F {// FTL
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
-  items[] += {LEADER_TOOLS};
+  items[] += {LEADER_TOOLS,RADIO_MR};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class Soldier_SL_F: Soldier_TL_F {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR};
+  items[] += {RADIO_MR,RADIO_LR};
 };
 class officer_F: Soldier_SL_F {// CO and DC
-  items[] += {RADIO_LR};
+  items[] += {RADIO_LR,RADIO_MR};
 };
 class soldier_UAV_F: Soldier_F {
   backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
+  items[] += {RADIO_MR};
 };
 class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
@@ -106,6 +107,7 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
 class medic_F: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
+  items[] += {RADIO_MR};
 };
 class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
@@ -159,8 +161,8 @@ class sniper_F: spotter_F {// Sniper
 class Helipilot_F {// Pilot
   // uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
   // backpack[] = {"B_AssaultPack_blk"};
-  // vest[] = {"UK3CB_BAF_V_Pilot_A"};
-  // headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+  vest[] = {CAMO_VEST};
+  headgear[] = {"rhsusf_hgu56p"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
