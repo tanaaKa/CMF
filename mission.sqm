@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1526.0432,205.95224,544.88049};
-		dir[]={-0.023451684,-0.70534152,0.70863104};
-		up[]={-0.023336418,0.70877635,0.70500714};
-		aside[]={0.9995603,4.1979147e-006,0.033088148};
+		pos[]={1355.8494,41.6385,751.97443};
+		dir[]={-0.010969121,-0.65343589,0.75690609};
+		up[]={-0.0094687548,0.75698102,0.65336895};
+		aside[]={0.99989706,5.0276867e-009,0.014490196};
 	};
 };
 binarizationWanted=0;
@@ -2520,7 +2520,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1349.5385,5.0014391,787.23328};
+						position[]={1349.538,5.0014391,787.23297};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -2528,8 +2528,9 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack Field Hospital"","""",{[] execVM ""scripts\buildccp\unpack_platoon.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitNATO_CO_M";
-						description=" Platoon Medic";
+						description=" Medical Officer";
 						isPlayable=1;
 					};
 					id=194;
@@ -2954,14 +2955,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1317.3951,5.0014391,779.80176};
-						angles[]={0,6.2821393,0};
+						position[]={1317.395,5.0014391,779.802};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_alpha.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitNATO_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -2997,14 +2999,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="MAIN";
 								};
 							};
 						};
@@ -3073,14 +3075,14 @@ class Mission
 							{
 								class data
 								{
-									nil=1;
 									class type
 									{
 										type[]=
 										{
-											"ANY"
+											"STRING"
 										};
 									};
+									value="";
 								};
 							};
 						};
@@ -5300,14 +5302,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1344.0067,5.0014391,781.2865};
-						angles[]={0,6.2821393,0};
+						position[]={1344.007,5.0014391,781.28699};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_bravo.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitNATO_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -7532,14 +7535,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1369.0901,5.0014391,779.62317};
-						angles[]={0,6.2821393,0};
+						position[]={1369.09,5.0014391,779.62299};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_charlie.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitNATO_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;

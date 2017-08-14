@@ -20,21 +20,25 @@ params["_site"];
 	_pos = getPos _site; // Gets position of CCP
 	_grid = mapGridPosition _pos; // Define grid position of player for hint
 	_name = name player; // Define name of player for hint
-	_hintString = format ["A CCP has been established at GR#%1 by %2",_grid,_name]; // Predefine hint
+	_hintString = format ["1st platoon field hospital established at GR#%1 by %2",_grid,_name]; // Predefine hint
 
 	// Delete backpack pile.
 	deleteVehicle _site;
 	
 	// Creates physical MASH at location of construction site
-	_ccp = "MASH" createVehicle _pos;
-	_ccp addItemCargoGlobal ["ACE_epinephrine", 10];
-	_ccp addItemCargoGlobal ["ACE_morphine", 10];
-	_ccp addItemCargoGlobal ["ACE_Bodybag", 10];
-	_ccp addItemCargoGlobal ["ACE_quikclot", 10];
-	_ccp addItemCargoGlobal ["ACE_bloodIV", 10];
-	_ccp addItemCargoGlobal ["ACE_plasmaIV", 10];
-	_ccp addItemCargoGlobal ["ACE_salineIV", 10];
-	_ccp addItemCargoGlobal ["ACE_tourniquet", 10];
+	_ccp = "USMC_WarfareBFieldhHospital" createVehicle _pos;
+	_ccp addItemCargoGlobal ["ACE_epinephrine", 20];
+	_ccp addItemCargoGlobal ["ACE_morphine", 20];
+	_ccp addItemCargoGlobal ["ACE_Bodybag", 20];
+	_ccp addItemCargoGlobal ["ACE_quikclot", 20];
+	_ccp addItemCargoGlobal ["ACE_bloodIV", 20];
+	_ccp addItemCargoGlobal ["ACE_plasmaIV", 20];
+	_ccp addItemCargoGlobal ["ACE_salineIV", 20];
+	_ccp addItemCargoGlobal ["ACE_tourniquet", 20];
+	_ccp addItemCargoGlobal ["ACE_elasticBandage", 20];
+	_ccp addItemCargoGlobal ["ACE_packingBandage",20];
+	_ccp addItemCargoGlobal ["ACE_atropine", 5];
+	_ccp addItemCargoGlobal ["ACE_surgicalKit",2];
 	_ccp setDir (getDir _site);
 	
 	// Add ACE interact to call reinforcements
@@ -60,11 +64,11 @@ params["_site"];
 	] remoteExecCall ["BIS_fnc_holdActionAdd",0]; // syncs across clients
 	
 	// Creates a marker for the new physical MASH
-	_marker = createMarker ["CCP", _ccp];
+	_marker = createMarker ["C CCP", _ccp];
 	_marker setMarkerShape "ICON";
 	_marker setMarkerType "loc_hospital";
 	_marker setMarkerColor "ColorWhite";
-	_marker setMarkerText "CCP";
+	_marker setMarkerText "C CCP";
 
 	// Alerts all players that a MASH has been constructed
 	_hintString remoteExec ["hint", 0];
