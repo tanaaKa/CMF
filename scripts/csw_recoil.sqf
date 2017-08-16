@@ -12,19 +12,3 @@
 
 player setUnitRecoilCoefficient 2;
 player setCustomAimCoef 0.35;
-
-/* {
-	_gunner = 
-	
-	if (_x == _gunner) then 
-	{_x addEventHandler ["Fired", 
-	{
-		addCamShake 
-			[
-			0.6, 
-			500
-			];
-		}];
-	};
-} forEach vehicles; */
-

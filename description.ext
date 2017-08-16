@@ -29,7 +29,15 @@ respawnOnStart = 0;
 // cfgFnc
 
 class CfgFunctions {
-	#include "f\common\functions.hpp"
+	class F
+	{
+		class mapClickTeleport
+		{
+			file = "f\mapClickTeleport";
+			class mapClickTeleportUnit{};
+			class mapClickTeleportGroup{};
+		};
+	};
 	class SC
 	{	
 		class simplepara
@@ -44,23 +52,27 @@ class CfgFunctions {
 // EH for various scenarios
 
 class Extended_InitPost_EventHandlers {
-  class Car 
-  {
-    class cmf_nothermals { 
-	init = "(_this select 0) disableTIEquipment true;"; 
+	class Car 
+	{
+		class cmf_nothermals 
+		{ 
+			init = "(_this select 0) disableTIEquipment true;"; 
+		};
 	};
-  };
-  class Tank
-  {
-    class cmf_nothermals { 
-	init = "(_this select 0) disableTIEquipment true;"; 
+	class Tank
+	{
+		class cmf_nothermals 
+		{ 
+			init = "(_this select 0) disableTIEquipment true;"; 
+		};
 	};
-  };
-  class Helicopter {
-    class cmf_nothermals { 
-	init = "(_this select 0) disableTIEquipment true;"; 
+	class Helicopter 
+	{
+		class cmf_nothermals 
+		{ 
+			init = "(_this select 0) disableTIEquipment true;"; 
+		};
 	};
-  };
 };
 
 // ============================================================================================
