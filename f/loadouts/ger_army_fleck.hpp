@@ -1,42 +1,42 @@
-// Author: You
+// Author: Cpl. Koala
 // Description: paste your loadout config from the arseanal exporter
 #include "undef.hpp" // Reset defines
 
 // ------------------- PASTE BELOW THIS LINE
 
 // Camo set
-#define CAMO_UNIFORM "PBW_Uniform1_fleck"
-#define CAMO_VEST "pbw_splitter_schtz"
-#define CAMO_BACKPACK "B_AssaultPack_rgr"
-#define CAMO_HEADGEAR "PBW_Helm5_fleck_H"
+#define CAMO_UNIFORM "PBW_Uniform3K_fleck","PBW_Uniform4K_fleck","PBW_Uniform4_fleck","PBW_Uniform3_fleck"
+#define CAMO_VEST "pbw_splitter_schtz","pbw_splitter_sani","pbw_splitter_mg_h","pbw_splitter_grpfhr","pbw_splitter_mg"
+#define CAMO_BACKPACK "B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli"
+#define CAMO_HEADGEAR "PBW_Helm1_fleck","PBW_Helm2_fleck","PBW_Helm2_fleck_H","PBW_Helm1_fleck_HBOD","PBW_Helm1_fleck_HBO"
 // Rifle
-#define RIFLE "hlc_rifle_G36KA1"
-#define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:10"
+#define RIFLE "hlc_rifle_G36A1"
+#define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8", "hlc_30rnd_556x45_Tracers_G36:2"
 #define RIFLE_ATTACHMENTS ""
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "RH_ta31rmr","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
 // GL Rifle
 #define GLRIFLE "hlc_rifle_G36A1AG36"
-#define GLRIFLE_MAG "hlc_30rnd_556x45_EPR_G36:10"
+#define GLRIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8", "hlc_30rnd_556x45_Tracers_G36:2"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
-#define CARBINE "rhs_weap_aks74un"
-#define CARBINE_MAG "rhs_30Rnd_545x39_AK:10"
+#define CARBINE "hlc_rifle_G36KA1"
+#define CARBINE_MAG "hlc_30rnd_556x45_EPR_G36:5"
 // AR
-#define AR "hlc_rifle_G36V"
-#define AR_MAG "hlc_30rnd_556x45_EPR_G36:15", "hlc_100rnd_556x45_M_G36:2"
+#define AR "hlc_rifle_MG36"
+#define AR_MAG "hlc_100rnd_556x45_EPR_G36:3", "hlc_100rnd_556x45_M_G36:2"
 // AT
 #define AT "rhs_weap_m72a7"
 #define AT_MAG "rhs_m72a7_mag:1"
 // MMG
 #define MMG "hlc_lmg_MG3KWS_b"
-#define MMG_MAG "hlc_50Rnd_762x51_B_MG3:8", "hlc_100Rnd_762x51_T_MG3:2"
+#define MMG_MAG "hlc_50Rnd_762x51_B_MG3:8", "hlc_50Rnd_762x51_T_MG3:2"
 // MAT
-#define MAT "rhs_weap_smaw_green"
-#define MAT_MAG "rhs_mag_smaw_HEDP:1"
-#define MAT_MAG2 "rhs_mag_smaw_HEDP:1"
+#define MAT "launch_B_Titan_short_F"
+#define MAT_MAG "Titan_AT:1"
+#define MAT_MAG2 "Titan_AP:1"
 #define MAT_OPTIC ""
 
 // -------------------- PASTE ABOVE THIS LINE
@@ -49,14 +49,14 @@
 #define SNIPER "UK3CB_BAF_L135A1"
 #define SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
 // Spotter Rifle
-#define SPOTTER "UK3CB_BAF_L86A3"
+#define SPOTTER RIFLE
 #define SPOTTER_MAG RIFLE_MAG
 // SMG
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "UK3CB_BAF_L131A1"
-#define PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
+#define PISTOL "hgun_P07_khk_F"
+#define PISTOL_MAG "16Rnd_9x21_Mag:3"
 // Grenades
 #define BASE_FRAG "rhs_mag_m67:2"
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
@@ -105,21 +105,22 @@ class Soldier_TL_F: Soldier_F {// FTL
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS,RADIO_MR};
-  linkedItems[] += {LEADER_LINKED,BINOS};
+  linkedItems[] += {BINOS};
 };
 class Soldier_SL_F: Soldier_TL_F {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR,RADIO_LR};
+  linkedItems[] = {BASE_LINKED,BINOS};
+  items[] += {RADIO_LR};
 };
 class officer_F: Soldier_SL_F {// CO and DC
-  items[] += {RADIO_LR,RADIO_MR};
+  items[] += {};
+  linkedItems[] += {};
 };
 class soldier_UAV_F: Soldier_F {
   backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
-  items[] += {RADIO_MR};
+  items[] += {RADIO_LR};
 };
 class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
@@ -137,6 +138,7 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  backpack[] = {"rhs_medic_bag"};
   backpackItems[] = {MEDIC_MEDICAL};
   items[] += {RADIO_MR};
 };
@@ -187,7 +189,7 @@ class sniper_F: spotter_F {// Sniper
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED};
-  attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
+  attachments[] = {"optic_LRPS"};
 };
 class Helipilot_F {// Pilot
   // uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};

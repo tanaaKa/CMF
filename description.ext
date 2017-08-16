@@ -20,7 +20,7 @@ disableChannels[] = {2,4,5,6};
 // Respawn Settings
 
 respawn = 1;
-respawndelay = 5;
+respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
 
@@ -76,21 +76,6 @@ class cfgNotifications
 		duration = 3;
 		priority = 5;
 	};
-};
-
-// ============================================================================================
-// F3 - Start of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
-class Params
-{
-    class f_param_debugMode
-    {
-            title = "$STR_f_param_debugMode";
-            values[] = {0,1};
-            texts[] = {"Off","On"};
-            default = 0;
-    };
 };
 
 // ============================================================================================

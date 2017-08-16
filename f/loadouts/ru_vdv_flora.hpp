@@ -1,43 +1,46 @@
-// Author: tanaKa-
-// Description: US Army OCP
-
+// Author: proteK
+// Description: paste your loadout config from the arseanal exporter
 #include "undef.hpp" // Reset defines
 
 // ------------------- PASTE BELOW THIS LINE
-// GEAR
-#define CAMO_UNIFORM "rhs_uniform_cu_ocp"
-#define CAMO_VEST "rhsusf_iotv_ocp_Rifleman"
-#define CAMO_BACKPACK "rhsusf_falconii_mc"
-#define CAMO_HEADGEAR "rhsusf_ach_helmet_ESS_ocp"
+
+// Camo set
+#define CAMO_UNIFORM "rhs_uniform_mflora_patchless"
+#define CAMO_VEST "rhs_6b23_digi_6sh92_radio"
+#define CAMO_BACKPACK "rhs_assault_umbts_engineer_empty"
+#define CAMO_HEADGEAR "rhs_beanie"
 // Rifle
-#define RIFLE "rhs_weap_m4a1_pmag"
-#define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk", "RH_eotech553"
+#define RIFLE "rhs_weap_ak74m"
+#define RIFLE_MAG "rhs_30Rnd_545x39_AK:10"
+#define RIFLE_ATTACHMENTS "rhs_acc_dtk1983", "rhs_acc_pkas"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "RH_ta31rmr","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
 // GL Rifle
-#define GLRIFLE "rhs_weap_m4a1_m203"
-#define GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
-#define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:7"
-#define GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:4"
+#define GLRIFLE "rhs_weap_ak74m_gp25"
+#define GLRIFLE_MAG "rhs_30Rnd_545x39_AK:10"
+#define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
+#define GLRIFLE_MAG_HE "rhs_VOG25:5"
+#define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
 // Carbine
-#define CARBINE "rhs_weap_m4a1_pmag"
-#define CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
+#define CARBINE "rhs_weap_aks74"
+#define CARBINE_MAG "rhs_30Rnd_545x39_AK:10"
 // AR
-#define AR "rhs_weap_m249_pip_L_vfg"
-#define AR_MAG "rhs_200rnd_556x45_M_SAW:3"
+#define AR "hlc_rifle_rpk74n"
+#define AR_MAG "hlc_30Rnd_545x39_B_AK:17"
 // AT
-#define AT "rhs_weap_M136"
-#define AT_MAG "rhs_m136_mag:1"
+#define AT "rhs_weap_rshg2"
+#define AT_MAG "rhs_rshg2_mag:1"
 // MMG
-#define MMG "rhs_weap_m240B_CAP"
-#define MMG_MAG "rhsusf_50Rnd_762x51:10"
+#define MMG "rhs_weap_pkp"
+#define MMG_MAG "rhs_100Rnd_762x54mmR:5"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEDP:1"
-#define MAT_MAG2 "rhs_mag_smaw_HEDP:1"
+#define MAT "rhs_weap_rshg2"
+#define MAT_MAG "rhs_rshg2_mag:1"
+#define MAT_MAG2 "rhs_rshg2_mag:1"
 #define MAT_OPTIC ""
+
+
+
 // -------------------- PASTE ABOVE THIS LINE
 
 // SAM
@@ -45,10 +48,10 @@
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m38_rail"
-#define SNIPER_MAG "rhsgref_5Rnd_762x54_m38:5"
+#define SNIPER "UK3CB_BAF_L135A1"
+#define SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
 // Spotter Rifle
-#define SPOTTER RIFLE
+#define SPOTTER "UK3CB_BAF_L86A3"
 #define SPOTTER_MAG RIFLE_MAG
 // SMG
 #define SMG CARBINE
@@ -226,4 +229,3 @@ class engineer_F: Fic_eng {// Mine Specialist
   magazines[] += {BASE_MINE};
 };
 class fallback: Soldier_F {}; // This means any faction member who doesn't match something will use this loadout
-

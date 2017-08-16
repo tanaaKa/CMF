@@ -14,7 +14,7 @@
 #define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk", "rhsusf_acc_compm4"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "RH_ta31rmr","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
 // GL Rifle
 #define GLRIFLE "rhs_weap_m16a4_carryhandle_M203"
 #define GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
@@ -105,21 +105,22 @@ class Soldier_TL_F: Soldier_F {// FTL
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS,RADIO_MR};
-  linkedItems[] += {LEADER_LINKED,BINOS};
+  linkedItems[] += {BINOS};
 };
 class Soldier_SL_F: Soldier_TL_F {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR,RADIO_LR};
+  linkedItems[] = {BASE_LINKED,BINOS};
+  items[] += {RADIO_LR};
 };
 class officer_F: Soldier_SL_F {// CO and DC
-  items[] += {RADIO_LR,RADIO_MR};
+  items[] += {};
+  linkedItems[] += {};
 };
 class soldier_UAV_F: Soldier_F {
   backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
-  items[] += {RADIO_MR};
+  items[] += {RADIO_LR};
 };
 class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
@@ -137,6 +138,7 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  backpack[] = {"rhs_medic_bag"};
   backpackItems[] = {MEDIC_MEDICAL};
   items[] += {RADIO_MR};
 };
@@ -187,7 +189,7 @@ class sniper_F: spotter_F {// Sniper
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED};
-  attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
+  attachments[] = {"optic_LRPS"};
 };
 class Helipilot_F {// Pilot
   // uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};

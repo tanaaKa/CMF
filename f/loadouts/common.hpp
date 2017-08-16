@@ -3,7 +3,7 @@
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
 #define RADIO_MR "ACRE_PRC148"
-#define RADIO_LR "ACRE_PRC152"
+#define RADIO_LR "ACRE_PRC117F"
 
 // KEYS
 #define KEY_WEST "ACE_key_west"
@@ -13,10 +13,10 @@
 // GEAR
 #define BASE_MEDICAL "ACE_fieldDressing:2","ACE_tourniquet:2"
 #define MEDIC_MEDICAL "ACE_packingBandage:10","ACE_elasticBandage:20","ACE_quikclot:5","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_morphine:12","ACE_tourniquet:5"
-#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item"
+#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_Flashlight_XL50"
 #define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_XL50"
 #define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
-#define COMMON_LEADER_LINKED RADIO_MR
+//#define COMMON_LEADER_LINKED "ItemGPS"
 #define BASE_SMOKES "SmokeShell:2"
 #define LEADER_SMOKES "SmokeShell:2","SmokeShellGreen:2"
 #define MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"

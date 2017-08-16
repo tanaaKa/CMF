@@ -23,11 +23,6 @@ private _unitfaction = toLower (faction player);
 // If the unitfaction is different from the group leader's faction, the latters faction is used
 if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1",_unitfaction];
-	};
 
 // ====================================================================================
 
@@ -39,11 +34,6 @@ if (serverCommandAvailable "#kick") then {
 
 #include "f\briefing\f_briefing_admin.sqf"
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for host selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================
@@ -56,11 +46,6 @@ if (_unitfaction in ["blu_f","blu_t_f"]) exitwith {
 
 #include "f\briefing\f_briefing_nato.sqf"
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================
@@ -73,11 +58,6 @@ if (_unitfaction in ["opf_f","opf_t_f"]) exitwith {
 
 #include "f\briefing\f_briefing_csat.sqf"
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================
@@ -90,11 +70,6 @@ if (_unitfaction in ["ind_f"]) exitwith {
 
 #include "f\briefing\f_briefing_aaf.sqf"
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 
@@ -108,11 +83,6 @@ if (_unitfaction in ["civ_f"]) exitwith {
 
 #include "f\briefing\f_briefing_civ.sqf"
 
-// DEBUG
-	if (f_param_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================

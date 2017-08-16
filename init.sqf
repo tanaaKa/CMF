@@ -1,10 +1,4 @@
 // ====================================================================================
-// Common Local Variables
-if(isServer) then {
-	f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
-};
-
-// ====================================================================================
 // F3 - Briefing
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_briefing = [] execVM "briefing.sqf";

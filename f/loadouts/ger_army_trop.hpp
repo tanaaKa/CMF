@@ -1,43 +1,44 @@
-// Author: tanaKa-
-// Description: US Army OCP
-
+// Author: Cpl. Koala
+// Description: paste your loadout config from the arseanal exporter
 #include "undef.hpp" // Reset defines
 
 // ------------------- PASTE BELOW THIS LINE
-// GEAR
-#define CAMO_UNIFORM "rhs_uniform_cu_ocp"
-#define CAMO_VEST "rhsusf_iotv_ocp_Rifleman"
-#define CAMO_BACKPACK "rhsusf_falconii_mc"
-#define CAMO_HEADGEAR "rhsusf_ach_helmet_ESS_ocp"
+
+// Camo set
+#define CAMO_UNIFORM "PBW_Uniform3_tropen","PBW_Uniform3K_tropen","PBW_Uniform4_tropen","PBW_Uniform4K_tropen"
+#define CAMO_VEST "pbw_splitter_schtz","pbw_splitter_sani","pbw_splitter_mg_h","pbw_splitter_grpfhr","pbw_splitter_mg"
+#define CAMO_BACKPACK "B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli"
+#define CAMO_HEADGEAR "PBW_Helm1_tropen","PBW_Helm1_tropen_HBO","PBW_Helm1_tropen_HBOD","PBW_Helm1_tropen_H"
 // Rifle
-#define RIFLE "rhs_weap_m4a1_pmag"
-#define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk", "RH_eotech553"
+#define RIFLE "hlc_rifle_G36A1"
+#define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8", "hlc_30rnd_556x45_Tracers_G36:2"
+#define RIFLE_ATTACHMENTS ""
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "RH_ta31rmr","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","RKSL_optic_RMR_MS19"
 // GL Rifle
-#define GLRIFLE "rhs_weap_m4a1_m203"
-#define GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
+#define GLRIFLE "hlc_rifle_G36A1AG36"
+#define GLRIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8", "hlc_30rnd_556x45_Tracers_G36:2"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:7"
-#define GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:4"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
+#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
-#define CARBINE "rhs_weap_m4a1_pmag"
-#define CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10"
+#define CARBINE "hlc_rifle_G36KA1"
+#define CARBINE_MAG "hlc_30rnd_556x45_EPR_G36:5"
 // AR
-#define AR "rhs_weap_m249_pip_L_vfg"
-#define AR_MAG "rhs_200rnd_556x45_M_SAW:3"
+#define AR "hlc_rifle_MG36"
+#define AR_MAG "hlc_100rnd_556x45_EPR_G36:3", "hlc_100rnd_556x45_M_G36:2"
 // AT
-#define AT "rhs_weap_M136"
-#define AT_MAG "rhs_m136_mag:1"
+#define AT "rhs_weap_m72a7"
+#define AT_MAG "rhs_m72a7_mag:1"
 // MMG
-#define MMG "rhs_weap_m240B_CAP"
-#define MMG_MAG "rhsusf_50Rnd_762x51:10"
+#define MMG "hlc_lmg_MG3KWS_b"
+#define MMG_MAG "hlc_50Rnd_762x51_B_MG3:8", "hlc_50Rnd_762x51_T_MG3:2"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEDP:1"
-#define MAT_MAG2 "rhs_mag_smaw_HEDP:1"
+#define MAT "launch_B_Titan_short_F"
+#define MAT_MAG "Titan_AT:1"
+#define MAT_MAG2 "Titan_AP:1"
 #define MAT_OPTIC ""
+
 // -------------------- PASTE ABOVE THIS LINE
 
 // SAM
@@ -45,8 +46,8 @@
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m38_rail"
-#define SNIPER_MAG "rhsgref_5Rnd_762x54_m38:5"
+#define SNIPER "UK3CB_BAF_L135A1"
+#define SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
 // Spotter Rifle
 #define SPOTTER RIFLE
 #define SPOTTER_MAG RIFLE_MAG
@@ -54,8 +55,8 @@
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "UK3CB_BAF_L131A1"
-#define PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
+#define PISTOL "hgun_P07_khk_F"
+#define PISTOL_MAG "16Rnd_9x21_Mag:3"
 // Grenades
 #define BASE_FRAG "rhs_mag_m67:2"
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
@@ -226,4 +227,3 @@ class engineer_F: Fic_eng {// Mine Specialist
   magazines[] += {BASE_MINE};
 };
 class fallback: Soldier_F {}; // This means any faction member who doesn't match something will use this loadout
-
