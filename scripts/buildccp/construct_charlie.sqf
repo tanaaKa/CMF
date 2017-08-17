@@ -28,14 +28,14 @@ params["_site"];
 	// Creates physical MASH at location of construction site
 	_ccp = "MASH" createVehicle _pos;
 	_ccp addItemCargoGlobal ["ACE_epinephrine", 10];
-	_ccp addItemCargoGlobal ["ACE_morphine", 10];
+	_ccp addItemCargoGlobal ["ACE_morphine", 20];
 	_ccp addItemCargoGlobal ["ACE_Bodybag", 10];
-	_ccp addItemCargoGlobal ["ACE_quikclot", 10];
+	_ccp addItemCargoGlobal ["ACE_quikclot", 20];
 	_ccp addItemCargoGlobal ["ACE_bloodIV", 10];
 	_ccp addItemCargoGlobal ["ACE_plasmaIV", 10];
 	_ccp addItemCargoGlobal ["ACE_salineIV", 10];
-	_ccp addItemCargoGlobal ["ACE_tourniquet", 10];
-	_ccp addItemCargoGlobal ["ACE_elasticBandage", 10];
+	_ccp addItemCargoGlobal ["ACE_tourniquet", 5];
+	_ccp addItemCargoGlobal ["ACE_elasticBandage", 20];
 	_ccp setDir (getDir _site);
 	
 	// Add ACE interact to call reinforcements
