@@ -66,6 +66,9 @@ class Soldier_F {// rifleman
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {ALT_OPTICS};
 };
+class Survivor_F: Soldier_F { // FT CLS
+	backpackItems[] = {CLS_MEDICAL};
+};
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,BASE_GRENADES};

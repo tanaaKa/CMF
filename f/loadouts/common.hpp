@@ -11,10 +11,11 @@
 #define KEY_IND "ACE_key_indp"
 
 // GEAR
-#define BASE_MEDICAL "ACE_fieldDressing:2","ACE_tourniquet:2"
-#define MEDIC_MEDICAL "ACE_packingBandage:10","ACE_elasticBandage:20","ACE_quikclot:5","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_morphine:12","ACE_tourniquet:5"
-#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_Flashlight_XL50"
-#define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_XL50"
+#define BASE_MEDICAL "ACE_elasticBandage:1","ACE_tourniquet:1","ACE_packingBandage:2"
+#define MEDIC_MEDICAL "ACE_packingBandage:20","ACE_elasticBandage:15","ACE_quikclot:5","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_morphine:12","ACE_tourniquet:2"
+#define CLS_MEDICAL "ACE_packingBandage:5","ACE_elasticBandage:5","ACE_tourniquet:2"
+#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_Flashlight_XL50","ACE_EntrenchingTool"
+#define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_XL50","ACE_personalAidKit"
 #define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
 //#define COMMON_LEADER_LINKED "ItemGPS"
 #define BASE_SMOKES "SmokeShell:2"

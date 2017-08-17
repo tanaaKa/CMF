@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1562;
+		nextID=1566;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1322.3822,51.736874,745.03094};
-		dir[]={0.047074828,-0.70170635,0.71096152};
-		up[]={0.046360727,0.71245909,0.70017123};
-		aside[]={0.99785012,-8.8129309e-007,-0.066068448};
+		pos[]={1304.358,21.347929,735.57874};
+		dir[]={0.088557839,-0.56550521,0.82004869};
+		up[]={0.060720116,0.82470334,0.56226915};
+		aside[]={0.99427426,-5.7648867e-007,-0.1073702};
 	};
 };
 binarizationWanted=0;
@@ -3346,7 +3346,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="RED";
 								};
 							};
 						};
@@ -3503,7 +3503,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -3620,7 +3620,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -3696,11 +3696,11 @@ class Mission
 					class Attributes
 					{
 						name="UnitNATO_A1_AT2";
-						description=" Alpha 1 Rifleman (AT)";
+						description=" Alpha 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1321;
-					type="B_soldier_LAT_F";
+					id=1565;
+					type="B_Survivor_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3737,7 +3737,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -5910,7 +5910,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -5986,11 +5986,11 @@ class Mission
 					class Attributes
 					{
 						name="UnitNATO_B1_AT2";
-						description=" Bravo 1 Rifleman (AT)";
+						description=" Bravo 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1327;
-					type="B_soldier_LAT_F";
+					id=1563;
+					type="B_Soldier_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6027,7 +6027,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -8143,7 +8143,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -8219,11 +8219,11 @@ class Mission
 					class Attributes
 					{
 						name="UnitNATO_C1_AT2";
-						description=" Charlie 1 Rifleman (AT)";
+						description=" Charlie 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1345;
-					type="B_soldier_LAT_F";
+					id=1564;
+					type="B_Soldier_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8260,7 +8260,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -34163,7 +34163,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1492.5518,5,952.32422};
+				position[]={1492.552,5,952.32397};
 			};
 			id=1545;
 			type="ACE_moduleAdvancedMedicalSettings";
@@ -34222,7 +34222,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -34279,7 +34279,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -34317,7 +34317,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -34374,7 +34374,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=4;
+							value=0;
 						};
 					};
 				};

@@ -32,6 +32,8 @@ params["_site"];
 	_ccp addItemCargoGlobal ["ACE_Bodybag", 20];
 	_ccp addItemCargoGlobal ["ACE_quikclot", 30];
 	_ccp addItemCargoGlobal ["ACE_bloodIV", 20];
+	_ccp addItemCargoGlobal ["ACE_bloodIV_500", 20];
+	_ccp addItemCargoGlobal ["ACE_bloodIV_250", 20];
 	_ccp addItemCargoGlobal ["ACE_plasmaIV", 20];
 	_ccp addItemCargoGlobal ["ACE_salineIV", 20];
 	_ccp addItemCargoGlobal ["ACE_tourniquet", 10];
@@ -69,6 +71,7 @@ params["_site"];
 	_marker setMarkerType "loc_hospital";
 	_marker setMarkerColor "ColorWhite";
 	_marker setMarkerText "1PLT FH";
+	_veh = createVehicle ["B_Truck_01_medical_F", position player, [], 10, "NONE"];
 
 	// Alerts all players that a MASH has been constructed
 	_hintString remoteExec ["hint", 0];
