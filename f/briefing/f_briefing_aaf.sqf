@@ -12,6 +12,11 @@
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
 *** Insert information on administration and logistics here. ***
+<br/><br/>
+<font size='18'>MEDICAL TYPE</font><br/>
+Centralized - Medical personnel build and stay at medical facilities<br/>
+De-centralized - Medical personnel move with the squad/platoon<br/>
+Para-rescue - Medical personnel are on-call with rotary support
 "]];
 
 // ====================================================================================

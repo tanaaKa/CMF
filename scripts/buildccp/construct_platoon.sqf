@@ -71,7 +71,6 @@ params["_site"];
 	_marker setMarkerType "loc_hospital";
 	_marker setMarkerColor "ColorWhite";
 	_marker setMarkerText "1PLT FH";
-	_veh = createVehicle ["B_Truck_01_medical_F", position player, [], 10, "NONE"];
 
 	// Alerts all players that a MASH has been constructed
 	_hintString remoteExec ["hint", 0];
@@ -82,3 +81,7 @@ params["_site"];
 	// Ends animation if play exits progress bar
 	player switchMove ([player] call ace_common_fnc_getDefaultAnim);
 }, "Constructing CCP..."] call ace_common_fnc_progressBar;
+
+	// Spawn veh for adv med purposes
+	sleep 10;
+	createVehicle ["B_Truck_01_medical_F", player modelToWorld [10, 0, 0], [], 0, "NONE"];
