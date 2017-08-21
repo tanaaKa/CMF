@@ -42,6 +42,7 @@ params["_site"];
 	_ccp addItemCargoGlobal ["ACE_atropine", 5];
 	_ccp addItemCargoGlobal ["ACE_surgicalKit",2];
 	_ccp setDir (getDir _site);
+	_ccp allowdamage false;
 	
 	// Add ACE interact to call reinforcements
 	//_reinforceAction = ["reinforceCCP","Call for Reinforcements","",{_target execVM "scripts\buildccp\reinforcements.sqf";},{true},{}] call ace_interact_menu_fnc_createAction;
@@ -84,4 +85,4 @@ params["_site"];
 
 	// Spawn veh for adv med purposes
 	sleep 10;
-	createVehicle ["B_Truck_01_medical_F", player modelToWorld [10, 0, 0], [], 0, "NONE"];
+	createVehicle ["rhsusf_m113_usarmy_medical", player modelToWorld [10, 0, 0], [], 0, "NONE"];

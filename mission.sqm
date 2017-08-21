@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1566;
+		nextID=1589;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1342.6987,63.940083,701.36298};
-		dir[]={0.017128201,-0.57585061,0.81745464};
-		up[]={0.012063903,0.81750804,0.5757615};
-		aside[]={0.9998396,-5.4100747e-007,-0.020947261};
+		pos[]={1582.7865,114.95061,719.38336};
+		dir[]={0.0056766425,-0.77936888,0.62666869};
+		up[]={0.0070588328,0.62651795,0.77934396};
+		aside[]={1.0000297,-1.3954614e-006,-0.0090549253};
 	};
 };
 binarizationWanted=0;
@@ -65,13 +65,16 @@ addons[]=
 	"acex_headless",
 	"A3_Data_F_Exp_A_Virtual",
 	"L_Suppress_Suppress_sys",
-	"potato_respawn"
+	"potato_respawn",
+	"HueyPack",
+	"ace_gforces",
+	"ace_parachute"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=35;
 		class Item0
 		{
 			className="DS_OBE_Layer";
@@ -298,6 +301,18 @@ class AddonsMetaData
 			className="potato_respawn";
 			name="potato_respawn";
 			author="Potato";
+		};
+		class Item33
+		{
+			className="HueyPack";
+			name="HueyPack";
+		};
+		class Item34
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -646,7 +661,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="en";
+								value="en,am";
 							};
 						};
 						class Item2
@@ -660,7 +675,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="ru";
+								value="ru,en";
 							};
 						};
 						class Item3
@@ -674,7 +689,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="ar";
+								value="ar,en";
 							};
 						};
 						class Item4
@@ -688,7 +703,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="ar";
+								value="ar,en";
 							};
 						};
 						class Item5
@@ -1647,14 +1662,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=119;
+		items=125;
 		class Item0
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1326.0972,8.3443718,703.65173};
-				angles[]={0,6.2821393,0};
+				position[]={1300.1713,8.3443718,702.71509};
+				angles[]={-0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1709,8 +1724,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1354.7766,8.3443718,703.25647};
-				angles[]={0,6.2821393,0};
+				position[]={1328.8507,8.3443718,702.31982};
+				angles[]={-0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1728,8 +1743,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1375.9696,6.9319248,705.18652};
-				angles[]={0,6.2821393,0};
+				position[]={1350.0437,6.9319248,704.24988};
+				angles[]={-0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13222,8 +13237,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1330.4871,5.0014391,708.95502};
-						angles[]={0,6.2821379,0};
+						position[]={1304.5612,5.0014391,708.01837};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -13323,8 +13338,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1333.278,5.0014391,707.43262};
-						angles[]={0,6.2821393,0};
+						position[]={1307.3521,5.0014391,706.49597};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -13499,8 +13514,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1359.995,5.0014391,707.74799};
-						angles[]={0,6.2821379,0};
+						position[]={1334.0691,5.0014391,706.81134};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -13600,8 +13615,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1362.6134,5.0014391,705.97833};
-						angles[]={0,6.2821393,0};
+						position[]={1336.6875,5.0014391,705.04169};
+						angles[]={-0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -13757,8 +13772,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.636,5.0014391,707.87299};
-						angles[]={0,6.2821379,0};
+						position[]={1355.7101,5.0014391,706.93634};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -13858,8 +13873,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1384.868,5.0014391,705.677};
-						angles[]={0,6.2821379,0};
+						position[]={1358.9421,5.0014391,704.74036};
+						angles[]={-0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -14117,16 +14132,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1635.3131,5.0014391,786.74084};
-						angles[]={0,0.00099769956,0};
+						position[]={1635.313,5.0014391,786.74097};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack Field Hospital"","""",{[] execVM ""scripts\buildccp\unpack_platoon.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitCSAT_CO_M";
-						description=" Platoon Medic";
+						description=" Medical Officer";
 						isPlayable=1;
 					};
 					id=371;
@@ -14481,8 +14497,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1601.7778,5.0014391,779.56567};
-						angles[]={0,0.00099769956,0};
+						position[]={1601.778,5.0014391,779.56598};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -14490,6 +14506,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_alpha.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitCSAT_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -16187,8 +16204,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1629.7195,5.0014391,778.05737};
-						angles[]={0,0.00099769956,0};
+						position[]={1629.719,5.0014391,778.05701};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -16196,6 +16213,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_bravo.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitCSAT_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -17893,8 +17911,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1661.902,5.0014391,775.96222};
-						angles[]={0,0.00099769956,0};
+						position[]={1661.902,5.0014391,775.96198};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -17902,6 +17920,7 @@ class Mission
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_charlie.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitCSAT_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
@@ -22822,16 +22841,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1492.7848,5.0014391,785.44708};
-						angles[]={0,0.0019730027,0};
+						position[]={1492.785,5.0014391,785.44696};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack Field Hospital"","""",{[] execVM ""scripts\buildccp\unpack_platoon.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitAAF_CO_M";
-						description=" Platoon Medic";
+						description=" Medical Officer";
 						isPlayable=1;
 					};
 					id=534;
@@ -23167,13 +23187,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1461.14,5.0014391,780.21802};
-						angles[]={0,0.0019730027,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_alpha.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitAAF_ASL_M";
 						description=" Alpha Medic";
 						isPlayable=1;
@@ -24862,14 +24883,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1487.481,5.0014391,778.86951};
-						angles[]={0,0.0019730027,0};
+						position[]={1487.481,5.0014391,778.87};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_bravo.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitAAF_BSL_M";
 						description=" Bravo Medic";
 						isPlayable=1;
@@ -26558,14 +26580,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1516.4385,5.0014391,776.63202};
-						angles[]={0,0.0019730027,0};
+						position[]={1516.438,5.0014391,776.63196};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="call{CCP_Unpack_Action = [""unpackCCP"",""Unpack CCP"","""",{[] execVM ""scripts\buildccp\unpack_charlie.sqf"";},{true}] call ace_interact_menu_fnc_createAction; [this, 1, [""ACE_SelfActions""], CCP_Unpack_Action] call ace_interact_menu_fnc_addActionToObject;}";
 						name="UnitAAF_CSL_M";
 						description=" Charlie Medic";
 						isPlayable=1;
@@ -33151,7 +33174,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.69999999;
+							value=1;
 						};
 					};
 				};
@@ -34222,7 +34245,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -34484,6 +34507,725 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item119
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1376.326,5.0014391,706.06396};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitNATO_AH1_P_1";
+						description=" Medevac Helo Pilot@Medevac";
+						isPlayable=1;
+					};
+					id=1568;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="14,3,0";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1379.558,5.0014391,703.86798};
+						angles[]={0,6.2821379,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitNATO_AH1_CP_1";
+						description=" Paramedic";
+						isPlayable=1;
+					};
+					id=1571;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="14,3,0";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_AH1_1";
+			};
+			id=1567;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="AH1,24,white,\z\potato\addons\markers\data\attack_helicopter.paa";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1370.6591,7.2488427,703.37701};
+				angles[]={0,6.2821379,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VehNATO_AH1_1";
+			};
+			id=1570;
+			type="UH1H_Medevac";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,2]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1527.1464,7.2488427,711.75793};
+				angles[]={-0,6.2821379,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VehNATO_AH1_2";
+			};
+			id=1575;
+			type="UH1H_Medevac";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,2]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item122
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1532.3051,5.0014391,714.18097};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						description=" Medevac Helo Pilot@Medevac";
+						isPlayable=1;
+					};
+					id=1577;
+					type="I_pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1536.13,5.0014391,712.159};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						description=" Paramedic";
+						isPlayable=1;
+					};
+					id=1579;
+					type="I_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1576;
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1675.9021,7.2488427,708.94275};
+				angles[]={-0,6.2821379,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VehNATO_AH1_3";
+			};
+			id=1583;
+			type="UH1H_Medevac";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,2]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item124
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1681.238,5.0014391,711.41797};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						description=" Medevac Helo Pilot@Medevac";
+						isPlayable=1;
+					};
+					id=1585;
+					type="O_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1684.463,5.0014391,708.133};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description=" Paramedic";
+						isPlayable=1;
+					};
+					id=1587;
+					type="O_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1584;
 		};
 	};
 	class Connections

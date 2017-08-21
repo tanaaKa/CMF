@@ -37,6 +37,7 @@ params["_site"];
 	_ccp addItemCargoGlobal ["ACE_tourniquet", 5];
 	_ccp addItemCargoGlobal ["ACE_elasticBandage", 20];
 	_ccp setDir (getDir _site);
+	_ccp allowdamage false;
 	
 	// Add ACE interact to call reinforcements
 	//_reinforceAction = ["reinforceCCP","Call for Reinforcements","",{_target execVM "scripts\buildccp\reinforcements.sqf";},{true},{}] call ace_interact_menu_fnc_createAction;
