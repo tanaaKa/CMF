@@ -35,6 +35,6 @@ while {true} do
       ((crew _vehicle) apply {name _x}) joinString "   ",
       "PLAIN DOWN",
       0.1
-      ];
+    ];
   };
 };
