@@ -77,10 +77,8 @@ plank_deploy_fnc_removePlacementActions = {
 
     private _actionIdNames = ["plank_deploy_confirmActionId", "plank_deploy_cancelActionId", "plank_deploy_openActionId"];
     {
-        private _actionId = _unit getVariable _x;
-        if (!isNil {_actionId}) then {
-            _unit removeAction _actionId;
-        };
+        private _actionId = _unit getVariable [_x,-1];
+        _unit removeAction _actionId;
     } foreach _actionIdNames;
 };
 
@@ -223,7 +221,7 @@ plank_deploy_fnc_initUnitVariables = {
     FUN_ARGS_2(_unit,_fortifications);
 
     private _fortActionIds = [];
-    _fortActionIds set [(count _fortifications) - 1, nil];
+    _fortActionIds resize (count _fortifications);
     _unit setVariable ["plank_deploy_fortActionIds", _fortActionIds, false];
     _unit setVariable ["plank_deploy_fortCounts", _fortifications, false];
     [_unit] call plank_deploy_fnc_resetFort;
