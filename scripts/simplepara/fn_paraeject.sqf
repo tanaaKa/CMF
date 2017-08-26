@@ -7,7 +7,7 @@ _vel = velocity _veh;
 _dir = direction _veh;
 
 _vel params ["_xVel, _yVel", "_zVel"];
-//_speed = sqrt ( _x*_x + _y*_y ) * 3.6;
+//_speed = sqrt ( _xVel*_xVel + _yVel*_yVel ) * 3.6;
 _speed = 1;
 
 MoveOut _unit;
