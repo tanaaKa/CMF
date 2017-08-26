@@ -3,8 +3,7 @@
 plank_deploy_fnc_setFortDirection = {
     FUN_ARGS_3(_unit,_fort,_fortIndex);
 
-    private "_direction";
-    _direction = _unit getVariable ["plank_deploy_fortDirection", GET_FORT_DIRECTION(_fortIndex)];
+    private _direction = _unit getVariable ["plank_deploy_fortDirection", GET_FORT_DIRECTION(_fortIndex)];
     _fort setDir ((getDir _unit) + _direction);
 };
 
@@ -15,11 +14,11 @@ plank_deploy_fnc_setFortPosition = {
     _heightMode = _unit getVariable ["plank_deploy_heightMode", RELATIVE_TO_UNIT];
     _newPostion = _unit modelToWorld [0, [_unit] call plank_deploy_fnc_getFortDistance, 0];
     call {
-        if (_heightMode == RELATIVE_TO_TERRAIN) exitWith {
+        if (_heightMode isEqualTo RELATIVE_TO_TERRAIN) exitWith {
             _newPostion set [2, 0];
             _fort setPos _newPostion;
         };
-        if (_heightMode == RELATIVE_TO_UNIT) exitWith {
+        if (_heightMode isEqualTo RELATIVE_TO_UNIT) exitWith {
             _newPostion set [2, ((getPosASL _unit) select 2) + (_unit getVariable ["plank_deploy_fortRelativeHeight", 0])];
             _fort setPosASL _newPostion;
         };
@@ -28,7 +27,7 @@ plank_deploy_fnc_setFortPosition = {
 
 plank_deploy_fnc_setFortVariables = {
     FUN_ARGS_7(_fortIndex,_fort,_relativeHeight,_direction,_distance,_pitch,_bank);
-    
+
     _unit setVariable ["plank_deploy_fortIndex", _fortIndex, false];
     _unit setVariable ["plank_deploy_fort", _fort, false];
     _unit setVariable ["plank_deploy_fortRelativeHeight", _relativeHeight, false];
@@ -53,8 +52,7 @@ plank_deploy_fnc_getFortDistance = {
 plank_deploy_fnc_createFortification = {
     FUN_ARGS_2(_unit,_fortIndex);
 
-    private "_fort";
-    _fort = createVehicle [GET_FORT_CLASS_NAME(_fortIndex), [0,0,0], [], 0, "NONE"];
+    private _fort = createVehicle [GET_FORT_CLASS_NAME(_fortIndex), [0,0,0], [], 0, "NONE"];
     [_fortIndex, _fort, 0, GET_FORT_DIRECTION(_fortIndex), GET_FORT_DISTANCE(_fortIndex), 0, 0] call plank_deploy_fnc_setFortVariables;
     [_unit, _fort, _fortIndex] call plank_deploy_fnc_setFortDirection;
     [_unit, _fort] call plank_deploy_fnc_setFortPosition;
@@ -77,11 +75,9 @@ plank_deploy_fnc_addPlacementActions = {
 plank_deploy_fnc_removePlacementActions = {
     FUN_ARGS_1(_unit);
 
-    private "_actionIdNames";
-    _actionIdNames = ["plank_deploy_confirmActionId", "plank_deploy_cancelActionId", "plank_deploy_openActionId"];
+    private _actionIdNames = ["plank_deploy_confirmActionId", "plank_deploy_cancelActionId", "plank_deploy_openActionId"];
     {
-        private "_actionId";
-        _actionId = _unit getVariable _x;
+        private _actionId = _unit getVariable _x;
         if (!isNil {_actionId}) then {
             _unit removeAction _actionId;
         };
@@ -91,8 +87,7 @@ plank_deploy_fnc_removePlacementActions = {
 plank_deploy_fnc_removeFortificationActions = {
     FUN_ARGS_1(_unit);
 
-    private "_fortActionIds";
-    _fortActionIds = _unit getVariable ["plank_deploy_fortActionIds", []];
+    private _fortActionIds = _unit getVariable ["plank_deploy_fortActionIds", []];
     {
         if (!isNil {_x}) then {
             _unit removeAction _x;
@@ -113,14 +108,14 @@ plank_deploy_fnc_updateFortPlacement = {
             [_unit, _fort] call plank_deploy_fnc_setFortPitchAndBank;
         };
 
-        _unit getVariable ["plank_deploy_placementState", STATE_PLACEMENT_INIT] != STATE_PLACEMENT_IN_PROGRESS;
+        !((_unit getVariable ["plank_deploy_placementState", STATE_PLACEMENT_INIT]) isEqualTo STATE_PLACEMENT_IN_PROGRESS);
     };
 };
 
 plank_deploy_fnc_startFortPlacement = {
     FUN_ARGS_3(_unit,_actionId,_fortIndex);
 
-    if ((_unit getVariable ["plank_deploy_placementState", STATE_PLACEMENT_INIT]) != STATE_PLACEMENT_IN_PROGRESS) then {
+    if !((_unit getVariable ["plank_deploy_placementState", STATE_PLACEMENT_INIT]) isEqualTo STATE_PLACEMENT_IN_PROGRESS) then {
         private "_fortActionIds";
         _fortActionIds = _unit getVariable ["plank_deploy_fortActionIds", []];
         _fortActionIds set [_fortIndex, nil];
@@ -144,14 +139,15 @@ plank_deploy_fnc_resetFort = {
     FUN_ARGS_1(_unit);
 
     _unit setVariable ["plank_deploy_fortIndex", -1, false];
-    private "_variableNames";
-    _variableNames = ["plank_deploy_fort", "plank_deploy_fortRelativeHeight", "plank_deploy_fortRelativeHeight",
+
+    {
+        _unit setVariable [_x, nil, false];
+    } foreach
+    [
+        "plank_deploy_fort", "plank_deploy_fortRelativeHeight", "plank_deploy_fortRelativeHeight",
         "plank_deploy_fortDirection", "plank_deploy_fortDistance", "plank_deploy_fortPitch",
         "plank_deploy_fortBank", "plank_deploy_heightMode"
     ];
-    {
-        _unit setVariable [_x, nil, false];
-    } foreach _variableNames;
 };
 
 plank_deploy_fnc_reAddFortificationAction = {
@@ -226,8 +222,7 @@ plank_deploy_fnc_addFortificationActions = {
 plank_deploy_fnc_initUnitVariables = {
     FUN_ARGS_2(_unit,_fortifications);
 
-    private "_fortActionIds";
-    _fortActionIds = [];
+    private _fortActionIds = [];
     _fortActionIds set [(count _fortifications) - 1, nil];
     _unit setVariable ["plank_deploy_fortActionIds", _fortActionIds, false];
     _unit setVariable ["plank_deploy_fortCounts", _fortifications, false];
