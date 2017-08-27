@@ -16,7 +16,7 @@
 #define CLS_MEDICAL "ACE_packingBandage:5","ACE_elasticBandage:5","ACE_tourniquet:2"
 #define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_Flashlight_XL50","ACE_EntrenchingTool"
 #define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_XL50","ACE_personalAidKit"
-#define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
+#define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"
 //#define COMMON_LEADER_LINKED "ItemGPS"
 #define BASE_SMOKES "SmokeShell:2"
 #define LEADER_SMOKES "SmokeShell:2","SmokeShellGreen:2"
