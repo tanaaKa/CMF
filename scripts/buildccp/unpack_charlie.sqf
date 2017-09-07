@@ -33,7 +33,7 @@ if ((player distance _pos)>6) exitWith {
 	[_site, 0, ["ACE_MainActions"], _constructAction] remoteExecCall ["ace_interact_menu_fnc_addActionToObject",0];
 	
 	// Add ACE interact to pack up ccp backpacks ONLY for the person that placed it.
-	_packupAction = ["packupCCP","Pack Up","",{_target execVM "scripts\buildccp\packup.sqf";},{true}] call ace_interact_menu_fnc_createAction;  
+	_packupAction = ["packupCCP","Pack Up","",{_target execVM "scripts\buildccp\packup_charlie.sqf";},{true}] call ace_interact_menu_fnc_createAction;  
 	[_site, 0, ["ACE_MainActions"], _packupAction] call ace_interact_menu_fnc_addActionToObject;
 
 	// Remove 'unpack CCP' action from inventory.

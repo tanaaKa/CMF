@@ -81,7 +81,7 @@ params["_site"];
 }, {
 	// Ends animation if play exits progress bar
 	player switchMove ([player] call ace_common_fnc_getDefaultAnim);
-}, "Constructing CCP..."] call ace_common_fnc_progressBar;
+}, "Constructing FH..."] call ace_common_fnc_progressBar;
 
 	// Spawn veh for adv med purposes
 	sleep 10;
