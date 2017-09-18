@@ -11,7 +11,7 @@ class CfgLoadouts {
 
   // Do Vehicle Loadouts
   // (1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
-  setVehicleLoadouts = -1;
+  setVehicleLoadouts = 1;
 
   // Fallback: use a basic soldiers loadout when the unit's classname isn't found (for Alive spawning random units)
   useFallback = 1;
@@ -29,7 +29,7 @@ class CfgLoadouts {
   // US Marines - Woodland "f\loadouts\us_marines_w.hpp"
   // US Marines - Desert "f\loadouts\us_marines_d.hpp"
   // RU MSV - EMR "f\loadouts\ru_msv_emr.hpp"
-  // GER Army - Flecktarn "ger_army_fleck.hpp"
+  // AUS Army - MC/Auspat "aus_army_auspat.hpp"
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OPF and CIV classes in a BLU vs IND fight)
@@ -38,13 +38,12 @@ class CfgLoadouts {
   };
 
   class ind_f { // IND
-    #include "f\loadouts\ger_army_fleck.hpp"
+    #include "f\loadouts\aus_army_auspat.hpp"
   };
 
   class opf_f { // OPF
     #include "f\loadouts\ru_msv_emr.hpp"
   }; 
-
-  // Civilians (mainly for RP missions)
-  #include "f\loadouts\civilians.hpp" // Bare example of doing civilian loadouts
+  
+  #include "f\loadouts\civilians.hpp" // Civilians (mainly for RP missions) 
 };

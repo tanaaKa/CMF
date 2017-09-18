@@ -85,4 +85,11 @@ params["_site"];
 
 	// Spawn veh for adv med purposes
 	sleep 10;
-	createVehicle ["rhsusf_m113_usarmy_medical", player modelToWorld [10, 0, 0], [], 0, "NONE"];
+	_veh1 = createVehicle ["rhsusf_m113_usarmy_medical", player modelToWorld [10, 0, 0], [], 0, "NONE"];
+	_veh1 addItemCargoGlobal ["ACE_epinephrine", 10];
+	_veh1 addItemCargoGlobal ["ACE_morphine", 10];
+	_veh1 addItemCargoGlobal ["ACE_Bodybag", 5];
+	_veh1 addItemCargoGlobal ["ACE_quikclot", 10];
+	_veh1 addItemCargoGlobal ["ACE_salineIV", 5];
+	_veh1 addItemCargoGlobal ["ACE_elasticBandage", 10];
+	_veh1 addItemCargoGlobal ["ACE_packingBandage",10]; 

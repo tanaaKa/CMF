@@ -56,7 +56,7 @@ _exe = player createDiaryRecord ["diary", ["Mission Briefing","
 <br/><br/>
 Mission by: *** Insert mission credits here. ***
 <br/>
-Made with Coalition Mission Framework (CMF) 3.8h2
+Made with Coalition Mission Framework (CMF) 3.9
 "]];
 
 // ====================================================================================

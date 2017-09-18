@@ -54,6 +54,10 @@ class CfgFunctions {
 class Extended_InitPost_EventHandlers {
 	class Car 
 	{
+		class cmf_noeject 
+		{ 
+			init = "(_this select 0) allowCrewInImmobile true;"; 
+		};
 		class cmf_nothermals 
 		{ 
 			init = "(_this select 0) disableTIEquipment true;"; 
@@ -61,6 +65,10 @@ class Extended_InitPost_EventHandlers {
 	};
 	class Tank
 	{
+		class cmf_noeject 
+		{ 
+			init = "(_this select 0) allowCrewInImmobile true;"; 
+		};
 		class cmf_nothermals 
 		{ 
 			init = "(_this select 0) disableTIEquipment true;"; 
