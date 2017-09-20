@@ -1148,7 +1148,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										class data
@@ -1247,6 +1247,20 @@ class CustomAttributes
 											value="sthud_settings_textshadow";
 										};
 									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="acre_sys_core_ts3channelname";
+										};
+									};
 								};
 							};
 						};
@@ -1263,7 +1277,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										class data
@@ -1560,6 +1574,51 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"STRING"
+															};
+														};
+														value="In-game (ACRE)";
 													};
 												};
 												class Item1
@@ -24368,6 +24427,7 @@ class Mission
 					};
 					id=1686;
 					type="I_Survivor_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26065,6 +26125,7 @@ class Mission
 					};
 					id=1687;
 					type="I_Survivor_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27762,6 +27823,7 @@ class Mission
 					};
 					id=1688;
 					type="I_Survivor_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
