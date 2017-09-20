@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1684;
+		nextID=1692;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1376.2413,51.395794,697.33234};
-		dir[]={-0.083785921,-0.56628245,0.82007557};
-		up[]={-0.057571329,0.82407987,0.5634464};
-		aside[]={0.99492157,1.3551326e-006,0.10165722};
+		pos[]={1515.6964,264.71484,592.60852};
+		dir[]={0.0043014344,-0.76649779,0.6424014};
+		up[]={0.0051277429,0.64213538,0.76650727};
+		aside[]={1.0000813,-7.8332596e-007,-0.0066890474};
 	};
 };
 binarizationWanted=0;
@@ -60,7 +60,6 @@ addons[]=
 	"A3_Ui_F",
 	"WW2_Core_c_IF_Gui_c",
 	"ace_advanced_fatigue",
-	"acex_headless",
 	"A3_Data_F_Exp_A_Virtual",
 	"L_Suppress_Suppress_sys",
 	"potato_respawn",
@@ -73,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=34;
 		class Item0
 		{
 			className="DS_OBE_Layer";
@@ -268,43 +267,36 @@ class AddonsMetaData
 		};
 		class Item28
 		{
-			className="acex_headless";
-			name="ACEX - Headless";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item29
-		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="L_Suppress_Suppress_sys";
 			name="L_Suppress_Suppress_sys";
 			author="LAxemann and jokoho482";
 		};
-		class Item31
+		class Item30
 		{
 			className="potato_respawn";
 			name="potato_respawn";
 			author="Potato";
 		};
-		class Item32
+		class Item31
 		{
 			className="HueyPack";
 			name="HueyPack";
 		};
-		class Item33
+		class Item32
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
@@ -1659,7 +1651,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=153;
+		items=152;
 		class Item0
 		{
 			dataType="Object";
@@ -1816,7 +1808,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1359.1653,7.5372982,731.66559};
-				angles[]={-0,6.2821393,0};
+				angles[]={0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1834,7 +1826,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1635.0674,7.1897745,732.39716};
-				angles[]={-0,0.00099769956,0};
+				angles[]={0,0.00099769956,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1853,7 +1845,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1499.6866,7.5486078,733.35999};
-				angles[]={-0,0.0019730027,0};
+				angles[]={0,0.0019730027,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1912,7 +1904,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1326.0873,7.4626956,731.33386};
-				angles[]={-0,6.2821393,0};
+				angles[]={0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1930,7 +1922,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1342.1757,7.4626956,731.25677};
-				angles[]={-0,6.2821393,0};
+				angles[]={0,6.2821393,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1948,7 +1940,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1617.134,7.392787,732.01819};
-				angles[]={-0,0.00099769956,0};
+				angles[]={0,0.00099769956,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1967,7 +1959,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1626.5236,7.392787,732.00507};
-				angles[]={-0,0.00099769956,0};
+				angles[]={0,0.00099769956,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1986,7 +1978,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1468.4548,7.4890223,732.61652};
-				angles[]={-0,0.0019730027,0};
+				angles[]={0,0.0019730027,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2004,7 +1996,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1483.7534,7.4890223,732.17554};
-				angles[]={-0,0.0019730027,0};
+				angles[]={0,0.0019730027,0};
 			};
 			side="Empty";
 			flags=4;
@@ -6001,8 +5993,8 @@ class Mission
 						description=" Bravo 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1563;
-					type="B_Soldier_F";
+					id=1684;
+					type="B_Survivor_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6039,7 +6031,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -8234,8 +8226,8 @@ class Mission
 						description=" Charlie 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1564;
-					type="B_Soldier_F";
+					id=1685;
+					type="B_Survivor_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8272,7 +8264,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -12218,7 +12210,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1325.8873,5.0014391,723.78754};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -12319,7 +12311,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1329.8325,5.0014391,724.0235};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -12382,7 +12374,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1322.4644,5.0014391,724.29254};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -12557,7 +12549,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1341.7773,5.0014391,724.60956};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -12658,7 +12650,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1345.9993,5.0014391,724.45569};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -12721,7 +12713,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1338.0123,5.0014391,724.74756};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -12896,7 +12888,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1358.7783,5.0014391,723.98956};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -12997,7 +12989,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1362.6296,5.0014391,725.01477};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -13060,7 +13052,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1355.2573,5.0014391,725.15356};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -15111,104 +15103,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1581.899,5.0014391,763.58698};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						name="UnitCSAT_A1_AT2";
-						description=" Alpha 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1423;
-					type="O_Soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1606.614,5.0014391,765.573};
 						angles[]={0,0.00099483761,0};
 					};
@@ -15299,6 +15193,104 @@ class Mission
 										};
 									};
 									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1581.899,5.0014391,763.58698};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UnitCSAT_A1_AT2";
+						description=" Alpha 1 Rifleman (CLS)";
+						isPlayable=1;
+					};
+					id=1689;
+					type="O_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
 								};
 							};
 						};
@@ -16818,104 +16810,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1611.976,5.0014391,762.44501};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						name="UnitCSAT_B1_AT2";
-						description=" Bravo 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1431;
-					type="O_Soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1634.677,5.0014391,763.50201};
 						angles[]={0,0.00099483761,0};
 					};
@@ -17006,6 +16900,104 @@ class Mission
 										};
 									};
 									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1611.976,5.0014391,762.44501};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UnitCSAT_B1_AT2";
+						description=" Bravo 1 Rifleman (CLS)";
+						isPlayable=1;
+					};
+					id=1690;
+					type="O_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
 								};
 							};
 						};
@@ -18525,104 +18517,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1642.546,5.0014391,759.43201};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						name="UnitCSAT_C1_AT2";
-						description=" Charlie 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1439;
-					type="O_Soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02PER";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1666.475,5.0014391,761.32898};
 						angles[]={0,0.00099483761,0};
 					};
@@ -18713,6 +18607,104 @@ class Mission
 										};
 									};
 									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1642.546,5.0014391,759.43201};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UnitCSAT_C1_AT2";
+						description=" Charlie 1 Rifleman (CLS)";
+						isPlayable=1;
+					};
+					id=1691;
+					type="O_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
 								};
 							};
 						};
@@ -19533,7 +19525,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2443,5.0014391,777.4906};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -19616,7 +19608,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.2345,5.0014391,775.45758};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -19851,7 +19843,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.3018,5.0014391,771.66003};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -19934,7 +19926,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.2916,5.0014391,769.31598};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -20169,7 +20161,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.3241,5.0014391,765.55261};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -20251,7 +20243,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.3461,5.0014391,763.40247};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -20485,7 +20477,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2584,5.0014391,759.39032};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -20567,7 +20559,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.4188,5.0014391,757.16919};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -20782,7 +20774,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2285,5.0014391,753.48938};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -20864,7 +20856,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.3617,5.0014391,751.32813};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -21098,7 +21090,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2428,5.0014391,747.29541};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -21180,7 +21172,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1676.2638,5.0014391,745.22302};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
@@ -21414,7 +21406,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1674.2642,5.0014391,739.13635};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -21496,7 +21488,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1679.2635,5.0014391,737.4812};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -21596,7 +21588,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1669.2635,5.0014391,737.49115};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -21696,7 +21688,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1684.2609,5.0014391,734.73621};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -21852,7 +21844,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1616.6941,5.0014391,723.75885};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -21934,7 +21926,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1619.3274,5.0014391,723.784};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -21978,7 +21970,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1614.8578,5.0014391,723.67218};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -22096,7 +22088,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1626.5101,5.0014391,723.82788};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -22178,7 +22170,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1628.106,5.0014391,723.76282};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -22222,7 +22214,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1624.822,5.0014391,723.90387};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -22340,7 +22332,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1634.1121,5.0014391,724.01184};
-						angles[]={-0,0.00099483761,0};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=6;
@@ -22422,7 +22414,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1636.2367,5.0014391,723.6593};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -22466,7 +22458,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1632.2585,5.0014391,723.93439};
-						angles[]={-0,0.00099769956,0};
+						angles[]={0,0.00099769956,0};
 					};
 					side="East";
 					flags=4;
@@ -24364,18 +24356,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1444.9771,5.0014391,765.43701};
+						position[]={1444.9771,5.0014386,765.43701};
 					};
 					side="Independent";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						name="UnitAAF_A1_AT2";
-						description=" Alpha 1 Rifleman (AT)";
+						description=" Alpha 1 Rifleman (CLS)";
 						isPlayable=1;
 					};
-					id=1337;
-					type="I_Soldier_AT_F";
+					id=1686;
+					type="I_Survivor_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24412,7 +24404,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -25961,104 +25953,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1471.6949,5.0014391,764.10498};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						name="UnitAAF_B1_AT2";
-						description=" Bravo 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1373;
-					type="I_Soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03GRE";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1493.3101,5.0014391,764.49896};
 						angles[]={0,0.001972222,0};
 					};
@@ -26148,6 +26042,104 @@ class Mission
 										};
 									};
 									value=1.03;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1471.6949,5.0014386,764.10498};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UnitAAF_B1_AT2";
+						description=" Bravo 1 Rifleman (CLS)";
+						isPlayable=1;
+					};
+					id=1687;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
 								};
 							};
 						};
@@ -27658,104 +27650,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1500.9659,5.0014391,762.01099};
-					};
-					side="Independent";
-					flags=5;
-					class Attributes
-					{
-						name="UnitAAF_C1_AT2";
-						description=" Charlie 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1379;
-					type="I_Soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03GRE";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1522.67,5.0014391,761.37799};
 						angles[]={0,0.001972222,0};
 					};
@@ -27845,6 +27739,104 @@ class Mission
 										};
 									};
 									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1500.9659,5.0014386,762.01099};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UnitAAF_C1_AT2";
+						description=" Charlie 1 Rifleman (CLS)";
+						isPlayable=1;
+					};
+					id=1688;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
 								};
 							};
 						};
@@ -28661,7 +28653,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.1222,5.0014391,777.95605};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -28743,7 +28735,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.1687,5.0014391,775.79718};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -28977,7 +28969,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.08,5.0014391,771.71997};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -29059,7 +29051,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.1642,5.0014391,769.74323};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -29293,7 +29285,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.1003,5.0014391,765.67169};
-						angles[]={-0,0.032899454,0};
+						angles[]={0,0.032899454,0};
 					};
 					side="Independent";
 					flags=6;
@@ -29375,7 +29367,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.1692,5.0014391,763.7124};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -29609,7 +29601,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.1348,5.0014391,759.87476};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -29691,7 +29683,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.1072,5.0014391,757.57813};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -29809,7 +29801,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.1604,5.0014391,751.78778};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -29968,7 +29960,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.1781,5.0014391,753.88684};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -30126,7 +30118,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1532.228,5.0014391,747.5719};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30207,7 +30199,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.1182,5.0014391,749.57593};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -30525,7 +30517,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1535.2927,5.0014391,741.45898};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30625,7 +30617,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1525.2917,5.0014391,741.47778};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30725,7 +30717,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1540.2872,5.0014391,738.70819};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30881,7 +30873,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1468.6908,5.0014391,726.56812};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -30963,7 +30955,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1472.7117,5.0014391,725.60907};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -31007,7 +30999,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1465.2776,5.0014391,726.53851};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -31125,7 +31117,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1484.5338,5.0014391,726.44312};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -31207,7 +31199,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1488.8223,5.0014391,726.2774};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -31251,7 +31243,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1480.9609,5.0014391,726.90485};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -31369,7 +31361,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1499.8958,5.0014391,724.88208};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -31451,7 +31443,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1504.4987,5.0014391,725.18817};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -31495,7 +31487,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1495.2067,5.0014391,725.224};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -34516,96 +34508,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1492.5835,5,969.41766};
-			};
-			id=1287;
-			type="acex_headless_module";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="acex_headless_module_delay";
-					expression="_this setVariable ['delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=90;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="acex_headless_module_log";
-					expression="_this setVariable ['log',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="acex_headless_module_enabled";
-					expression="_this setVariable ['enabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="acex_headless_module_endMission";
-					expression="_this setVariable ['endMission',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item108
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={1479.4679,5,1019.57};
 			};
 			init="call{[this] call acre_api_fnc_setSpectator;}";
@@ -34712,7 +34614,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item109
+		class Item108
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -34823,7 +34725,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item110
+		class Item109
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -34833,7 +34735,7 @@ class Mission
 			id=1479;
 			type="L_ModuleSuppress";
 		};
-		class Item111
+		class Item110
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -34866,7 +34768,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -34918,7 +34820,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -35179,7 +35081,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -35212,7 +35114,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -35245,7 +35147,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Group";
 			side="West";
@@ -35522,7 +35424,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item117
+		class Item116
 		{
 			dataType="Object";
 			class PositionInfo
@@ -35563,7 +35465,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Object";
 			class PositionInfo
@@ -35604,7 +35506,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Group";
 			side="Independent";
@@ -35815,7 +35717,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Object";
 			class PositionInfo
@@ -35856,7 +35758,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Group";
 			side="East";
@@ -36067,7 +35969,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Group";
 			side="Independent";
@@ -36201,7 +36103,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36277,7 +36179,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Group";
 			side="Independent";
@@ -36368,7 +36270,7 @@ class Mission
 			};
 			id=1630;
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Group";
 			side="Independent";
@@ -36459,7 +36361,7 @@ class Mission
 			};
 			id=1633;
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Group";
 			side="Independent";
@@ -36550,7 +36452,7 @@ class Mission
 			};
 			id=1635;
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Group";
 			side="Independent";
@@ -36641,7 +36543,7 @@ class Mission
 			};
 			id=1637;
 		};
-		class Item128
+		class Item127
 		{
 			dataType="Group";
 			side="Independent";
@@ -36732,7 +36634,7 @@ class Mission
 			};
 			id=1639;
 		};
-		class Item129
+		class Item128
 		{
 			dataType="Group";
 			side="Independent";
@@ -36823,7 +36725,7 @@ class Mission
 			};
 			id=1641;
 		};
-		class Item130
+		class Item129
 		{
 			dataType="Group";
 			side="Independent";
@@ -36914,7 +36816,7 @@ class Mission
 			};
 			id=1643;
 		};
-		class Item131
+		class Item130
 		{
 			dataType="Group";
 			side="Independent";
@@ -37007,7 +36909,7 @@ class Mission
 			id=1645;
 			atlOffset=-4.7683716e-007;
 		};
-		class Item132
+		class Item131
 		{
 			dataType="Group";
 			side="West";
@@ -37098,7 +37000,7 @@ class Mission
 			};
 			id=1647;
 		};
-		class Item133
+		class Item132
 		{
 			dataType="Group";
 			side="West";
@@ -37189,7 +37091,7 @@ class Mission
 			};
 			id=1649;
 		};
-		class Item134
+		class Item133
 		{
 			dataType="Group";
 			side="West";
@@ -37280,7 +37182,7 @@ class Mission
 			};
 			id=1651;
 		};
-		class Item135
+		class Item134
 		{
 			dataType="Group";
 			side="West";
@@ -37371,7 +37273,7 @@ class Mission
 			};
 			id=1653;
 		};
-		class Item136
+		class Item135
 		{
 			dataType="Group";
 			side="West";
@@ -37462,7 +37364,7 @@ class Mission
 			};
 			id=1655;
 		};
-		class Item137
+		class Item136
 		{
 			dataType="Group";
 			side="West";
@@ -37553,7 +37455,7 @@ class Mission
 			};
 			id=1657;
 		};
-		class Item138
+		class Item137
 		{
 			dataType="Group";
 			side="West";
@@ -37644,7 +37546,7 @@ class Mission
 			};
 			id=1659;
 		};
-		class Item139
+		class Item138
 		{
 			dataType="Group";
 			side="West";
@@ -37735,7 +37637,7 @@ class Mission
 			};
 			id=1661;
 		};
-		class Item140
+		class Item139
 		{
 			dataType="Group";
 			side="East";
@@ -37826,7 +37728,7 @@ class Mission
 			};
 			id=1663;
 		};
-		class Item141
+		class Item140
 		{
 			dataType="Group";
 			side="East";
@@ -37917,7 +37819,7 @@ class Mission
 			};
 			id=1665;
 		};
-		class Item142
+		class Item141
 		{
 			dataType="Group";
 			side="East";
@@ -38008,7 +37910,7 @@ class Mission
 			};
 			id=1667;
 		};
-		class Item143
+		class Item142
 		{
 			dataType="Group";
 			side="East";
@@ -38099,7 +38001,7 @@ class Mission
 			};
 			id=1669;
 		};
-		class Item144
+		class Item143
 		{
 			dataType="Group";
 			side="East";
@@ -38190,7 +38092,7 @@ class Mission
 			};
 			id=1671;
 		};
-		class Item145
+		class Item144
 		{
 			dataType="Group";
 			side="East";
@@ -38281,7 +38183,7 @@ class Mission
 			};
 			id=1673;
 		};
-		class Item146
+		class Item145
 		{
 			dataType="Group";
 			side="East";
@@ -38372,7 +38274,7 @@ class Mission
 			};
 			id=1675;
 		};
-		class Item147
+		class Item146
 		{
 			dataType="Group";
 			side="East";
@@ -38463,7 +38365,7 @@ class Mission
 			};
 			id=1677;
 		};
-		class Item148
+		class Item147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -38539,7 +38441,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item149
+		class Item148
 		{
 			dataType="Object";
 			class PositionInfo
@@ -38615,7 +38517,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item150
+		class Item149
 		{
 			dataType="Object";
 			class PositionInfo
@@ -38655,7 +38557,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item151
+		class Item150
 		{
 			dataType="Object";
 			class PositionInfo
@@ -38695,7 +38597,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item152
+		class Item151
 		{
 			dataType="Object";
 			class PositionInfo
