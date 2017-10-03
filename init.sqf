@@ -37,6 +37,10 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "scripts\crewinfo\crew.sqf";
 
 // ====================================================================================	
+// tanaKa's no looting
+[] execVM "scripts\looting.sqf";
+
+// ====================================================================================	
 //Plank Settings
 call compile preprocessFileLineNumbers "plank\plank_init.sqf";
 
