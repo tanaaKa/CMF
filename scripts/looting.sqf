@@ -1,8 +1,13 @@
-player addEventHandler ["InventoryOpened",{
-        _this spawn {
-            waitUntil {
-                not isNull findDisplay 602
-            };
-            if (_this select 1 isKindOf "Man") then {closeDialog 602 && systemChat "You are not allowed to loot dead soldiers";};
-        }
+player addEventHandler ["InventoryOpened",
+{
+  _container = _this select 1;
+  if ((_container isKindOf "Man") && {!((side _container) isEqualTo playerSide)}) then
+  {
+    systemChat "You are not allowed to loot dead soldiers.";
+    true
+  }
+  else
+  {
+    false
+  };
 }];
