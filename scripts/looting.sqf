@@ -3,7 +3,7 @@ player addEventHandler ["InventoryOpened",
   _container = _this select 1;
   if ((_container isKindOf "Man") && {!((side _container) isEqualTo playerSide)}) then
   {
-    systemChat "You are not allowed to loot dead soldiers.";
+    systemChat "You are not allowed to loot dead enemies.";
     true
   }
   else
