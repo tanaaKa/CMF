@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={1499.2589,318.70953,615.6922};
-		dir[]={0.003928707,-0.88872671,0.4584654};
-		up[]={0.0076160077,0.45828554,0.88876623};
-		aside[]={0.99997365,-2.1031155e-008,-0.0085689109};
+		dir[]={-0.0030031926,-0.88116568,0.47284752};
+		up[]={-0.0055969516,0.47265199,0.88122487};
+		aside[]={0.99999231,-2.1415872e-008,0.0063513778};
 	};
 };
 binarizationWanted=0;
@@ -72,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=34;
 		class Item0
 		{
 			className="DS_OBE_Layer";
@@ -255,55 +255,50 @@ class AddonsMetaData
 		};
 		class Item26
 		{
-			className="WW2_Core_c_IF_Gui_c";
-			name="WW2_Core_c_IF_Gui_c";
-		};
-		class Item27
-		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="L_Suppress_Suppress_sys";
 			name="L_Suppress_Suppress_sys";
 			author="LAxemann and jokoho482";
 		};
-		class Item30
+		class Item29
 		{
 			className="potato_respawn";
 			name="potato_respawn";
 			author="Potato";
 		};
-		class Item31
+		class Item30
 		{
 			className="HueyPack";
 			name="HueyPack";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";

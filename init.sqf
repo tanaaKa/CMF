@@ -37,8 +37,12 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "scripts\crewinfo\crew.sqf";
 
 // ====================================================================================	
-// tanaKa's no looting
-[] execVM "scripts\looting.sqf";
+// tanaKa's no looting (enable if necessary)
+//[] execVM "scripts\looting.sqf";
+
+// ====================================================================================	
+// tanaKa's ear protection script for unbalanced vehicle audio (FUCK YOU RHS)
+[] execVM "scripts\earpro\earpro.sqf";
 
 // ====================================================================================	
 //Plank Settings
