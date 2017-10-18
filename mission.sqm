@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1798;
+		nextID=1828;
 	};
 	class MarkerIDProvider
 	{
-		nextID=7;
+		nextID=8;
 	};
 	class Camera
 	{
-		pos[]={1497.8679,105.27043,694.06927};
-		dir[]={-0.13980436,-0.45336214,0.88039243};
-		up[]={-0.071114883,0.8912788,0.44782895};
-		aside[]={0.98771048,6.0108141e-007,0.15685345};
+		pos[]={1477.6495,199.63832,486.94635};
+		dir[]={0.010873524,-0.55856371,0.82945168};
+		up[]={0.007320961,0.82942683,0.55855966};
+		aside[]={0.99996084,3.4474215e-007,-0.013108632};
 	};
 };
 binarizationWanted=0;
@@ -1649,7 +1649,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=142;
+		items=151;
 		class Item0
 		{
 			dataType="Group";
@@ -34385,7 +34385,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1486.0789,5,679.56689};
+				position[]={1483.5673,5,802.1485};
 			};
 			id=1480;
 			type="potato_respawn_placeRespawnPoint";
@@ -34731,7 +34731,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1631.0602,5,680.72626};
+				position[]={1625.4001,5,805.91815};
 			};
 			id=1550;
 			type="potato_respawn_placeRespawnPoint";
@@ -34764,7 +34764,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1341.9703,5,679.56689};
+				position[]={1339.5457,5,801.04785};
 			};
 			id=1551;
 			type="potato_respawn_placeRespawnPoint";
@@ -38344,7 +38344,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1298.24,4.1980848,735.53802};
+				position[]={1360.7273,4.1980848,703.49994};
 			};
 			side="Empty";
 			flags=4;
@@ -38360,7 +38360,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1298.131,5,720.224};
+				position[]={1360.6183,5,688.18591};
 			};
 			side="Empty";
 			flags=4;
@@ -38375,7 +38375,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1448.3027,5,714.93402};
+				position[]={1494.3033,5,690.01288};
 			};
 			side="Empty";
 			flags=4;
@@ -38390,7 +38390,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1589.5625,5,712.51807};
+				position[]={1650.5535,5,677.51624};
 			};
 			side="Empty";
 			flags=4;
@@ -38403,7 +38403,7 @@ class Mission
 		class Item137
 		{
 			dataType="Marker";
-			position[]={1298.2266,0,719.47009};
+			position[]={1360.6066,0,688.18347};
 			name="vehfac1pad";
 			type="Empty";
 			id=1709;
@@ -38412,7 +38412,7 @@ class Mission
 		class Item138
 		{
 			dataType="Marker";
-			position[]={1448.2976,0,714.72565};
+			position[]={1494.3019,0,689.87506};
 			name="vehfac2pad";
 			type="Empty";
 			id=1710;
@@ -38421,18 +38421,17 @@ class Mission
 		class Item139
 		{
 			dataType="Marker";
-			position[]={1589.306,0,713.41302};
+			position[]={1650.5919,5,677.17242};
 			name="vehfac3pad";
 			type="Empty";
 			id=1711;
-			atlOffset=-5;
 		};
 		class Item140
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1588.9871,4.5801501,730.43103};
+				position[]={1649.978,4.5801501,695.4292};
 			};
 			side="Empty";
 			class Attributes
@@ -38448,7 +38447,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1447.947,4.3301501,731.68597};
+				position[]={1493.9476,4.3301501,706.76483};
 			};
 			side="Empty";
 			class Attributes
@@ -38458,6 +38457,130 @@ class Mission
 			id=1717;
 			type="Ins_WarfareBLightFactory";
 			atlOffset=0.25;
+		};
+		class Item142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1322.9364,10.998148,703.69489};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="airfac1";
+			};
+			id=1798;
+			type="USMC_WarfareBAircraftFactory";
+			atlOffset=-4.7683716e-007;
+		};
+		class Item143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1463.6064,11.042853,706.09448};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="airfac2";
+			};
+			id=1799;
+			type="WarfareBAircraftFactory_Ins";
+		};
+		class Item144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1611.5289,11.042853,694.49866};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="airfac3";
+			};
+			id=1800;
+			type="RU_WarfareBAircraftFactory";
+		};
+		class Item145
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1612.1689,5,675.591};
+				angles[]={0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1801;
+			type="Land_HelipadSquare_F";
+		};
+		class Item146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1462.88,5,687.70001};
+				angles[]={0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1802;
+			type="Land_HelipadSquare_F";
+		};
+		class Item147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1322.5645,5,685.08539};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1803;
+			type="Land_HelipadSquare_F";
+		};
+		class Item148
+		{
+			dataType="Marker";
+			position[]={1322.53,0,685.11401};
+			name="airfac1pad";
+			type="Empty";
+			id=1804;
+			atlOffset=-5;
+		};
+		class Item149
+		{
+			dataType="Marker";
+			position[]={1462.894,0,687.63702};
+			name="airfac2pad";
+			type="Empty";
+			id=1805;
+			atlOffset=-5;
+		};
+		class Item150
+		{
+			dataType="Marker";
+			position[]={1612.137,0,675.29901};
+			name="airfac3pad";
+			type="Empty";
+			id=1806;
+			atlOffset=-5;
 		};
 	};
 	class Connections

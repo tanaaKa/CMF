@@ -46,7 +46,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 
 // ====================================================================================	
 // tanaKa's veh spawner
-[vehfac1,vehfac2,vehfac3] execVM "scripts\vehiclespawner\factoryaction.sqf";
+[] execVM "scripts\vehiclespawner\factoryaction.sqf";
 
 // ====================================================================================	
 //Plank Settings

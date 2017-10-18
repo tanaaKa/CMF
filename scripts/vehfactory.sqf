@@ -62,31 +62,58 @@
 			BRDM ATGM - rhsgref_BRDM2_ATGM
 		AA:
 			ZSU-23 - LOP_CDF_ZSU234
+	Helicopter:
+		Transport:
+			UH-80 Ghosthawk - B_Heli_Transport_01_F
+			UH-60 Blackhawk - RHS_UH60M
+			KA-60 Kasatka - O_Heli_Light_02_unarmed_F
+			AW159 Wildcat - I_Heli_light_03_unarmed_F
+			Mi-8 - RHS_Mi8mt_vdv 
+			CH-47F Chinook - RHS_CH_47F
+			MH-6M LB - RHS_MELB_MH6M
+			Old Huey Slick - UH1C
+			New Huey Slick- RHS_UH1Y_UNARMED_d
+			CH-53 S-Stallion - rhs_usf_CH53E_USMC_D
+		Attack:
+			Mi-8 Rocket - RHS_Mi8MTV3_heavy_vvs
+			Mi-48 Cayman - O_Heli_Attack_02_dynamicLoadout_F
+			Mi-24V Hind - RHS_Mi24V_vdv
+			KA-52 - RHS_Ka52_vvsc
+			AH-64 Apache - RHS_AH64D_wd
+			AH-6M LB - RHS_MELB_AH6M
+			Old Huey Gunship - UH1H_Gunship
+			New Huey Venom - RHS_UH1Y_d
+			AH-1Z Cobra - RHS_AH1Z
 */
 
 _factory = _this select 0;
 
 //Set spawn locations for each side's factory
 _bluspawnloc = getMarkerPos "vehfac1pad";
+_bluairspawnloc = getMarkerPos "airfac1pad";
 _indspawnloc = getMarkerPos "vehfac2pad";
+_indairspawnloc = getMarkerPos "airfac2pad";
 _opfspawnloc = getMarkerPos "vehfac3pad";
+_opfairspawnloc = getMarkerPos "airfac3pad";
 
-// CHANGE THESE TO MATCH YOUR FACTION!
-
+// CHANGE THESE TO MATCH YOUR FACTION! -------------------------------------------------
 //BLUFOR Vics
 _blutransport = "B_Truck_01_transport_F";
 _bluftveh = "rhsusf_m1025_d_s_m2";
 _bluarmor = "rhsusf_m1a1fep_d";
+_bluheli = "B_Heli_Transport_01_F";
 
 //INDFOR Vics
 _indtransport = "rhsgref_nat_ural";
 _indftveh = "rhsgref_nat_uaz_dshkm";
 _indarmor = "LOP_AFR_T55";
+_indheli = "I_Heli_light_03_unarmed_F";
 
 //OPFOR  Vics
 _opftransport = "rhs_gaz66_msv";
 _opfftveh = "rhs_tigr_sts_msv";
 _opfarmor = "rhs_t90_tv";
+_opfheli = "RHS_Mi8mt_vdv..";
 
 //UNIVERSAL Vics
 _boat = "B_Boat_Transport_01_F";
