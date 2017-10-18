@@ -78,12 +78,12 @@ _blutransport = "B_Truck_01_transport_F";
 _bluftveh = "rhsusf_m1025_d_s_m2";
 _bluarmor = "rhsusf_m1a1fep_d";
 
-//OPFOR Vics
+//INDFOR Vics
 _indtransport = "rhsgref_nat_ural";
 _indftveh = "rhsgref_nat_uaz_dshkm";
 _indarmor = "LOP_AFR_T55";
 
-//INDFOR Vics
+//OPFOR  Vics
 _opftransport = "rhs_gaz66_msv";
 _opfftveh = "rhs_tigr_sts_msv";
 _opfarmor = "rhs_t90_tv";
