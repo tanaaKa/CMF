@@ -34,7 +34,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 
 // ====================================================================================	
 // tanaKa's crew info display
-[] execVM "scripts\crewinfo\crew.sqf";
+//[] execVM "scripts\crewinfo\crew.sqf";
 
 // ====================================================================================	
 // tanaKa's no looting (enable if necessary)
@@ -43,6 +43,10 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 // ====================================================================================	
 // tanaKa's ear protection script for unbalanced vehicle audio (FUCK YOU RHS)
 [] execVM "scripts\earpro\earpro.sqf";
+
+// ====================================================================================	
+// tanaKa's veh spawner
+[vehfac1,vehfac2,vehfac3] execVM "scripts\vehiclespawner\factoryaction.sqf";
 
 // ====================================================================================	
 //Plank Settings
