@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1828;
+		nextID=1829;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1333.354,32.079277,652.64117};
-		dir[]={0.11400555,-0.59984785,0.79202884};
-		up[]={0.085469216,0.8000648,0.59378481};
-		aside[]={0.98985589,5.4840348e-007,-0.14248088};
+		pos[]={1346.3408,58.858463,681.21716};
+		dir[]={-0.0013557215,-0.53647029,0.84399563};
+		up[]={-0.0008627284,0.84386683,0.53653866};
+		aside[]={1.00006,4.6085006e-007,0.0016062998};
 	};
 };
 binarizationWanted=0;
@@ -7741,123 +7741,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1356.918,5.0014391,766.36499};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						name="UnitNATO_C1_GR";
-						description=" Charlie  1 Grenadier";
-						isPlayable=1;
-					};
-					id=1311;
-					type="B_Soldier_lite_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male09ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="4,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1353.978,5.0014391,765.20099};
 					};
 					side="West";
@@ -7945,6 +7828,123 @@ class Mission
 										};
 									};
 									value=0.94999999;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="4,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1356.918,5.0014391,766.36499};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UnitNATO_C1_GR";
+						description=" Charlie  1 Grenadier";
+						isPlayable=1;
+					};
+					id=1828;
+					type="B_Soldier_GL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
 								};
 							};
 						};

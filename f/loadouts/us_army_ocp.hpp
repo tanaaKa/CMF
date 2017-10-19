@@ -138,6 +138,10 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
+class Soldier_GL_F: Soldier_F { // Grenadier
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,BASE_GRENADES};
+};
 class medic_F: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpack[] = {"rhs_medic_bag"};

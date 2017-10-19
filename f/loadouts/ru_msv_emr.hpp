@@ -101,6 +101,9 @@ class Soldier_F {// rifleman
   attachments[] = {RIFLE_ATTACHMENTS,GRIP};
   opticChoices[] = {ALT_OPTICS};
 };
+class Survivor_F: Soldier_F { // FT CLS
+	backpackItems[] = {CLS_MEDICAL};
+};
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
@@ -140,6 +143,10 @@ class Soldier_AAR_F: Soldier_F {// AAR
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   magazines[] += {AT_MAG};
   launchers[] = {AT};
+};
+class Soldier_GL_F: Soldier_F { // Grenadier
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,BASE_GRENADES};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
