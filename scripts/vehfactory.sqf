@@ -113,7 +113,7 @@ _indheli = "I_Heli_light_03_unarmed_F";
 _opftransport = "rhs_gaz66_msv";
 _opfftveh = "rhs_tigr_sts_msv";
 _opfarmor = "rhs_t90_tv";
-_opfheli = "RHS_Mi8mt_vdv..";
+_opfheli = "RHS_Mi8mt_vdv";
 
 //UNIVERSAL Vics
 _boat = "B_Boat_Transport_01_F";
