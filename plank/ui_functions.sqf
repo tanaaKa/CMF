@@ -2,7 +2,9 @@
 
 plank_ui_fnc_createSettingsDialog = {
     if (!dialog) then {
-        if (createDialog "PlankSettingsDialog") then {
+        private "_isDialogCreated";
+        _isDialogCreated = createDialog "PlankSettingsDialog";
+        if (_isDialogCreated) then {
             [] call plank_ui_fnc_initDialog;
         };
     };
@@ -20,13 +22,15 @@ plank_ui_fnc_resetHeightSlider = {
 };
 
 plank_ui_fnc_resetDirectionSlider = {
-    private _fortDirection = GET_FORT_DIRECTION((player getVariable "plank_deploy_fortIndex"));
+    private "_fortDirection";
+    _fortDirection = GET_FORT_DIRECTION((player getVariable "plank_deploy_fortIndex"));
     sliderSetPosition [SETTINGS_DIRECTION_SLIDER_IDC, _fortDirection];
     [_fortDirection] call plank_ui_fnc_updateDirectiontSliderValue;
 };
 
 plank_ui_fnc_resetDistanceSlider = {
-    private _fortDistance = GET_FORT_DISTANCE((player getVariable "plank_deploy_fortIndex"));
+    private "_fortDistance";
+    _fortDistance = GET_FORT_DISTANCE((player getVariable "plank_deploy_fortIndex"));
     sliderSetPosition [SETTINGS_DISTANCE_SLIDER_IDC, _fortDistance];
     [_fortDistance] call plank_ui_fnc_updateDistanceSliderValue;
 };
@@ -42,14 +46,15 @@ plank_ui_fnc_resetBankSlider = {
 };
 
 plank_ui_fnc_heightModeButtonClick = {
-    private _heightMode = player getVariable ["plank_deploy_heightMode", RELATIVE_TO_UNIT];
-    if (_heightMode isEqualTo RELATIVE_TO_TERRAIN) then
-    {
-      _heightMode = RELATIVE_TO_UNIT;
-    }
-    else
-    {
-      _heightMode = RELATIVE_TO_TERRAIN;
+    private "_heightMode";
+    _heightMode = player getVariable ["plank_deploy_heightMode", RELATIVE_TO_UNIT];
+    call {
+        if (_heightMode == RELATIVE_TO_TERRAIN) exitWith {
+            _heightMode = RELATIVE_TO_UNIT;
+        };
+        if (_heightMode == RELATIVE_TO_UNIT) exitWith {
+            _heightMode = RELATIVE_TO_TERRAIN;
+        };
     };
     [_heightMode] call plank_ui_fnc_setHeightModeButton;
 };
