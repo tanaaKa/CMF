@@ -1,4 +1,4 @@
-// Author: Morbo
+// Author: tanaKa
 // Description: paste your loadout config from the arseanal exporter
 #include "undef.hpp" // Reset defines
 
@@ -8,7 +8,7 @@
 #define CAMO_UNIFORM "rhs_uniform_vdv_flora"
 #define CAMO_VEST "rhs_6b13_Flora_6sh92"
 #define CAMO_BACKPACK "rhs_sidor"
-#define CAMO_HEADGEAR "rhs_6b26","rhs_6b26_bala","rhs_6b26_ess","rhs_6b26_ess_bala"
+#define CAMO_HEADGEAR "rhs_6b26","rhs_6b26_ess"
 // Rifle
 #define RIFLE "rhs_weap_ak74m","rhs_weap_ak74m_2mag","rhs_weap_ak74m_plummag","rhs_weap_ak74m_fullplum"
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:10"
@@ -17,9 +17,10 @@
 #define ALT_OPTICS "rhs_acc_1p63","rhs_acc_ekp1","rhs_acc_ekp8_02","rhs_acc_pkas"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25","rhs_weap_ak74m_fullplum_gp25"
-#define GLRIFLE_MAG "rhs_30Rnd_545x39_AK:10"
+#define GLRIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 #define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
 #define GLRIFLE_MAG_HE "rhs_VOG25:5"
+#define GLRIFLE_MAG_HE2 "rhs_VOG25:10"
 #define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
 // Carbine
 #define CARBINE "rhs_weap_ak105"
@@ -35,8 +36,8 @@
 #define MMG_MAG "rhs_100Rnd_762x54mmR:5"
 // MAT
 #define MAT "rhs_weap_rpg7"
-#define MAT_MAG "rhs_rpg7_PG7VR_mag:1", "rhs_rpg7_PG7VL_mag:1"
-#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:1", "rhs_rpg7_PG7VL_mag:1"
+#define MAT_MAG "rhs_rpg7_PG7VR_mag:2", "rhs_rpg7_PG7VL_mag:1"
+#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:1", "rhs_rpg7_PG7VL_mag:3"
 #define MAT_OPTIC "rhs_acc_pgo7v3"
 
 // -------------------- PASTE ABOVE THIS LINE
@@ -50,11 +51,15 @@
 // Spotter Rifle
 #define SPOTTER "rhs_weap_svdp"
 #define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:6"
+#define SPOTTER_ATT "rhs_acc_pso1m21"
 // SMG
 #define SMG "rhs_weap_aks74un"
 #define SMG_MAG "rhs_30Rnd_545x39_AK:6"
 #define SMG2 "rhs_weap_pp2000"
 #define SMG2_MAG "rhs_mag_9x19mm_7n21_20:6"
+// Shotgun
+#define SG "hlc_rifle_saiga12k"
+#define SG_MAG "hlc_10rnd_12g_buck_S12:3"
 // Pistol
 #define PISTOL "hgun_Pistol_01_F"
 #define PISTOL_MAG "10Rnd_9x21_Mag:4"
@@ -68,6 +73,7 @@
 #define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_WEST
 #define BASE_LINKED COMMON_LINKED
+// NODSRU - Add to BASE_LINKED to give all troops NVGs
 #define LEADER_LINKED COMMON_LEADER_LINKED
 
 class Car {
@@ -103,6 +109,11 @@ class Soldier_F {// rifleman
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
+};
+class Soldier_GL_F: Soldier_F { // Grenadier
+  vest[] = {"rhs_6b13_Flora_6sh92_vog"};
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE2,BASE_GRENADES};
 };
 class Soldier_TL_F: Soldier_F {// FTL
   vest[] = {"rhs_6b13_Flora_6sh92_vog"};
@@ -170,7 +181,7 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
 };
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
   backpackItems[] = {};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
@@ -192,7 +203,7 @@ class spotter_F: Fic_Spotter {// Spotter
   headgear[] = {"rhs_Booniehat_flora"};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-  attachments[] = {"rhs_acc_pso1m21"};
+  attachments[] = {SPOTTER_ATT};
   linkedItems[] += {LEADER_LINKED};
 };
 class sniper_F: spotter_F {// Sniper
@@ -212,7 +223,7 @@ class Helipilot_F {// Pilot
   magazines[] = {SMG2_MAG,FLAREPISTOL_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
+  linkedItems[] = {BASE_LINKED,LEADER_LINKED,NODS3};
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
@@ -222,7 +233,7 @@ class crew_F: Fic_Soldier_Carbine {// Crew
   headgear[] = {"rhs_tsh4"};
   vest[] = {"rhs_6b13_Flora"};
   backpackItems[] = {KEY_WEST,RADIO_LR};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS};
+  linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS,NODS3};
   items[] += {BASE_MEDICAL};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
@@ -230,8 +241,9 @@ class soldier_repair_F: crew_F {// Repair Specialist
   backpackItems[] = {"Toolkit",RADIO_MR,KEY_WEST};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
-class Fic_eng: soldier_repair_F {
+class Fic_eng: Fic_Soldier_Carbine {
   items[] += {BASE_ENG};
+  handguns[] = {MINE_SWEEPER};
   backpackItems[] = {};
 };
 class soldier_exp_F: Fic_eng {// Explosive Specialist
@@ -245,6 +257,18 @@ class soldier_M_F: spotter_F { // Marksman
   weapons[] = {SPOTTER};
   headgear[] = {CAMO_HEADGEAR};
   handguns[] = {PISTOL};
+  attachments[] = {SPOTTER_ATT};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES,PISTOL_MAG};
+};
+class Soldier_lite_F: Fic_Soldier_Carbine { // Breacher
+  headgear[] = {"rhs_altyn"};
+  vest[] = {"rhs_6b23_6sh116_od"};
+  weapons[] = {SG};
+  backpack[] = {"rhs_assault_umbts"};
+  backpackItems[] += {CARBINE,"rhs_acc_1p63"};
+  magazines[] += {SG_MAG,STUN_GRENADES};
+};
+class Survivor_F: Soldier_F { // FT CLS
+    backpackItems[] = {CLS_MEDICAL};
 };
 class fallback: Soldier_F {}; // This means any faction member who doesn't match something will use this loadout
