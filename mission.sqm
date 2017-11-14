@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1324.6482,63.744392,661.16913};
-		dir[]={0.0049811001,-0.50111693,0.86548299};
-		up[]={0.0028836979,0.86530423,0.50121367};
-		aside[]={1.0000805,1.3309182e-007,-0.0057571037};
+		pos[]={1337.4972,50.396458,728.87701};
+		dir[]={-0.011242609,-0.76405364,0.64522904};
+		up[]={-0.013313065,0.64507002,0.76397264};
+		aside[]={0.99995852,2.9320981e-006,0.017419109};
 	};
 };
 binarizationWanted=0;
@@ -9839,7 +9839,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1383.9993,5.0014391,765.88892};
-						angles[]={-0,6.2821393,0};
+						angles[]={0,6.2821393,0};
 					};
 					side="West";
 					flags=4;
@@ -9901,7 +9901,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1380.0488,5.0014391,765.87512};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -10002,7 +10002,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1381.954,5.0014391,767.85602};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -10178,7 +10178,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1384.0933,5.0014391,759.987};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -10279,7 +10279,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1380.0302,5.0014391,760.03772};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -10380,7 +10380,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1381.9969,5.0014391,761.96497};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -10556,7 +10556,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1383.9835,5.0404391,753.82703};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -10658,7 +10658,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1379.9474,5.016439,753.89343};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -10760,7 +10760,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1381.979,5.0014391,755.81299};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -10936,7 +10936,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1383.8875,5.0774388,747.68811};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -11038,7 +11038,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1380.0217,5.0774388,747.61255};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -11140,7 +11140,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1381.906,5.0014391,749.63397};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -11316,7 +11316,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1381.959,5.0014391,737.7915};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=6;
@@ -11436,7 +11436,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1386.9601,5.0014391,736.14594};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -11555,7 +11555,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1376.9601,5.0014391,736.1355};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -11674,7 +11674,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1391.9629,5.0014391,733.41217};
-						angles[]={-0,6.2821379,0};
+						angles[]={0,6.2821379,0};
 					};
 					side="West";
 					flags=4;
@@ -14061,7 +14061,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1596.7795,5.0014391,781.22119};
+						position[]={1596.78,5.0014391,781.22101};
 						angles[]={0,0.00099483761,0};
 					};
 					side="East";
@@ -14136,7 +14136,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,0,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -14219,7 +14238,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,0,0";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -15020,7 +15058,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,0,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item26
@@ -15753,7 +15810,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item27
@@ -15843,7 +15919,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,1,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -15926,7 +16021,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,1,0";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -16727,7 +16841,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2,1,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item29
@@ -17460,7 +17593,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="3,1,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item30
@@ -17475,7 +17627,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1656.9034,5.0014391,777.61737};
+						position[]={1656.903,5.0014391,777.617};
 						angles[]={0,0.00099483761,0};
 					};
 					side="East";
@@ -17550,7 +17702,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,2,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -17633,7 +17804,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,2,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -18434,7 +18624,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="4,2,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item32
@@ -19167,7 +19376,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="5,2,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item33
@@ -21063,7 +21291,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1674.0287,5.0014391,733.92682};
+						position[]={1673.9912,5.0014391,735.92365};
 						angles[]={-0,0.00099483761,0};
 					};
 					side="East";
@@ -21145,7 +21373,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1679.0281,5.0014391,732.27167};
+						position[]={1678.9906,5.0014391,734.26849};
 						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
@@ -21245,7 +21473,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1669.0281,5.0014391,732.28162};
+						position[]={1668.9906,5.0014391,734.27844};
 						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
@@ -21345,7 +21573,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1684.0254,5.0014391,729.52667};
+						position[]={1683.9879,5.0014391,731.5235};
 						angles[]={-0,0.00099769956,0};
 					};
 					side="East";
@@ -22948,7 +23176,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,3,4";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -23219,7 +23466,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1456.1431,5.0014391,781.87805};
+						position[]={1456.1429,5.0014391,781.87799};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -23293,7 +23540,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,0,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -23375,7 +23641,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,0,0";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -24172,7 +24457,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,0,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item49
@@ -24901,7 +25205,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item50
@@ -24990,7 +25313,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,0,0";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -25072,7 +25414,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,1,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -25869,7 +26230,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2,1,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item52
@@ -26598,7 +26978,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="3,1,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item53
@@ -26613,7 +27012,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1511.4412,5.0014391,778.29236};
+						position[]={1511.441,5.0014391,778.29199};
 						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
@@ -26687,7 +27086,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,2,3";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -26769,7 +27187,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="15,2,0";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -27566,7 +28003,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="4,2,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item55
@@ -28295,7 +28751,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="5,2,0";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item56
@@ -30093,7 +30568,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1530.0479,5.0014391,737.95941};
-						angles[]={-0,0.001972222,0};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=6;
@@ -30175,7 +30650,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1535.0446,5.0014391,736.30042};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30275,7 +30750,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1525.0436,5.0014391,736.31921};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -30375,7 +30850,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1540.0391,5.0014391,733.54962};
-						angles[]={-0,0.0019730027,0};
+						angles[]={0,0.0019730027,0};
 					};
 					side="Independent";
 					flags=4;
@@ -38137,7 +38612,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1674.1055,5.8253026,731.11548};
+				position[]={1674.068,5.8253026,733.1123};
 			};
 			side="Empty";
 			flags=4;
@@ -38678,13 +39153,12 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1381.9591,5.0014391,744.09772};
+						position[]={1381.959,5.0014391,744.09796};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1835;
@@ -38712,6 +39186,44 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="potato_radios_radio";
 							expression="[_this,_value] call potato_radios_fnc_setChannels";
 							class Value
@@ -38729,7 +39241,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 				class Item1
@@ -38860,6 +39372,7 @@ class Mission
 					};
 					id=1839;
 					type="I_Sniper_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38918,6 +39431,7 @@ class Mission
 					};
 					id=1841;
 					type="I_Spotter_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38966,6 +39480,7 @@ class Mission
 			{
 			};
 			id=1838;
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
