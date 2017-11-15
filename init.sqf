@@ -49,10 +49,6 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "scripts\vehiclespawner\factoryaction.sqf";
 
 // ====================================================================================	
-//Plank Settings
-call compile preprocessFileLineNumbers "plank\plank_init.sqf";
-
-// ====================================================================================	
 //Tao Settings
 tao_foldmap_changePermitted = false;
 tao_foldmap_alternateDrawPaper = true;
