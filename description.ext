@@ -147,15 +147,15 @@ class ACE_Settings {
     };
     class ace_overheating_enabled {
         typeName = "BOOL";
-        value = 0;
+        value = 1;
     };
     class ace_overheating_unJamOnreload {
         typeName = "BOOL";
-        value = 1;
+        value = 0;
     };
     class ace_overheating_unJamFailChance {
         typeName = "SCALAR";
-        value = 0;
+        value = 0.3;
     };
     class ace_respawn_removeDeadBodiesDisconnected {
         typeName = "BOOL";
