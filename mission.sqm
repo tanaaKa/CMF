@@ -1102,7 +1102,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=12;
+									items=13;
 									class Item0
 									{
 										class data
@@ -1271,6 +1271,20 @@ class CustomAttributes
 											value="acre_sys_core_terrainloss";
 										};
 									};
+									class Item12
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="acre_sys_core_ts3channelswitch";
+										};
+									};
 								};
 							};
 						};
@@ -1287,7 +1301,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=12;
+									items=13;
 									class Item0
 									{
 										class data
@@ -1808,7 +1822,52 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=0.19920775;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item12
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
