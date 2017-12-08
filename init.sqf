@@ -1,13 +1,4 @@
 // ====================================================================================
-// F3 - Briefing
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_script_briefing = [] execVM "briefing.sqf";
-
-// ====================================================================================
-// Briefing Loadout
-[] execVM "f\briefing\f_loadoutNotes.sqf";
-
-// ====================================================================================
 // Forward Deploy Options
 f_var_mapClickTeleport_Uses = 1;					// How often the teleport action can be used. 0 = infinite usage.
 f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
