@@ -298,14 +298,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>BACKGROUND</font><br/>*** Insert background information here ***<br/><br/><font size='18'>CALLSIGNS</font><br/>*** Insert callsigns for specialties here ***";
 				};
 			};
 		};
@@ -317,14 +317,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>FACTION?</font><br/>***List faction***<br/><br/><font size='18'>USE POTATO TO SPAWN UNITS?</font><br/>Yes<br/>No<br/><br/><font size='18'>HOW TO PLACE UNITS:</font><br/>***Explain how you want zeus to place units***";
 				};
 			};
 		};
@@ -336,14 +336,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>BACKGROUND</font><br/>*** Insert background information here ***<br/><br/><font size='18'>CALLSIGNS</font><br/>*** Insert callsigns for specialties here ***";
 				};
 			};
 		};
@@ -355,14 +355,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>OBJECTIVE</font><br/>*** List the objectives of the mission ***<br/><br/><font size='18'>COMMANDER'S INTENT</font><br/>*** Explain what you want the plan to be ***<br/><br/><font size='18'>ENEMY FORCES</font><br/>*** Insert information about enemy forces here. ***<br/><br/><font size='18'>FRIENDLY FORCES</font><br/>*** Insert information about friendly forces here. ***<br/><br/><font size='18'>VEHICLE/FIRE SUPPORT</font><br/>*** Insert vehicles available here. ***<br/>*** Insert fire support options here. ***<br/><br/><font size='18'>ROE STATUS</font><br/>Stealth - Fire when told<br/>Amber - Fire if fired upon<br/>Red - Fire at will";
 				};
 			};
 		};
@@ -374,14 +374,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.2";
 				};
 			};
 		};
@@ -393,14 +393,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>BACKGROUND</font><br/>*** Insert background information here ***<br/><br/><font size='18'>CALLSIGNS</font><br/>*** Insert callsigns for specialties here ***";
 				};
 			};
 		};
@@ -412,14 +412,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.2";
 				};
 			};
 		};
@@ -431,14 +431,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>OBJECTIVE</font><br/>*** List the objectives of the mission ***<br/><br/><font size='18'>COMMANDER'S INTENT</font><br/>*** Explain what you want the plan to be ***<br/><br/><font size='18'>ENEMY FORCES</font><br/>*** Insert information about enemy forces here. ***<br/><br/><font size='18'>FRIENDLY FORCES</font><br/>*** Insert information about friendly forces here. ***<br/><br/><font size='18'>VEHICLE/FIRE SUPPORT</font><br/>*** Insert vehicles available here. ***<br/>*** Insert fire support options here. ***<br/><br/><font size='18'>ROE STATUS</font><br/>Stealth - Fire when told<br/>Amber - Fire if fired upon<br/>Red - Fire at will";
 				};
 			};
 		};
@@ -450,14 +450,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.2";
 				};
 			};
 		};
@@ -469,14 +469,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>BACKGROUND</font><br/>*** Insert background information here ***<br/><br/><font size='18'>CALLSIGNS</font><br/>*** Insert callsigns for specialties here ***";
 				};
 			};
 		};
@@ -488,14 +488,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>OBJECTIVE</font><br/>*** List the objectives of the mission ***<br/><br/><font size='18'>COMMANDER'S INTENT</font><br/>*** Explain what you want the plan to be ***<br/><br/><font size='18'>ENEMY FORCES</font><br/>*** Insert information about enemy forces here. ***<br/><br/><font size='18'>FRIENDLY FORCES</font><br/>*** Insert information about friendly forces here. ***<br/><br/><font size='18'>VEHICLE/FIRE SUPPORT</font><br/>*** Insert vehicles available here. ***<br/>*** Insert fire support options here. ***<br/><br/><font size='18'>ROE STATUS</font><br/>Stealth - Fire when told<br/>Amber - Fire if fired upon<br/>Red - Fire at will";
 				};
 			};
 		};
@@ -507,14 +507,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="<font size='18'>OBJECTIVE</font><br/>*** List the objectives of the mission ***<br/><br/><font size='18'>COMMANDER'S INTENT</font><br/>*** Explain what you want the plan to be ***<br/><br/><font size='18'>ENEMY FORCES</font><br/>*** Insert information about enemy forces here. ***<br/><br/><font size='18'>FRIENDLY FORCES</font><br/>*** Insert information about friendly forces here. ***<br/><br/><font size='18'>VEHICLE/FIRE SUPPORT</font><br/>*** Insert vehicles available here. ***<br/>*** Insert fire support options here. ***<br/><br/><font size='18'>ROE STATUS</font><br/>Stealth - Fire when told<br/>Amber - Fire if fired upon<br/>Red - Fire at will";
 				};
 			};
 		};
@@ -526,14 +526,14 @@ class CustomAttributes
 			{
 				class data
 				{
-					nil=1;
 					class type
 					{
 						type[]=
 						{
-							"ANY"
+							"STRING"
 						};
 					};
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.2";
 				};
 			};
 		};

@@ -116,6 +116,11 @@ class ACE_Settings {
 		typeName = "BOOL";
 		value = 0;
 	};
+	class potato_briefing_brief_addCredits
+	{
+		value=1;
+		typeName="BOOL";
+	};
 	class potato_safeStart_enabled {
 		typeName = "BOOL";
 		value = 1;
