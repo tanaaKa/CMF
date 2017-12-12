@@ -7,6 +7,8 @@ class Header
 
 disableChannels[] = {2,4,5,6};
 
+cmfDate="11/12/2017"; // day/month/year
+
 // ============================================================================================
 // Awesome new gearsets from the guys at BW
 
@@ -123,6 +125,14 @@ class ACE_Settings {
 	class potato_briefing_brief_addOrbat {
 		typeName = "BOOL";
 		value = 1;
+	};
+	class potato_recruits_showMessage {
+		typeName="BOOL";
+		value=1;
+	};
+	class potato_recruits_showTags {
+		typeName="BOOL";
+		value=1;
 	};
     class ace_frag_maxTrack {
         typeName = "SCALAR";
