@@ -41,6 +41,9 @@ params["_site"];
 	_ccp addItemCargoGlobal ["ACE_packingBandage",40];
 	_ccp addItemCargoGlobal ["ACE_atropine", 5];
 	_ccp addItemCargoGlobal ["ACE_surgicalKit",2];
+	_ccp addItemCargoGlobal ["ACE_Chemlight_HiRed", 2]; 
+	_ccp addItemCargoGlobal ["ACE_Chemlight_HiYellow", 2]; 
+	_ccp addItemCargoGlobal ["ACE_Chemlight_HiWhite", 2]; 
 	_ccp setDir (getDir _site);
 	_ccp allowdamage false;
 	

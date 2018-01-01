@@ -222,7 +222,7 @@ class Helipilot_F {// Pilot
   handguns[] = {FLAREPISTOL};
   magazines[] = {SMG_MAG,FLAREPISTOL_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
-  items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
+  items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR,LEADER_SMOKES};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,NODS3};
 };
 class helicrew_F: Helipilot_F {}; // Pilot
@@ -232,7 +232,7 @@ class crew_F: Fic_Soldier_Carbine {// Crew
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS,NODS3};
-  items[] += {BASE_MEDICAL};
+  items[] += {BASE_MEDICAL,LEADER_SMOKES};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
   // backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};

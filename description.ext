@@ -1,31 +1,19 @@
-class Header
-{
-	gameType = Survive; // Game type, see 'class' columns in the table below
-	minPlayers = 1; //min # of players the mission supports
-	maxPlayers = 100; //max # of players the mission supports
-};
+// CMF description.ext
 
+// Misc settings
 disableChannels[] = {2,4,5,6};
-
 cmfDate="11/12/2017"; // day/month/year
 
-// ============================================================================================
 // Awesome new gearsets from the guys at BW
-
 #include "CfgLoadouts.hpp"
 
-// ============================================================================================
 // Respawn Settings
-
 respawn = 1;
 respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
 
-
-// ============================================================================================
 // cfgFnc
-
 class CfgFunctions {
 	class F
 	{
@@ -46,9 +34,7 @@ class CfgFunctions {
 	};
 };
 
-// ============================================================================================
 // EH for various scenarios
-
 class Extended_InitPost_EventHandlers {
 	class Car 
 	{
@@ -81,9 +67,7 @@ class Extended_InitPost_EventHandlers {
 	};
 };
 
-// ============================================================================================
-// F3 - Start of Notifications block.
-
+// Note for deploy/tele fnc
 class cfgNotifications
 {
 	// Notification for the F3 Mapclick Teleport component
@@ -96,9 +80,7 @@ class cfgNotifications
 	};
 };
 
-// ============================================================================================
 // Coalition Kill Tracker (ACEX)
-
 class CfgDebriefingSections {
 	class acex_killTracker {
 		title = "Acex Killed Events";
@@ -106,9 +88,7 @@ class CfgDebriefingSections {
     };
 };
 
-// ============================================================================================
-// ACE Settings
-
+// ACE/Potato Settings
 class ACE_Settings {
 	class potato_markers_groupAndUnitEnabled {
 		typeName = "BOOL";
@@ -134,45 +114,4 @@ class ACE_Settings {
 		typeName="BOOL";
 		value=1;
 	};
-    class ace_frag_maxTrack {
-        typeName = "SCALAR";
-        value = 2;
-    };
-    class ace_gforces_enabledFor {
-        typeName = "SCALAR";
-        value = 0;
-    };
-	class ace_medical_ai_enabledFor {
-		value = 0;
-		typeName = "SCALAR";
-		force = 0;
-	};
-    class ace_goggles_effects {
-        typeName = "SCALAR";
-        value = 1;
-    };
-    class ace_medical_blood_enabledFor {
-        typeName = "SCALAR";
-        value = 1;
-    };
-    class ace_overheating_enabled {
-        typeName = "BOOL";
-        value = 1;
-    };
-    class ace_overheating_unJamOnreload {
-        typeName = "BOOL";
-        value = 0;
-    };
-    class ace_overheating_unJamFailChance {
-        typeName = "SCALAR";
-        value = 0.3;
-    };
-    class ace_respawn_removeDeadBodiesDisconnected {
-        typeName = "BOOL";
-        value = 0;
-    };
-    class ace_zeus_autoAddObjects {
-        typeName = "BOOL";
-        value = 1;
-    };
 };
