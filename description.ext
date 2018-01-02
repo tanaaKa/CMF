@@ -87,31 +87,3 @@ class CfgDebriefingSections {
         variable = "acex_killTracker_outputText";
     };
 };
-
-// ACE/Potato Settings
-class ACE_Settings {
-	class potato_markers_groupAndUnitEnabled {
-		typeName = "BOOL";
-		value = 1;
-	};
-	class potato_markers_intraFireteamEnabled {
-		typeName = "BOOL";
-		value = 0;
-	};
-	class potato_safeStart_enabled {
-		typeName = "BOOL";
-		value = 1;
-	};
-	class potato_briefing_brief_addOrbat {
-		typeName = "BOOL";
-		value = 1;
-	};
-	class potato_recruits_showMessage {
-		typeName="BOOL";
-		value=1;
-	};
-	class potato_recruits_showTags {
-		typeName="BOOL";
-		value=1;
-	};
-};
