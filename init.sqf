@@ -29,7 +29,3 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 
 // tanaKa's veh spawner
 [] execVM "scripts\vehiclespawner\factoryaction.sqf";
-
-//Tao Settings
-tao_foldmap_changePermitted = false;
-tao_foldmap_alternateDrawPaper = true;
