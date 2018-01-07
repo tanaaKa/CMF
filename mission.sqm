@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1480.715,235.9991,492.13544};
-		dir[]={0.0050057909,-0.62704712,0.77901393};
-		up[]={0.0040291687,0.77891165,0.62711287};
-		aside[]={1.0000184,-3.907453e-007,-0.006424794};
+		pos[]={1488.2549,204.77962,509.14795};
+		dir[]={0.013173701,-0.56353372,0.82604092};
+		up[]={0.0089869238,0.82602239,0.56355399};
+		aside[]={0.99991691,-2.3498069e-007,-0.015945569};
 	};
 };
 binarizationWanted=0;
@@ -17916,7 +17916,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
+						rank="SERGEANT";
 						name="UnitNATO_CO_JTAC";
 						description=" JTAC/Forward Observer";
 						isPlayable=1;
@@ -29832,15 +29832,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1630.3163,5.0014391,789.48578};
-						angles[]={0,0.00099769956,0};
+						position[]={1630.316,5.0014391,789.48596};
+						angles[]={0,0.00099483761,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
+						rank="SERGEANT";
 						name="UnitCSAT_CO_JTAC";
 						description=" JTAC/Forward Observer";
 						isPlayable=1;
@@ -29870,6 +29870,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -29887,7 +29906,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item3
@@ -39256,15 +39275,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1487.7906,5.0014391,788.1955};
-						angles[]={0,0.0019730027,0};
+						position[]={1487.791,5.0014391,788.19598};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
+						rank="SERGEANT";
 						name="UnitAAF_CO_JTAC";
 						description=" JTAC/Forward Observer";
 						isPlayable=1;
@@ -39294,6 +39313,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -39311,7 +39349,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item3
