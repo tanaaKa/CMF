@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1488.2549,204.77962,509.14795};
-		dir[]={0.013173701,-0.56353372,0.82604092};
-		up[]={0.0089869238,0.82602239,0.56355399};
-		aside[]={0.99991691,-2.3498069e-007,-0.015945569};
+		pos[]={1490.0492,204.77962,614.72339};
+		dir[]={0.0094000697,-0.72717345,0.68645346};
+		up[]={0.0099569932,0.68637627,0.72716922};
+		aside[]={0.999951,-4.6533023e-007,-0.013691972};
 	};
 };
 binarizationWanted=0;
@@ -50842,7 +50842,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1461.1464,5,945.70587};
+				position[]={1461.146,5,945.70599};
 			};
 			id=1846;
 			type="potato_fortify_setupModule";
@@ -50882,7 +50882,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -50932,7 +50932,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1488.3604,5,945.61584};
+				position[]={1488.36,5,945.61603};
 			};
 			id=1847;
 			type="potato_fortify_setupModule";
@@ -50972,7 +50972,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -51022,7 +51022,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1516.6433,5,944.83984};
+				position[]={1516.6429,5,944.84003};
 			};
 			id=1848;
 			type="potato_fortify_setupModule";
@@ -51062,7 +51062,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
