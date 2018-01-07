@@ -16,7 +16,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "scripts\paradrop.sqf";
 
 // tanaKa's safestart and server load script
-[] execVM "scripts\serverstart.sqf";
+[] execVM "serverstart.sqf";
 
 // tanaKa's crew info display
 //[] execVM "scripts\crewinfo\crew.sqf";
