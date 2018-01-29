@@ -29,7 +29,7 @@ class CfgLoadouts {
   // US Marines - Woodland "f\loadouts\us_marines_w.hpp"
   // US Marines - Desert "f\loadouts\us_marines_d.hpp"
   // RU MSV - EMR "f\loadouts\ru_msv_emr.hpp"
-  // AUS Army - MC/Auspat "aus_army_auspat.hpp"
+  // AUS Army - MC/Auspat "f\loadouts\aus_army_auspat.hpp"
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OPF and CIV classes in a BLU vs IND fight)

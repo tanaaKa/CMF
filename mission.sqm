@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1902;
+		nextID=1903;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1490.0492,204.77962,614.72339};
-		dir[]={0.0094000697,-0.72717345,0.68645346};
-		up[]={0.0099569932,0.68637627,0.72716922};
-		aside[]={0.999951,-4.6533023e-007,-0.013691972};
+		pos[]={1496.6772,160.06006,620.00391};
+		dir[]={0.010165794,-0.70188057,0.71228725};
+		up[]={0.010016672,0.71221286,0.70188129};
+		aside[]={0.99994284,-4.2403917e-007,-0.014270158};
 	};
 };
 binarizationWanted=0;
@@ -143,7 +143,9 @@ class ScenarioData
 	respawn=1;
 	class Header
 	{
-		gameType="Sandbox";
+		gameType="Survive";
+		minPlayers=1;
+		maxPlayers=128;
 	};
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=1;
@@ -5669,10 +5671,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5714,10 +5716,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5759,10 +5761,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5804,10 +5806,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5852,7 +5854,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5897,7 +5899,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -5928,7 +5930,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -5942,7 +5944,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -6153,7 +6155,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.19920801;
+														value=0.30350399;
 													};
 												};
 												class Item1
@@ -6212,7 +6214,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -17962,7 +17964,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -17976,7 +17978,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -18457,7 +18459,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -18471,7 +18473,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -18727,7 +18729,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -18772,7 +18774,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -18862,7 +18864,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -18952,7 +18954,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -19042,7 +19044,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -19132,7 +19134,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -19222,7 +19224,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -19312,7 +19314,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -19402,7 +19404,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -21081,7 +21083,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
