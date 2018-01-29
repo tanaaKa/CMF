@@ -85,11 +85,3 @@ class cfgNotifications
 		priority = 5;
 	};
 };
-
-// Coalition Kill Tracker (ACEX)
-class CfgDebriefingSections {
-	class acex_killTracker {
-		title = "Acex Killed Events";
-        variable = "acex_killTracker_outputText";
-    };
-};
