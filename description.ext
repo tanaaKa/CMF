@@ -6,9 +6,16 @@ class Header
 	maxPlayers = 128;
 };
 
+// Include missionsqm so we can use missionConfigFile
+class MissionSQM
+{
+	#include "mission.sqm"
+};
+
 // Misc settings
 disableChannels[]={{2,true,true},{4,true,true},{5,true,true},{6,true,true}};
-cmfDate="11/12/2017"; // day/month/year
+cmfDate = "12/02/2018"; // day/month/year
+cmfVers = "CMF 4.4";
 
 // Awesome new gearsets from the guys at BW
 #include "CfgLoadouts.hpp"

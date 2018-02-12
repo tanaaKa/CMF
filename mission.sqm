@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1903;
+		nextID=1905;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1496.6772,160.06006,620.00391};
-		dir[]={0.010165794,-0.70188057,0.71228725};
-		up[]={0.010016672,0.71221286,0.70188129};
-		aside[]={0.99994284,-4.2403917e-007,-0.014270158};
+		pos[]={1482.1515,276.86374,504.11633};
+		dir[]={0.012928504,-0.7625109,0.64691985};
+		up[]={0.015236113,0.64689213,0.7624191};
+		aside[]={0.9998458,-5.156071e-007,-0.019980635};
 	};
 };
 binarizationWanted=0;
@@ -138,7 +138,7 @@ class DynamicSimulation
 randomSeed=1116085;
 class ScenarioData
 {
-	author="*** Insert mission author name here. ***";
+	author="*** Insert Author Name ***";
 	loadScreen="loadlogo.jpg";
 	respawn=1;
 	class Header
@@ -969,7 +969,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=332;
+									items=336;
 									class Item0
 									{
 										class data
@@ -5618,6 +5618,62 @@ class CustomAttributes
 											value="potato_recruits_showtags";
 										};
 									};
+									class Item332
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enablecombatdeafness";
+										};
+									};
+									class Item333
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_disableearringing";
+										};
+									};
+									class Item334
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enabledforzeusunits";
+										};
+									};
+									class Item335
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_autoaddearplugstounits";
+										};
+									};
 								};
 							};
 						};
@@ -5634,7 +5690,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=332;
+									items=336;
 									class Item0
 									{
 										class data
@@ -17964,7 +18020,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -17978,7 +18034,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 											};
@@ -21224,6 +21280,186 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item332
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item333
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item334
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item335
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -21271,7 +21507,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="*** Insert mission name here. ***";
+		briefingName="*** Insert Mission Name ***";
 		overviewText="COOP40 - [Attack/Defend] | [Explain faction and gear type] | [Specialties]";
 		resistanceWest=0;
 		timeOfChanges=28800;
