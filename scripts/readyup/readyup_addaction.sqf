@@ -13,12 +13,12 @@ if (isServer) then {
 };
 
 //Define PLs and SLs per faction
-_bluPL = missionNamespace getVariable "BLU_PL";
-_bluASL = missionNamespace getVariable "BLU_ASL";
-_opfPL = missionNamespace getVariable "OPF_PL";
-_opfASL = missionNamespace getVariable "OPF_ASL";
-_indPL = missionNamespace getVariable "IND_PL";
-_indASL = missionNamespace getVariable "IND_ASL";
+bluPL = missionNamespace getVariable "BLU_PL";
+bluASL = missionNamespace getVariable "BLU_ASL";
+opfPL = missionNamespace getVariable "OPF_PL";
+opfASL = missionNamespace getVariable "OPF_ASL";
+indPL = missionNamespace getVariable "IND_PL";
+indASL = missionNamespace getVariable "IND_ASL";
 
 //Set the ready variables per team to false
 blufor_ready = false;
@@ -28,11 +28,11 @@ gamestart = false;
 
 ///////////////////////////////////////////////////////////////
 //Add readyup action to each PL IF they exist, otherwise give to ASL
-if (isNil "_bluPL") then
+if (isNil "bluPL") then
 {
-	if !(isNil "_bluASL") then
+	if !(isNil "bluASL") then
 	{
-		blurdyup = _bluASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
+		blurdyup = bluASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
 	}
 	else
 	{
@@ -42,14 +42,14 @@ if (isNil "_bluPL") then
 }
 else
 {
-	blurdyup = _bluPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
+	blurdyup = bluPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
 };
 
-if (isNil "_opfPL") then
+if (isNil "opfPL") then
 {
-	if !(isNil "_opfASL") then
+	if !(isNil "opfASL") then
 	{
-		opfrdyup = _opfASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
+		opfrdyup = opfASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
 	}
 	else
 	{
@@ -59,14 +59,14 @@ if (isNil "_opfPL") then
 }
 else
 {
-	opfrdyup = _opfPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
+	opfrdyup = opfPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
 };
 
-if (isNil "_indPL") then
+if (isNil "indPL") then
 {
-	if !(isNil "_indASL") then
+	if !(isNil "indASL") then
 	{
-		indrdyup = _indASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
+		indrdyup = indASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
 	}
 	else
 	{
@@ -76,6 +76,6 @@ if (isNil "_indPL") then
 }
 else
 {
-	indrdyup = _indPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
+	indrdyup = indPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
 };
 ///////////////////////////////////////////////////////////////
