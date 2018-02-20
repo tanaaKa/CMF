@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1905;
+		nextID=1910;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1482.1515,276.86374,504.11633};
-		dir[]={0.012928504,-0.7625109,0.64691985};
-		up[]={0.015236113,0.64689213,0.7624191};
-		aside[]={0.9998458,-5.156071e-007,-0.019980635};
+		pos[]={1479.3361,243.97763,545.15131};
+		dir[]={0.0096102227,-0.73703223,0.67588603};
+		up[]={0.010478224,0.67574608,0.7370401};
+		aside[]={0.99995857,-3.7951395e-007,-0.014215733};
 	};
 };
 binarizationWanted=0;
@@ -29,6 +29,7 @@ addons[]=
 	"ace_explosives",
 	"ace_nouniformrestrictions",
 	"A3_Ui_F",
+	"WW2_Core_c_IF_Gui_c",
 	"potato_respawn",
 	"ace_gforces",
 	"ace_parachute",
@@ -43,7 +44,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -74,49 +75,54 @@ class AddonsMetaData
 		};
 		class Item4
 		{
+			className="WW2_Core_c_IF_Gui_c";
+			name="WW2_Core_c_IF_Gui_c";
+		};
+		class Item5
+		{
 			className="potato_respawn";
 			name="potato_respawn";
 			author="Potato";
 		};
-		class Item5
+		class Item6
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item6
+		class Item7
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item9
+		class Item10
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="potato_fortify";
 			name="potato_fortify";
@@ -21305,7 +21311,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -21554,7 +21560,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitNATO_PL";
+						name="BLU_PL";
 						description=" Platoon Leader@Platoon";
 						isPlayable=1;
 					};
@@ -21929,7 +21935,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1312.3944,5.0014391,781.44604};
+						position[]={1312.394,5.0014391,781.44598};
 						angles[]={0,6.2821379,0};
 					};
 					side="West";
@@ -21938,7 +21944,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitNATO_ASL_SL";
+						name="BLU_ASL";
 						description=" Alpha Squad Leader@Alpha";
 						isPlayable=1;
 					};
@@ -30590,7 +30596,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						lock="UNLOCKED";
-						name="UnitCSAT_PL";
+						name="OPF_PL";
 						description=" Platoon Leader@Platoon";
 						isPlayable=1;
 					};
@@ -30841,7 +30847,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						lock="UNLOCKED";
-						name="UnitCSAT_ASL_SL";
+						name="OPF_ASL";
 						description=" Alpha Squad Leader@Alpha";
 						isPlayable=1;
 					};
@@ -37202,7 +37208,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitAAF_PL";
+						name="IND_PL";
 						description=" Platoon Leader@Platoon";
 						isPlayable=1;
 					};
@@ -37471,7 +37477,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitAAF_ASL_SL";
+						name="IND_ASL";
 						description=" Alpha Squad Leader@Alpha";
 						isPlayable=1;
 					};
@@ -37907,18 +37913,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1448.335,5.0014391,766.83997};
+						position[]={1467.652,5.0014391,765.99701};
+						angles[]={0,0.001972222,0};
 					};
 					side="Independent";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
-						name="UnitAAF_A1_GR";
-						description=" Alpha 1 Grenadier";
+						skill=0.60000002;
+						name="UnitAAF_A1_AT";
+						description=" Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1335;
-					type="I_Soldier_GL_F";
+					id=551;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37967,20 +37975,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1467.652,5.0014391,765.99701};
-						angles[]={0,0.001972222,0};
+						position[]={1448.335,5.0014391,766.83997};
 					};
 					side="Independent";
-					flags=4;
+					flags=5;
 					class Attributes
 					{
-						skill=0.60000002;
-						name="UnitAAF_A1_AT";
-						description=" Alpha 1 Rifleman (AT)";
+						name="UnitAAF_A1_GR";
+						description=" Alpha 1 Grenadier";
 						isPlayable=1;
 					};
-					id=551;
-					type="I_Soldier_LAT_F";
+					id=1335;
+					type="I_Soldier_GL_F";
 					class CustomAttributes
 					{
 						class Attribute0

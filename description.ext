@@ -37,8 +37,8 @@ class CfgFunctions {
 			class mapClickTeleportGroup{};
 		};
 	};
-	class SC
-	{	
+	class tnk
+	{
 		class simplepara
 		{
 			file = "scripts\simplepara";			
