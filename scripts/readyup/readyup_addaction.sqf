@@ -32,7 +32,7 @@ if (isNil "bluPL") then
 {
 	if !(isNil "bluASL") then
 	{
-		blurdyup = bluASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
+		blurdyup = bluASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf",[],6,true,false,"","_target == player"];
 	}
 	else
 	{
@@ -42,14 +42,14 @@ if (isNil "bluPL") then
 }
 else
 {
-	blurdyup = bluPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf"];
+	blurdyup = bluPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_blu.sqf",[],6,true,false,"","_target == player"];
 };
 
 if (isNil "opfPL") then
 {
 	if !(isNil "opfASL") then
 	{
-		opfrdyup = opfASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
+		opfrdyup = opfASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf",[],6,true,false,"","_target == player"];
 	}
 	else
 	{
@@ -59,14 +59,14 @@ if (isNil "opfPL") then
 }
 else
 {
-	opfrdyup = opfPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf"];
+	opfrdyup = opfPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_opf.sqf",[],6,true,false,"","_target == player"];
 };
 
 if (isNil "indPL") then
 {
 	if !(isNil "indASL") then
 	{
-		indrdyup = indASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
+		indrdyup = indASL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf",[],6,true,false,"","_target == player"];
 	}
 	else
 	{
@@ -76,6 +76,6 @@ if (isNil "indPL") then
 }
 else
 {
-	indrdyup = indPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf"];
+	indrdyup = indPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf",[],6,true,false,"","_target == player"];
 };
 ///////////////////////////////////////////////////////////////
