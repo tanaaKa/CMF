@@ -2,7 +2,6 @@ waitUntil
 	{    
         (blufor_ready && {opfor_ready} && {indfor_ready});
     };
-    sleep 2;
 	if !(isNil "bluPL") then {
 	bluPL removeAction bluUnready;
 	}
@@ -30,6 +29,7 @@ waitUntil
 	}
 	else {};
 	
+	sleep 2;
     ["MISSION IS LIVE IN 10 SECONDS","systemChat"] call BIS_fnc_MP;
     "MISSION IS LIVE IN 10 SECONDS" remoteExec ["hint", 0];
     sleep 5;
