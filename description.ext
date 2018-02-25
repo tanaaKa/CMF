@@ -14,7 +14,7 @@ class MissionSQM
 
 // Misc settings
 disableChannels[]={{2,true,true},{4,true,true},{5,true,true},{6,true,true}};
-cmfDate = "12/02/2018"; // day/month/year
+cmfDate = "25/02/2018"; // day/month/year
 cmfVers = "CMF 4.4";
 
 // Awesome new gearsets from the guys at BW
@@ -78,6 +78,13 @@ class Extended_InitPost_EventHandlers {
 			init = "(_this select 0) disableTIEquipment true;"; 
 		};
 	};
+	class Plane 
+	{
+		class cmf_nothermals 
+		{ 
+			init = "(_this select 0) disableTIEquipment true;"; 
+		};
+	};
 };
 
 // Note for deploy/tele fnc
@@ -90,5 +97,13 @@ class cfgNotifications
 		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
 		duration = 3;
 		priority = 5;
+	};
+};
+
+// ACE killtracking
+class CfgDebriefingSections {
+	class acex_killTracker {
+		title = "Acex Killed Events";
+		variable = "acex_killTracker_outputText";
 	};
 };

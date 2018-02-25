@@ -28,7 +28,7 @@
 #define CARBINE_MAG "rhs_30Rnd_545x39_AK:10"
 // AR
 #define AR "hlc_rifle_RPK12_60rnd"
-#define AR_MAG "hlc_30Rnd_545x39_B_AK:15", "hlc_60Rnd_545x39_t_rpk:2"
+#define AR_MAG "hlc_60Rnd_545x39_t_rpk:10"
 // AT
 #define AT "rhs_weap_rpg26"
 #define AT_MAG "rhs_rpg26_mag:1"

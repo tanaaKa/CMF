@@ -31,4 +31,4 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 [] execVM "scripts\vehiclespawner\factoryaction.sqf";
 
 // tanaKa's ready-up script
-[] execVM "scripts\readyup\readyup_addaction.sqf";
+[] execVM "scripts\readyup\readyup_addaction.sqf"; 

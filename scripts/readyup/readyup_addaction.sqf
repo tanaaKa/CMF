@@ -8,9 +8,6 @@
 //
 ///////////////////////////////////////////////////////////////
 //Pre-setup
-if (isServer) then {
-	[] execVM "scripts\readyup\gamestart.sqf"
-};
 
 //Define PLs and SLs per faction
 bluPL = missionNamespace getVariable "BLU_PL";
@@ -24,7 +21,6 @@ indASL = missionNamespace getVariable "IND_ASL";
 blufor_ready = false;
 opfor_ready = false;
 indfor_ready = false;
-gamestart = false;
 
 ///////////////////////////////////////////////////////////////
 //Add readyup action to each PL IF they exist, otherwise give to ASL
@@ -37,7 +33,6 @@ if (isNil "bluPL") then
 	else
 	{
 		blufor_ready = true;
-		exit;
 	};
 }
 else
@@ -54,7 +49,6 @@ if (isNil "opfPL") then
 	else
 	{
 		opfor_ready = true;
-		exit;
 	};
 }
 else
@@ -71,7 +65,6 @@ if (isNil "indPL") then
 	else
 	{
 		indfor_ready = true;
-		exit;
 	};
 }
 else
@@ -79,3 +72,8 @@ else
 	indrdyup = indPL addaction ["<t color='#ff0000'>Ready Up</t>","scripts\readyup\readyup_ind.sqf",[],6,true,false,"","_target == player"];
 };
 ///////////////////////////////////////////////////////////////
+// Wait until all sides have readied up then execute the game start script
+waitUntil {    
+	(blufor_ready && {opfor_ready} && {indfor_ready});	
+};
+[] execVM "scripts\readyup\gamestart.sqf";
