@@ -16,6 +16,7 @@ _hintString remoteExec ["hint", 0];
 
 //set indfor ready flag to true for gamestart fnc
 indfor_ready = false;
+publicVariable "indfor_ready";
 
 //remove the un-ready up action so idiots dont spam it
 (_this select 0) removeAction indUnready;

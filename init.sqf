@@ -25,7 +25,7 @@ f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a
 //[] execVM "scripts\looting.sqf";
 
 // tanaKa's ear protection script for unbalanced vehicle audio (FUCK YOU RHS)
-//[] execVM "scripts\earpro\earpro.sqf";
+[] execVM "scripts\earpro\earpro.sqf";
 
 // tanaKa's veh spawner
 [] execVM "scripts\vehiclespawner\factoryaction.sqf";

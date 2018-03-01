@@ -16,6 +16,7 @@ _hintString remoteExec ["hint", 0];
 
 //set opfor ready flag to true for gamestart fnc
 opfor_ready = false;
+publicVariable "opfor_ready";
 
 //remove the un-ready up action so idiots dont spam it
 (_this select 0) removeAction opfUnready;

@@ -16,6 +16,7 @@ _hintString remoteExec ["hint", 0];
 
 //set blufor ready flag to true for gamestart fnc
 blufor_ready = true;
+publicVariable "blufor_ready";
 
 //remove the ready up action so idiots dont spam it
 (_this select 0) removeAction blurdyup;
