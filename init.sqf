@@ -27,11 +27,11 @@ f_var_JIP_GearMenu = false;			// Can JIP/respawned players select their own gear
 // tanaKa's no looting (enable if necessary)
 //[] execVM "scripts\looting.sqf";
 
-// tanaKa's ear protection script for unbalanced vehicle audio (FUCK YOU RHS)
-[] execVM "scripts\earpro\earpro.sqf";
-
 // tanaKa's veh spawner
 [] execVM "scripts\vehiclespawner\factoryaction.sqf";
 
 // tanaKa's ready-up script
 [] execVM "scripts\readyup\readyup_addaction.sqf"; 
+
+// Whale's Ear Pro script
+[] execVM "scripts\earplugs\wh_earplugInit.sqf";

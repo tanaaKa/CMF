@@ -11,17 +11,3 @@ cutText ["Initializing. Do not move.", "BLACK IN", 30];
 
 sleep 30; 
 cutText ["Server Initialized. Free to move.", "PLAIN"];
-sleep 5;
-
-_title = getText (missionConfigFile >> "MissionSQM" >> "Mission" >> "Intel" >> "briefingName");
-_author = getMissionConfigValue ["Author",0];
-_cmfvers = getText (missionConfigFile >> "cmfVers");
-
-[
-    [
-        [_title, "<t align = 'center' shadow = '1' size = '0.9'>%1</t><br/>",5],
-        ["By: " + _author,"<t align = 'center' shadow = '1' size = '0.6'>%1</t><br/>",5],
-		[_cmfvers,"<t align = 'center' shadow = '1' size = '0.4'>%1</t><br/>",5],
-         [format ["%3/%2/%1 %4:%5",date select 0, date select 1, date select 2,date select 3, date select 4],"<t align = 'center' shadow = '1' size = '0.4'>%1</t>",10]
-    ] , 1, 1.05
-] spawn BIS_fnc_typeText;

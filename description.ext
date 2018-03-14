@@ -49,6 +49,7 @@ class CfgFunctions {
 			class paraeject{};						
 		};
 	};
+	#include "scripts\earplugs\functions\wh_earplugFunctions.hpp"
 };
 
 // EH for various scenarios
