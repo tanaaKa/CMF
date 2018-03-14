@@ -13,9 +13,13 @@ class MissionSQM
 };
 
 // Misc settings
-disableChannels[]={{2,true,true},{4,true,true},{5,true,true},{6,true,true}};
+disableChannels[] = {2,4,5,6};
 cmfDate = "25/02/2018"; // day/month/year
 cmfVers = "CMF 4.4";
+
+// Menu components for the JIP Menu
+#include "f\JIP\f_JIP_kitpicker.h"
+#include "f\JIP\f_JIP_grppicker.h"
 
 // Awesome new gearsets from the guys at BW
 #include "CfgLoadouts.hpp"
@@ -95,6 +99,13 @@ class cfgNotifications
 		title= "NOTE";
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
+		duration = 3;
+		priority = 5;
+	};
+	class JIP {
+		title= "REINFORCEMENTS";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
 		duration = 3;
 		priority = 5;
 	};

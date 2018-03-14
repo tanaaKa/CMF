@@ -86,6 +86,7 @@
 			AH-1Z Cobra - RHS_AH1Z
 */
 
+
 _factory = _this select 0;
 
 //Set spawn locations for each side's factory

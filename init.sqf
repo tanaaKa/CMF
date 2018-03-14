@@ -4,6 +4,9 @@ f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be 
 f_var_mapClickTeleport_GroupTeleport = true; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
 //f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
 f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
+f_var_JIP_FirstMenu = false;		// Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
+f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
+f_var_JIP_GearMenu = false;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // Misc settings

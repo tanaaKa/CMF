@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1483.4834,293.35779,489.94614};
-		dir[]={0.014093761,-0.74129266,0.67114085};
-		up[]={0.015564289,0.67106289,0.74121374};
-		aside[]={0.99984175,-3.9127553e-007,-0.020994317};
+		pos[]={1499.0496,239.53664,527.45477};
+		dir[]={0.00019157946,-0.74271321,0.66972297};
+		up[]={0.00021116331,0.66948545,0.7428003};
+		aside[]={1.0000682,-4.8789434e-007,-0.00028307689};
 	};
 };
 binarizationWanted=0;
@@ -254,7 +254,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.3";
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.4";
 				};
 			};
 		};
@@ -292,7 +292,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.3";
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.4";
 				};
 			};
 		};
@@ -330,7 +330,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.3";
+					value="*** Insert information on administration and logistics here. ***<br/><br/><font size='18'>MEDICAL TYPE</font><br/>Centralized - Medical personnel build and stay at medical facilities<br/>De-centralized - Medical personnel move with the squad/platoon<br/>Para-rescue - Medical personnel are on-call with rotary support<br/><br/><font size='18'>CREDITS</font><br/>Mission by: *** Insert mission credits here. ***<br/>Made with Coalition Mission Framework (CMF) 4.4";
 				};
 			};
 		};
@@ -39337,12 +39337,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1332.3323,5.0014391,743.46863};
+						position[]={1332.332,5.0014391,743.46899};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39367,12 +39368,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1334.5056,5.0014391,743.55347};
+						position[]={1334.506,5.0014391,743.55298};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39397,12 +39399,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1336.4856,5.0014391,743.42792};
+						position[]={1336.486,5.0014391,743.42798};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39427,12 +39430,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1338.4274,5.0014391,743.54114};
+						position[]={1338.427,5.0014391,743.54102};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39457,12 +39461,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1340.4476,5.0014391,743.48535};
+						position[]={1340.448,5.0014391,743.48499};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39487,12 +39492,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1342.5415,5.0014391,743.56775};
+						position[]={1342.542,5.0014391,743.56799};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39517,12 +39523,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1344.5413,5.0014391,743.57977};
+						position[]={1344.541,5.0014391,743.58002};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39547,12 +39554,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1346.5497,5.0014391,743.62616};
+						position[]={1346.55,5.0014391,743.62598};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39577,12 +39585,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1477.7051,5.0014391,741.0838};
+						position[]={1477.705,5.0014391,741.08398};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39607,12 +39616,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1479.6556,5.0014391,741.08026};
+						position[]={1479.656,5.0014391,741.08002};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39637,12 +39647,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1481.5923,5.0014391,741.04816};
+						position[]={1481.592,5.0014391,741.04797};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39667,12 +39678,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1483.5929,5.0014391,741.04297};
+						position[]={1483.593,5.0014391,741.04297};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39697,12 +39709,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1485.7068,5.0014391,741.06519};
+						position[]={1485.707,5.0014391,741.065};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39727,12 +39740,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1487.8263,5.0014391,741.11365};
+						position[]={1487.826,5.0014391,741.11401};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39757,12 +39771,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1489.6875,5.0014391,741.10706};
+						position[]={1489.688,5.0014391,741.10699};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39787,25 +39802,24 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1491.6415,5.0014386,741.04926};
+						position[]={1491.641,5.0014391,741.04999};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
 					id=1881;
 					type="I_Soldier_LAT_F";
-					atlOffset=-4.7683716e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1880;
-			atlOffset=-4.7683716e-007;
 		};
 		class Item124
 		{
@@ -39819,12 +39833,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1619.0002,5.0014391,739.56396};
+						position[]={1619,5.0014391,739.56396};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39849,12 +39864,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1620.9325,5.0014391,739.58331};
+						position[]={1620.932,5.0014391,739.58301};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39879,12 +39895,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1622.9873,5.0014391,739.53339};
+						position[]={1622.9871,5.0014391,739.53296};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39909,12 +39926,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1624.9799,5.0014391,739.55377};
+						position[]={1624.98,5.0014391,739.55402};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39939,12 +39957,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1626.9141,5.0014391,739.60889};
+						position[]={1626.9139,5.0014391,739.60901};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39969,12 +39988,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1628.8644,5.0014391,739.55798};
+						position[]={1628.864,5.0014391,739.55798};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39999,12 +40019,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1631.0139,5.0014391,739.57996};
+						position[]={1631.014,5.0014391,739.58002};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40029,12 +40050,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1632.9506,5.0014391,739.63507};
+						position[]={1632.951,5.0014391,739.63501};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
