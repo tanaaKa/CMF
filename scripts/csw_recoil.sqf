@@ -10,5 +10,5 @@
 		-Stop the shake of other players
 */
 
-player setUnitRecoilCoefficient 2;
+player setUnitRecoilCoefficient 1.5;
 player setCustomAimCoef 0.35;

@@ -242,7 +242,7 @@ class soldier_repair_F: crew_F {// Repair Specialist
 class Fic_eng: Fic_Soldier_Carbine {
   items[] += {BASE_ENG};
   handguns[] = {MINE_SWEEPER}; 
-  backpackItems[] = {};
+  backpackItems[] = {RADIO_MR};
 };
 class soldier_exp_F: Fic_eng {// Explosive Specialist
   magazines[] += {BASE_EXP};

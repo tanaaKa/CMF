@@ -14,14 +14,14 @@ class MissionSQM
 
 // Misc settings
 disableChannels[] = {2,4,5,6};
-cmfDate = "25/02/2018"; // day/month/year
-cmfVers = "CMF 4.4";
+cmfDate = "09/03/2018"; // day/month/year
+cmfVers = "CMF 4.5";
 
 // Menu components for the JIP Menu
 #include "f\JIP\f_JIP_kitpicker.h"
 #include "f\JIP\f_JIP_grppicker.h"
 
-// Awesome new gearsets from the guys at BW
+// Gearset call
 #include "CfgLoadouts.hpp"
 
 // Respawn Settings

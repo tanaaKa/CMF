@@ -18,7 +18,7 @@
 
 WH_EP_EARPLUGS = true;			// Enable or disable the earplugs system.		(true)
 
-WH_EP_SOUNDLEVEL = 0.4;			// Level of sound when earplugs are in, of 1. 	(0.4)
+WH_EP_SOUNDLEVEL = 0.3;			// Level of sound when earplugs are in, of 1. 	(0.4)
 
 WH_EP_DEFAULT = false;			// Whether earplugs should be in at start.		(false)
 
