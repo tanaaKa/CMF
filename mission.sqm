@@ -438,7 +438,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="true,Negotiations,20,false,false";
+					value="true,Negotiations,20,false,true";
 				};
 			};
 		};
@@ -471,7 +471,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="false,true,false,false,false,false,false,false";
+								value="false,false,false,false,false,false,false,false";
 							};
 						};
 						class Item1
