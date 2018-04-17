@@ -153,7 +153,6 @@ randomSeed=1116085;
 class ScenarioData
 {
 	author="*** Insert Author Name ***";
-	overviewText="***Place any administrative requirements here***";
 	loadScreen="loadlogo.jpg";
 	respawn=1;
 	class Header
@@ -12829,7 +12828,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.80000001;
+														value=0.43317971;
 													};
 												};
 												class Item1
@@ -12874,7 +12873,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0.58962572;
 													};
 												};
 												class Item1
@@ -18679,7 +18678,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.5;
+														value=0.27673513;
 													};
 												};
 												class Item1
