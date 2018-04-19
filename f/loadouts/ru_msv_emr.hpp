@@ -135,8 +135,8 @@ class officer_F: Soldier_SL_F {// CO and DC
   linkedItems[] += {};
 };
 class soldier_UAV_F: Soldier_F {
-  backpack[] = {"B_UAV_01_backpack_F"};
-  linkedItems[] += {"B_uavterminal"};
+  backpack[] = {"O_UAV_01_backpack_F"};
+  linkedItems[] += {"O_uavterminal"};
   items[] += {RADIO_LR};
 };
 class Soldier_AR_F: Soldier_F {// AR
