@@ -34,16 +34,16 @@ class CfgLoadouts {
   // Note: please delete any factions you're not using
   // (i.e. delete the OPF and CIV classes in a BLU vs IND fight)
   class blu_f { // BLU
-    #include "f\loadouts\us_army_ocp.hpp"
+    #include "c\loadouts\us_army_ocp.hpp"
   };
 
   class ind_f { // IND
-    #include "f\loadouts\aus_army_auspat.hpp"
+    #include "c\loadouts\aus_army_auspat.hpp"
   };
 
   class opf_f { // OPF
-    #include "f\loadouts\ru_msv_emr.hpp"
+    #include "c\loadouts\ru_msv_emr.hpp"
   }; 
   
-  #include "f\loadouts\civilians.hpp" // Civilians (mainly for RP missions) 
+  #include "c\loadouts\civilians.hpp" // Civilians (mainly for RP missions) 
 };

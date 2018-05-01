@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1498.8978,295.18954,468.4267};
-		dir[]={0.017083354,-0.61985242,0.78466988};
-		up[]={0.013494353,0.78455645,0.61985672};
-		aside[]={0.99984926,-4.2339525e-007,-0.021765238};
+		pos[]={1480.2725,71.525742,686.46588};
+		dir[]={-0.3908737,-0.71555305,0.57915962};
+		up[]={-0.40035585,0.69838947,0.59320891};
+		aside[]={0.82896072,-7.0012175e-007,0.55946702};
 	};
 };
 binarizationWanted=0;
@@ -38294,7 +38294,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_cookoff_enable";
-					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable',_value,true];};";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable', _value, true];};";
 					class Value
 					{
 						class data
@@ -38370,7 +38370,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_cookoff_enable";
-					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable',_value,true];};";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable', _value, true];};";
 					class Value
 					{
 						class data
@@ -38446,7 +38446,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_cookoff_enable";
-					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable',_value,true];};";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enable', _value, true];};";
 					class Value
 					{
 						class data
@@ -39657,7 +39657,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39688,7 +39687,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39719,7 +39717,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39750,7 +39747,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39781,7 +39777,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39812,7 +39807,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39843,7 +39837,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39874,7 +39867,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39905,7 +39897,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39936,7 +39927,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39967,7 +39957,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -39998,7 +39987,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40029,7 +40017,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40060,7 +40047,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40091,7 +40077,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40122,7 +40107,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40153,7 +40137,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40184,7 +40167,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40215,7 +40197,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40246,7 +40227,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40277,7 +40257,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40308,7 +40287,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40339,7 +40317,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
@@ -40370,7 +40347,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";}";
 						description="JIP SLOT";
 						isPlayable=1;
 					};
